@@ -1,4 +1,4 @@
-
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>
 /******/
 (function(modules) { // webpackBootstrap
     /******/ // The module cache
@@ -117,8 +117,8 @@
           var data = res.list[j].arr;
           var liTmpl = "";
           for (var i = 0, len = data.link.length; i < len; i++) {
-            var minSrc = 'https://raw.githubusercontent.com/PaddyLin-xum/test_album/master/min_photos/' + data.link[i];
-            var src = 'https://raw.githubusercontent.com/PaddyLin-xum/test_album/master/photos/' + data.link[i];
+            var minSrc = 'https://paddylin2.coding.net/p/pho/d/pho/git/raw/master/min_photos/' + data.link[i];
+            var src = 'https://paddylin2.coding.net/p/pho/d/pho/git/raw/master/photos/' + data.link[i];
             var type = data.type[i];
             var target = src + (type === 'video' ? '.mp4' : '.jpg');
             src += '';
