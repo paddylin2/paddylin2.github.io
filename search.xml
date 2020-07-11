@@ -41,30 +41,10 @@
       </tags>
   </entry>
   <entry>
-    <title>爬虫第一课</title>
-    <url>/2020/07/05/Python%E7%88%AC%E8%99%AB/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://img-blog.csdnimg.cn/20200706200425139.png#pic_center" alt="霸王别姬"><br><a id="more"></a></p>
-<h2 id="Python爬取豆瓣电影Top250"><a href="#Python爬取豆瓣电影Top250" class="headerlink" title="Python爬取豆瓣电影Top250"></a>Python爬取豆瓣电影Top250</h2><p>这是我参考改写的代码<br><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_movies</span><span class="params">()</span>:</span></span><br><span class="line">    headers=&#123;<span class="string">'user-agent'</span>:<span class="string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:77.0) Gecko/20100101 Firefox/77.0'</span>,<span class="string">'Host'</span>:<span class="string">'movie.douban.com'</span>&#125;</span><br><span class="line">    movie_list1=[]</span><br><span class="line">    movie_list2=[]</span><br><span class="line">    movie_list3=[]</span><br><span class="line">    movie_list4=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,<span class="number">10</span>):</span><br><span class="line">        link=<span class="string">'https://movie.douban.com/top250?start='</span>+str(i*<span class="number">25</span>)</span><br><span class="line">        r=requests.get(link,headers=headers,timeout=<span class="number">10</span>)</span><br><span class="line">        print(str(i+<span class="number">1</span>),<span class="string">'页响应状态码'</span>,r.status_code)</span><br><span class="line"></span><br><span class="line">        soup=BeautifulSoup(r.text,<span class="string">'lxml'</span>)</span><br><span class="line">        <span class="keyword">for</span> t <span class="keyword">in</span> soup.find_all(<span class="string">'div'</span>, <span class="string">'hd'</span>):</span><br><span class="line">            name = t.find(<span class="string">'span'</span>, <span class="string">'title'</span>).get_text()</span><br><span class="line">            movie_list1.append(name)</span><br><span class="line">        <span class="keyword">for</span> t <span class="keyword">in</span> soup.find_all(<span class="string">'div'</span>, <span class="string">'hd'</span>):</span><br><span class="line">            name = t.find(<span class="string">'span'</span>, <span class="string">'other'</span>).get_text()</span><br><span class="line">            movie_list2.append(name)</span><br><span class="line">        <span class="keyword">for</span> t <span class="keyword">in</span> soup.find_all(<span class="string">'div'</span>, <span class="string">'info'</span>):</span><br><span class="line">            info = t.find(<span class="string">'p'</span>).get_text().replace(<span class="string">' '</span>,<span class="string">''</span>)</span><br><span class="line">            movie_list3.append(info)</span><br><span class="line">        <span class="keyword">for</span> t <span class="keyword">in</span> soup.find_all(<span class="string">'div'</span>, <span class="string">'star'</span>):</span><br><span class="line">            fen = t.find(<span class="string">'span'</span>, <span class="string">'rating_num'</span>).get_text()</span><br><span class="line">            movie_list4.append(fen)     </span><br><span class="line">    <span class="keyword">return</span> movie_list1,movie_list2,movie_list3,movie_list4</span><br><span class="line">a,b,c,d=get_movies()</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">import</span> codecs</span><br><span class="line">    <span class="keyword">with</span> codecs.open(<span class="string">'c:\\Users\\lin paddy\\Desktop\\python\\Python爬虫\\豆瓣电影.txt'</span>, <span class="string">'wb'</span>,encoding=<span class="string">'utf-8'</span>) <span class="keyword">as</span> f:</span><br><span class="line">            f.write(<span class="string">'豆瓣电影 Top 250\n'</span>)</span><br><span class="line">            <span class="keyword">for</span> n <span class="keyword">in</span> range(<span class="number">0</span>,<span class="number">250</span>):</span><br><span class="line">                </span><br><span class="line">                f.write(<span class="string">'Top'</span>+str(n+<span class="number">1</span>)+<span class="string">'\n'</span>)</span><br><span class="line">                f.write(<span class="string">'电影名:'</span>+a[n]+b[n]+c[n]+<span class="string">'豆瓣评分'</span>+d[n])</span><br><span class="line">                f.write(<span class="string">'\n\n'</span>)</span><br><span class="line">                </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure></div><br>运行后可以得到下面所示的图片结果：<br><img src="https://img-blog.csdnimg.cn/20200705155231116.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="">                                                                                 </p>
-]]></content>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PaddyLin的博客</title>
     <url>/2020/07/04/hello-world/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="我的博客诞生了"><a href="#我的博客诞生了" class="headerlink" title="我的博客诞生了"></a>我的博客诞生了</h2><p>纪念我在2020年7月4日开始接触hexo和github，并学习了搭建博客<br><a href="https://www.liaofuzhan.com/photos/" target="_blank" rel="noopener" class="LinkCard">我的相册——时光留影</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>P站图片分享1</title>
-    <url>/2020/07/06/%E5%88%86%E4%BA%AB%E4%B8%80/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://img-blog.csdnimg.cn/20200706162859635.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><a id="more"></a></p>
-<h2 id="图片分享"><a href="#图片分享" class="headerlink" title="图片分享"></a>图片分享</h2><p><strong>Picture Share</strong><br><img src="https://img-blog.csdnimg.cn/20200706162904532.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162903133.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162902421.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162901900.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162950121.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162949738.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162949638.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070616294869.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162947934.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-]]></content>
-      <tags>
-        <tag>图片</tag>
-      </tags>
   </entry>
   <entry>
     <title>穿乐福鞋的少女特辑</title>
@@ -77,30 +57,50 @@
       </tags>
   </entry>
   <entry>
-    <title>P站图片分享2</title>
-    <url>/2020/07/06/%E5%88%86%E4%BA%AB%E4%BA%8C/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://img-blog.csdnimg.cn/20200706194758499.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><a id="more"></a></p>
-<h2 id="图片分享"><a href="#图片分享" class="headerlink" title="图片分享"></a>图片分享</h2><p><strong>Picture Share</strong><br><img src="https://img-blog.csdnimg.cn/20200706194757859.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706194757459.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706194756497.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706194755284.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706195609505.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706195609290.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706195608503.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706195606535.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706195605674.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+    <title>P站图片分享1</title>
+    <url>/2020/07/06/%E5%88%86%E4%BA%AB%E4%B8%80/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://img-blog.csdnimg.cn/20200706162859635.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><a id="more"></a></p>
+<h2 id="图片分享"><a href="#图片分享" class="headerlink" title="图片分享"></a>图片分享</h2><p><strong>Picture Share</strong><br><img src="https://img-blog.csdnimg.cn/20200706162904532.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162903133.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162902421.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162901900.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162950121.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162949738.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162949638.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070616294869.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162947934.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 ]]></content>
       <tags>
         <tag>图片</tag>
       </tags>
   </entry>
   <entry>
-    <title>七夕特辑</title>
-    <url>/2020/07/08/%E5%88%86%E4%BA%AB%E5%9B%9B/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://img-blog.csdnimg.cn/20200708205154101.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><a id="more"></a><br><img src="https://img-blog.csdnimg.cn/20200708205220726.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220687.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220628.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220528.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220429.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220414.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220316.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220274.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220256.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20200708205220146.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205219817.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+    <title>自定义“引用”板块</title>
+    <url>/2020/07/11/%E8%87%AA%E5%AE%9A%E4%B9%89%E2%80%9C%E5%BC%95%E7%94%A8%E2%80%9D%E6%9D%BF%E5%9D%97/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>摆脱单一引用块使用的困扰<br><img src="https://img-blog.csdnimg.cn/2020071123043061.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><a id="more"></a></p>
+<h1 id="自定义“引用”板块"><a href="#自定义“引用”板块" class="headerlink" title="自定义“引用”板块"></a>自定义“引用”板块</h1><h2 id="启发"><a href="#启发" class="headerlink" title="启发"></a>启发</h2><hr>
+<p>自从为了方便编写Md文件，我一直在用CSDN写文章，但我一直困扰于如何使用更加引人注目的<code>引用板块</code>，因为在CSDN中引用板块样子如下</p>
+<blockquote>
+<p>内容:又学废了</p>
+</blockquote>
+<p>经过多方努力，我终于在大佬reuixiy的博客<br><a href="https://io-oi.me/tech/hexo-next-optimization/#%E4%B8%BB%E9%A2%98%E8%87%AA%E5%B8%A6%E6%A0%B7%E5%BC%8F-%E4%BB%A3%E7%A0%81%E5%9D%97%E9%AB%98%E4%BA%AE" target="_blank" rel="noopener" class="LinkCard">reuixiy</a><br>里面找到了答案。首先在文件位置：<code>/blog/themes/next/source/css/_custom/custom.styl</code>中添加如下代码</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="CSS"><figure class="iseeu highlight /css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">blockquote</span><span class="selector-class">.question</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#BA55D3</span>;</span><br><span class="line">    <span class="attribute">border-left</span>: <span class="number">4px</span> solid <span class="built_in">rgb</span>(<span class="number">16</span>, <span class="number">152</span>, <span class="number">173</span>);</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">250</span>, <span class="number">240</span>, <span class="number">230</span>);</span><br><span class="line">    <span class="attribute">border-top-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    <span class="attribute">border-bottom-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    <span class="attribute">margin-bottom</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p>其中</p>
+<p>1）文字颜色改 <code>color</code> 的值<br>2）背景色改 <code>background-color</code> 的值<br>3）边框颜色和粗细改 <code>border-left</code> 的值</p>
+<p>在文章中这样使用：</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;blockquote class="question"&gt;内容：又学废了&lt;/blockquote&gt;</span><br></pre></td></tr></table></figure>
+<p>结果为</p>
+<blockquote class="question">内容：又学废了</blockquote>
+
+<h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><hr>
+<p>基于对上面的理解。我又添加了如下代码</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="CSS"><figure class="iseeu highlight /css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">blockquote</span><span class="selector-class">.moli</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>:  <span class="number">#FF7F00</span>;</span><br><span class="line">    <span class="attribute">border-left</span>: <span class="number">4px</span> solid <span class="built_in">rgb</span>(<span class="number">16</span>, <span class="number">152</span>, <span class="number">173</span>);</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">205</span>, <span class="number">197</span>, <span class="number">191</span>);</span><br><span class="line">    <span class="attribute">border-top-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    <span class="attribute">border-bottom-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    <span class="attribute">margin-bottom</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p>在文章中运行结果为：</p>
+<blockquote class="moli">内容：又学废了</blockquote>
+
+<p>最后附上RGB颜色对照表：<br><a href="https://tool.oschina.net/commons?type=3" target="_blank" rel="noopener" class="LinkCard">RGB</a></p>
 ]]></content>
       <tags>
-        <tag>图片</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
     <title>数理逻辑第一章</title>
     <url>/2020/07/11/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91%E7%AC%AC%E4%B8%80%E7%AB%A0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>本节主要介绍数理逻辑的基本概念</p>
-<p><img src="https://img-blog.csdnimg.cn/20200711143750737.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt=""><br><a id="more"></a></p>
+<p><img src="https://img-blog.csdnimg.cn/20200711230726452.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt=""><br><a id="more"></a></p>
 <h1 id="命题逻辑的基本概念"><a href="#命题逻辑的基本概念" class="headerlink" title="命题逻辑的基本概念"></a>命题逻辑的基本概念</h1><h2 id="命题及符号化"><a href="#命题及符号化" class="headerlink" title="命题及符号化"></a>命题及符号化</h2><p> <strong>命题</strong>：能够判断真假的陈述句<br> <strong>命题的真值</strong>：真、假<br> <strong>真命题</strong>：真值为真的命题<br> <strong>定义</strong>：设p为命题，复合命题“非p”记为$\rceil p$，p为真当且仅当“非p”是假<br><strong>定义</strong>：设p，q为两个命题，复合命题“p并且q”记为$p\wedge$q,$p\wedge$q为真当且仅当p和q都为真<br><strong>定义</strong>设p，q为两个命题，复合命题“p或q”记为$p\vee$q，$p\vee$q为假当且仅当p和q都为假</p>
 <blockquote>
 <p>注意：数理逻辑的析取运算只能表示自然语言里面的“相容或”，自然语言里面的“排斥或”可以写成($p\wedge\rceil$q)$\vee$$(\rceil p\wedge q)$</p>
@@ -134,6 +134,115 @@
 <p>真值表的作用：<br>（1）表示出公式的成真或成假赋值。<br>（2）判断公式类型：<br>(a)若真值表最后一列全为1，则为重言式；<br>(b)若真值表最后一列全为0，则为矛盾式；<br>(c )若真值表最后一列至少有一个1，则为可满足式；<br>(d)若真值表最后一列至少有一个1和一个0，则为非重言的可满足式。</p>
 </blockquote>
 ]]></content>
+      <tags>
+        <tag>数理逻辑</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>P站图片分享2</title>
+    <url>/2020/07/06/%E5%88%86%E4%BA%AB%E4%BA%8C/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://img-blog.csdnimg.cn/20200706194758499.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><a id="more"></a></p>
+<h2 id="图片分享"><a href="#图片分享" class="headerlink" title="图片分享"></a>图片分享</h2><p><strong>Picture Share</strong><br><img src="https://img-blog.csdnimg.cn/20200706194757859.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706194757459.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706194756497.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706194755284.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706195609505.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706195609290.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706195608503.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706195606535.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706195605674.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+]]></content>
+      <tags>
+        <tag>图片</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>七夕特辑</title>
+    <url>/2020/07/08/%E5%88%86%E4%BA%AB%E5%9B%9B/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://img-blog.csdnimg.cn/20200708205154101.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><a id="more"></a><br><img src="https://img-blog.csdnimg.cn/20200708205220726.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220687.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220628.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220528.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220429.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220414.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220316.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220274.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220256.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/20200708205220146.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205219817.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+]]></content>
+      <tags>
+        <tag>图片</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>获得音乐 ID</title>
+    <url>/2020/07/08/%E8%8E%B7%E5%BE%97%E9%9F%B3%E4%B9%90ID/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="http://5b0988e595225.cdn.sohucs.com/images/20170913/3b1ae15485a74bd1b97482706eec5804.jpeg" alt=""></p>
+<a id="more"></a>
+<h1 id="获取音乐连接（ID）"><a href="#获取音乐连接（ID）" class="headerlink" title="获取音乐连接（ID）"></a>获取音乐连接（ID）</h1><h2 id="1、首先介绍音乐地址中的ID位置"><a href="#1、首先介绍音乐地址中的ID位置" class="headerlink" title="1、首先介绍音乐地址中的ID位置"></a>1、首先介绍音乐地址中的ID位置</h2><hr>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>音乐软件</th>
+<th>音乐地址</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>网易</td>
+<td><a href="http://music.163.com/#/song?id=`25906124`" target="_blank" rel="noopener">http://music.163.com/#/song?id=`25906124`</a></td>
+</tr>
+<tr>
+<td>ＱＱ</td>
+<td><a href="http://y.qq.com/n/yqq/song/`002B2EAA3brD5b`.html" target="_blank" rel="noopener">http://y.qq.com/n/yqq/song/`002B2EAA3brD5b`.html</a></td>
+</tr>
+<tr>
+<td>酷狗</td>
+<td><a href="http://m.kugou.com/play/info/`08228af3cb404e8a4e7e9871bf543ff6`" target="_blank" rel="noopener">http://m.kugou.com/play/info/`08228af3cb404e8a4e7e9871bf543ff6`</a></td>
+</tr>
+<tr>
+<td>酷我</td>
+<td><a href="http://www.kuwo.cn/yinyue/`382425`/" target="_blank" rel="noopener">http://www.kuwo.cn/yinyue/`382425`/</a></td>
+</tr>
+<tr>
+<td>虾米</td>
+<td><a href="http://www.xiami.com/song/`2113248`" target="_blank" rel="noopener">http://www.xiami.com/song/`2113248`</a></td>
+</tr>
+<tr>
+<td>百度</td>
+<td><a href="http://music.baidu.com/song/`556113`" target="_blank" rel="noopener">http://music.baidu.com/song/`556113`</a></td>
+</tr>
+<tr>
+<td>一听</td>
+<td><a href="http://www.1ting.com/player/b6/player_`220513`.html" target="_blank" rel="noopener">http://www.1ting.com/player/b6/player_`220513`.html</a></td>
+</tr>
+<tr>
+<td>咪咕</td>
+<td><a href="http://music.migu.cn/#/song/`1002531572`/P7Z1Y1L1N1/3/001002C" target="_blank" rel="noopener">http://music.migu.cn/#/song/`1002531572`/P7Z1Y1L1N1/3/001002C</a></td>
+</tr>
+<tr>
+<td>荔枝</td>
+<td><a href="http://www.lizhi.fm/1947925/`2498707770886461446`" target="_blank" rel="noopener">http://www.lizhi.fm/1947925/`2498707770886461446`</a></td>
+</tr>
+<tr>
+<td>蜻蜓</td>
+<td><a href="http://www.qingting.fm/channels/`158696`/programs/`5266259`" target="_blank" rel="noopener">http://www.qingting.fm/channels/`158696`/programs/`5266259`</a></td>
+</tr>
+<tr>
+<td>喜马拉雅</td>
+<td><a href="http://www.ximalaya.com/51701370/sound/`24755731`" target="_blank" rel="noopener">http://www.ximalaya.com/51701370/sound/`24755731`</a> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>上面比较特殊的是蜻蜓的 ID 为：158696|5266259</p>
+<h2 id="2、网易音乐的-ID-其他获取办法"><a href="#2、网易音乐的-ID-其他获取办法" class="headerlink" title="2、网易音乐的 ID 其他获取办法"></a>2、网易音乐的 ID 其他获取办法</h2><hr>
+<p>打开网页版的网易云音乐，找到需要的歌或者歌单，点击<code>生成外链播放器</code></p>
+<blockquote>
+<p>单曲</p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/2020070819345668.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<blockquote>
+<p>歌单</p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/20200708193456437.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<p>然后我们得到的 <code>HTML 代码</code>中就有<code>ID</code></p>
+<p><img src="https://img-blog.csdnimg.cn/20200708201919593.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br> 如果出现了下图版权问题</p>
+<p> <img src="https://img-blog.csdnimg.cn/20200708194009499.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br> 我们可以在<code>谷歌浏览器</code>或者<code>Firfox浏览器</code>打开该页面，右击页面任何地方打开元素检查，并找到字样<code>生产外链播放器</code>，如图</p>
+<p> <img src="https://img-blog.csdnimg.cn/20200708194406414.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述">他旁边的1404596131就是我们要找的 ID</p>
+<h2 id="3、自建歌单怎么找外链播放器"><a href="#3、自建歌单怎么找外链播放器" class="headerlink" title="3、自建歌单怎么找外链播放器"></a>3、自建歌单怎么找外链播放器</h2><hr>
+<p> 如图是我自己的歌单</p>
+<p> <img src="https://img-blog.csdnimg.cn/20200708194658547.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述">里面并没有<code>生成外链播放器</code>，那么我们点击<code>分享</code>键并分享，然后点击动态并找到刚才分享的歌单，点进去<br> <img src="https://img-blog.csdnimg.cn/20200708194958698.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br> 我们就可以看到<code>生成外链播放器</code></p>
+<p><img src="https://img-blog.csdnimg.cn/20200708195127108.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
   </entry>
   <entry>
     <title>添加音乐播放器</title>
@@ -253,89 +362,13 @@
       </tags>
   </entry>
   <entry>
-    <title>获得音乐 ID</title>
-    <url>/2020/07/08/%E8%8E%B7%E5%BE%97%E9%9F%B3%E4%B9%90ID/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="http://5b0988e595225.cdn.sohucs.com/images/20170913/3b1ae15485a74bd1b97482706eec5804.jpeg" alt=""></p>
-<a id="more"></a>
-<h1 id="获取音乐连接（ID）"><a href="#获取音乐连接（ID）" class="headerlink" title="获取音乐连接（ID）"></a>获取音乐连接（ID）</h1><h2 id="1、首先介绍音乐地址中的ID位置"><a href="#1、首先介绍音乐地址中的ID位置" class="headerlink" title="1、首先介绍音乐地址中的ID位置"></a>1、首先介绍音乐地址中的ID位置</h2><hr>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>音乐软件</th>
-<th>音乐地址</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>网易</td>
-<td><a href="http://music.163.com/#/song?id=`25906124`" target="_blank" rel="noopener">http://music.163.com/#/song?id=`25906124`</a></td>
-</tr>
-<tr>
-<td>ＱＱ</td>
-<td><a href="http://y.qq.com/n/yqq/song/`002B2EAA3brD5b`.html" target="_blank" rel="noopener">http://y.qq.com/n/yqq/song/`002B2EAA3brD5b`.html</a></td>
-</tr>
-<tr>
-<td>酷狗</td>
-<td><a href="http://m.kugou.com/play/info/`08228af3cb404e8a4e7e9871bf543ff6`" target="_blank" rel="noopener">http://m.kugou.com/play/info/`08228af3cb404e8a4e7e9871bf543ff6`</a></td>
-</tr>
-<tr>
-<td>酷我</td>
-<td><a href="http://www.kuwo.cn/yinyue/`382425`/" target="_blank" rel="noopener">http://www.kuwo.cn/yinyue/`382425`/</a></td>
-</tr>
-<tr>
-<td>虾米</td>
-<td><a href="http://www.xiami.com/song/`2113248`" target="_blank" rel="noopener">http://www.xiami.com/song/`2113248`</a></td>
-</tr>
-<tr>
-<td>百度</td>
-<td><a href="http://music.baidu.com/song/`556113`" target="_blank" rel="noopener">http://music.baidu.com/song/`556113`</a></td>
-</tr>
-<tr>
-<td>一听</td>
-<td><a href="http://www.1ting.com/player/b6/player_`220513`.html" target="_blank" rel="noopener">http://www.1ting.com/player/b6/player_`220513`.html</a></td>
-</tr>
-<tr>
-<td>咪咕</td>
-<td><a href="http://music.migu.cn/#/song/`1002531572`/P7Z1Y1L1N1/3/001002C" target="_blank" rel="noopener">http://music.migu.cn/#/song/`1002531572`/P7Z1Y1L1N1/3/001002C</a></td>
-</tr>
-<tr>
-<td>荔枝</td>
-<td><a href="http://www.lizhi.fm/1947925/`2498707770886461446`" target="_blank" rel="noopener">http://www.lizhi.fm/1947925/`2498707770886461446`</a></td>
-</tr>
-<tr>
-<td>蜻蜓</td>
-<td><a href="http://www.qingting.fm/channels/`158696`/programs/`5266259`" target="_blank" rel="noopener">http://www.qingting.fm/channels/`158696`/programs/`5266259`</a></td>
-</tr>
-<tr>
-<td>喜马拉雅</td>
-<td><a href="http://www.ximalaya.com/51701370/sound/`24755731`" target="_blank" rel="noopener">http://www.ximalaya.com/51701370/sound/`24755731`</a> </td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>上面比较特殊的是蜻蜓的 ID 为：158696|5266259</p>
-<h2 id="2、网易音乐的-ID-其他获取办法"><a href="#2、网易音乐的-ID-其他获取办法" class="headerlink" title="2、网易音乐的 ID 其他获取办法"></a>2、网易音乐的 ID 其他获取办法</h2><hr>
-<p>打开网页版的网易云音乐，找到需要的歌或者歌单，点击<code>生成外链播放器</code></p>
-<blockquote>
-<p>单曲</p>
-</blockquote>
-<p><img src="https://img-blog.csdnimg.cn/2020070819345668.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<blockquote>
-<p>歌单</p>
-</blockquote>
-<p><img src="https://img-blog.csdnimg.cn/20200708193456437.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<p>然后我们得到的 <code>HTML 代码</code>中就有<code>ID</code></p>
-<p><img src="https://img-blog.csdnimg.cn/20200708201919593.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br> 如果出现了下图版权问题</p>
-<p> <img src="https://img-blog.csdnimg.cn/20200708194009499.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br> 我们可以在<code>谷歌浏览器</code>或者<code>Firfox浏览器</code>打开该页面，右击页面任何地方打开元素检查，并找到字样<code>生产外链播放器</code>，如图</p>
-<p> <img src="https://img-blog.csdnimg.cn/20200708194406414.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述">他旁边的1404596131就是我们要找的 ID</p>
-<h2 id="3、自建歌单怎么找外链播放器"><a href="#3、自建歌单怎么找外链播放器" class="headerlink" title="3、自建歌单怎么找外链播放器"></a>3、自建歌单怎么找外链播放器</h2><hr>
-<p> 如图是我自己的歌单</p>
-<p> <img src="https://img-blog.csdnimg.cn/20200708194658547.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述">里面并没有<code>生成外链播放器</code>，那么我们点击<code>分享</code>键并分享，然后点击动态并找到刚才分享的歌单，点进去<br> <img src="https://img-blog.csdnimg.cn/20200708194958698.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br> 我们就可以看到<code>生成外链播放器</code></p>
-<p><img src="https://img-blog.csdnimg.cn/20200708195127108.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+    <title>爬虫第一课</title>
+    <url>/2020/07/05/Python%E7%88%AC%E8%99%AB/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://img-blog.csdnimg.cn/20200706200425139.png#pic_center" alt="霸王别姬"><br><a id="more"></a></p>
+<h2 id="Python爬取豆瓣电影Top250"><a href="#Python爬取豆瓣电影Top250" class="headerlink" title="Python爬取豆瓣电影Top250"></a>Python爬取豆瓣电影Top250</h2><p>这是我参考改写的代码<br><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_movies</span><span class="params">()</span>:</span></span><br><span class="line">    headers=&#123;<span class="string">'user-agent'</span>:<span class="string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:77.0) Gecko/20100101 Firefox/77.0'</span>,<span class="string">'Host'</span>:<span class="string">'movie.douban.com'</span>&#125;</span><br><span class="line">    movie_list1=[]</span><br><span class="line">    movie_list2=[]</span><br><span class="line">    movie_list3=[]</span><br><span class="line">    movie_list4=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,<span class="number">10</span>):</span><br><span class="line">        link=<span class="string">'https://movie.douban.com/top250?start='</span>+str(i*<span class="number">25</span>)</span><br><span class="line">        r=requests.get(link,headers=headers,timeout=<span class="number">10</span>)</span><br><span class="line">        print(str(i+<span class="number">1</span>),<span class="string">'页响应状态码'</span>,r.status_code)</span><br><span class="line"></span><br><span class="line">        soup=BeautifulSoup(r.text,<span class="string">'lxml'</span>)</span><br><span class="line">        <span class="keyword">for</span> t <span class="keyword">in</span> soup.find_all(<span class="string">'div'</span>, <span class="string">'hd'</span>):</span><br><span class="line">            name = t.find(<span class="string">'span'</span>, <span class="string">'title'</span>).get_text()</span><br><span class="line">            movie_list1.append(name)</span><br><span class="line">        <span class="keyword">for</span> t <span class="keyword">in</span> soup.find_all(<span class="string">'div'</span>, <span class="string">'hd'</span>):</span><br><span class="line">            name = t.find(<span class="string">'span'</span>, <span class="string">'other'</span>).get_text()</span><br><span class="line">            movie_list2.append(name)</span><br><span class="line">        <span class="keyword">for</span> t <span class="keyword">in</span> soup.find_all(<span class="string">'div'</span>, <span class="string">'info'</span>):</span><br><span class="line">            info = t.find(<span class="string">'p'</span>).get_text().replace(<span class="string">' '</span>,<span class="string">''</span>)</span><br><span class="line">            movie_list3.append(info)</span><br><span class="line">        <span class="keyword">for</span> t <span class="keyword">in</span> soup.find_all(<span class="string">'div'</span>, <span class="string">'star'</span>):</span><br><span class="line">            fen = t.find(<span class="string">'span'</span>, <span class="string">'rating_num'</span>).get_text()</span><br><span class="line">            movie_list4.append(fen)     </span><br><span class="line">    <span class="keyword">return</span> movie_list1,movie_list2,movie_list3,movie_list4</span><br><span class="line">a,b,c,d=get_movies()</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">import</span> codecs</span><br><span class="line">    <span class="keyword">with</span> codecs.open(<span class="string">'c:\\Users\\lin paddy\\Desktop\\python\\Python爬虫\\豆瓣电影.txt'</span>, <span class="string">'wb'</span>,encoding=<span class="string">'utf-8'</span>) <span class="keyword">as</span> f:</span><br><span class="line">            f.write(<span class="string">'豆瓣电影 Top 250\n'</span>)</span><br><span class="line">            <span class="keyword">for</span> n <span class="keyword">in</span> range(<span class="number">0</span>,<span class="number">250</span>):</span><br><span class="line">                </span><br><span class="line">                f.write(<span class="string">'Top'</span>+str(n+<span class="number">1</span>)+<span class="string">'\n'</span>)</span><br><span class="line">                f.write(<span class="string">'电影名:'</span>+a[n]+b[n]+c[n]+<span class="string">'豆瓣评分'</span>+d[n])</span><br><span class="line">                f.write(<span class="string">'\n\n'</span>)</span><br><span class="line">                </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure></div><br>运行后可以得到下面所示的图片结果：<br><img src="https://img-blog.csdnimg.cn/20200705155231116.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="">                                                                                 </p>
 ]]></content>
       <tags>
-        <tag>Hexo</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
 </search>
