@@ -178,48 +178,6 @@
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
   
-  <!-- Root element of PhotoSwipe. Must have class pswp. -->
-  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="pswp__bg"></div>
-      <div class="pswp__scroll-wrap">
-          <div class="pswp__container">
-              <div class="pswp__item"></div>
-              <div class="pswp__item"></div>
-              <div class="pswp__item"></div>
-          </div>
-          <div class="pswp__ui pswp__ui--hidden">
-              <div class="pswp__top-bar">
-                  <div class="pswp__counter"></div>
-                  <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                  <button class="pswp__button pswp__button--share" title="Share"></button>
-                  <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                  <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                  <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                  <!-- element will get class pswp__preloader--active when preloader is running -->
-                  <div class="pswp__preloader">
-                      <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                          <div class="pswp__preloader__donut"></div>
-                        </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                  <div class="pswp__share-tooltip"></div> 
-              </div>
-              <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-              </button>
-              <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-              </button>
-              <div class="pswp__caption">
-                  <div class="pswp__caption__center"></div>
-              </div>
-          </div>
-      </div>
-  </div>
-  
-
-  
   
     
   
@@ -626,13 +584,13 @@ setInterval("createtime()",250);
 
         
 <div class="busuanzi-count">
-  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
   
     <span class="site-uv">
-      你是来访的第
+      <i class="fa fa-flag"></i>你是来访的第<b>
       <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-      位小伙伴
+      </b>位小伙伴
     </span>
   
 
@@ -781,7 +739,7 @@ setInterval("createtime()",250);
 
   
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/valine@1.1.4/dist/Valine.min.js"></script>
+  <script src="/js/src/Valine.min.js"></script>
   <script type="text/javascript">
     new Valine({
         av: AV,
@@ -1140,4 +1098,4 @@ setInterval("createtime()",250);
 <!-- 页面点击小红心 -->
 <script type="text/javascript" src="/js/src/clicklove.js"></script>
 
-
+<script type="text/javascript" src="/js/src/crash_cheat.js"></script>
