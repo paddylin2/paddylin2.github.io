@@ -43,6 +43,11 @@
 
 
   
+
+
+
+
+  
   
   <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
@@ -136,6 +141,9 @@
 <script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
 </div>
 
+
+
+ 
   <title>添加音乐播放器 | PaddyLin的博客</title>
   
 
@@ -384,7 +392,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  579
+                  577
                 </span>
               
 
@@ -425,22 +433,19 @@
 <a id="more"></a>
 <h1 id="博客制作单独页面音乐播放器"><a href="#博客制作单独页面音乐播放器" class="headerlink" title="博客制作单独页面音乐播放器"></a>博客制作单独页面音乐播放器</h1><hr>
 <p>首先我们给出效果图<br><img src="https://img-blog.csdnimg.cn/20200708121933181.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="">接下来让我们开始操作吧！！！</p>
-<h2 id="1、添加“我的音乐”模块"><a href="#1、添加“我的音乐”模块" class="headerlink" title="1、添加“我的音乐”模块"></a><strong>1、添加“我的音乐”模块</strong></h2><p>在<code>Git Bash</code>中执行代码</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page playlist</span><br></pre></td></tr></table></figure>
-<p>之后会在博客<code>sourse</code>目录下生成文件<code>playlist</code>，修改里面<code>index</code>文件如下</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 歌单</span><br><span class="line">date: 2020-07-08 10:08:04</span><br><span class="line"><span class="built_in">type</span>: <span class="string">"playlist"</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h2 id="1、添加“我的音乐”模块"><a href="#1、添加“我的音乐”模块" class="headerlink" title="1、添加“我的音乐”模块"></a><strong>1、添加“我的音乐”模块</strong></h2><p>在<code>Git Bash</code>中执行代码<br><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page playlist</span><br></pre></td></tr></table></figure></div><br>之后会在博客<code>sourse</code>目录下生成文件<code>playlist</code>，修改里面<code>index</code>文件如下</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 歌单</span><br><span class="line">date: 2020-07-08 10:08:04</span><br><span class="line"><span class="built_in">type</span>: <span class="string">"playlist"</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure></div>
 <p>我引用的主题为<code>spfk</code>，我们在<code>theme\spfk\lanhuages</code>下找到<code>zh-Hans.yml</code><br>并在<code>menu</code>下添加<code>playlist: 歌单</code></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  menu: 菜单</span><br><span class="line">  home: 首页</span><br><span class="line">  archives: 归档</span><br><span class="line">  categories: 分类</span><br><span class="line">  playlist: 歌单</span><br></pre></td></tr></table></figure>
-<h2 id="2、添加-hexo-tag-aplayer-插件"><a href="#2、添加-hexo-tag-aplayer-插件" class="headerlink" title="2、添加 hexo-tag-aplayer 插件"></a><strong>2、添加 hexo-tag-aplayer 插件</strong></h2><p>安装执行</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --save hexo-tag-aplayer</span><br></pre></td></tr></table></figure>
-<p>在 Hexo 配置文件<code>_config.yml</code>中设置</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">aplayer:</span><br><span class="line">   meting: true</span><br></pre></td></tr></table></figure>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  menu: 菜单</span><br><span class="line">  home: 首页</span><br><span class="line">  archives: 归档</span><br><span class="line">  categories: 分类</span><br><span class="line">  playlist: 歌单</span><br></pre></td></tr></table></figure></div>
+<h2 id="2、添加-hexo-tag-aplayer-插件"><a href="#2、添加-hexo-tag-aplayer-插件" class="headerlink" title="2、添加 hexo-tag-aplayer 插件"></a><strong>2、添加 hexo-tag-aplayer 插件</strong></h2><p>安装执行<br><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --save hexo-tag-aplayer</span><br></pre></td></tr></table></figure></div><br>在 Hexo 配置文件<code>_config.yml</code>中设置</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">aplayer:</span><br><span class="line">   meting: true</span><br></pre></td></tr></table></figure></div>
 <p>接着就可以使用 MetingJS 播放器了，例如我们在 Hexo的<code>sourse\playlist\index</code>中添加歌单模块</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% meting <span class="string">"523845661"</span> <span class="string">"netease"</span> <span class="string">"playlist"</span> <span class="string">"theme:#FF4081"</span> <span class="string">"mode:circulation"</span> <span class="string">"mutex:true"</span> <span class="string">"listmaxheight:340px"</span> <span class="string">"preload:auto"</span> %&#125;</span><br></pre></td></tr></table></figure>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% meting <span class="string">"523845661"</span> <span class="string">"netease"</span> <span class="string">"playlist"</span> <span class="string">"theme:#FF4081"</span> <span class="string">"mode:circulation"</span> <span class="string">"mutex:true"</span> <span class="string">"listmaxheight:340px"</span> <span class="string">"preload:auto"</span> %&#125;</span><br></pre></td></tr></table></figure></div>
 <p>和</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% meting <span class="string">"547791232"</span> <span class="string">"netease"</span> <span class="string">"playlist"</span> <span class="string">"theme:#FF4081"</span> <span class="string">"mode:circulation"</span> <span class="string">"mutex:true"</span> <span class="string">"listmaxheight:340px"</span> <span class="string">"preload:auto"</span> %&#125;</span><br></pre></td></tr></table></figure>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% meting <span class="string">"547791232"</span> <span class="string">"netease"</span> <span class="string">"playlist"</span> <span class="string">"theme:#FF4081"</span> <span class="string">"mode:circulation"</span> <span class="string">"mutex:true"</span> <span class="string">"listmaxheight:340px"</span> <span class="string">"preload:auto"</span> %&#125;</span><br></pre></td></tr></table></figure></div>
 <p>找到博客中的“我的音乐”就可以看到我们第一张图中的结果</p>
-<h2 id="3、歌单模块中的参数设置"><a href="#3、歌单模块中的参数设置" class="headerlink" title="3、歌单模块中的参数设置"></a><strong>3、歌单模块中的参数设置</strong></h2><table>
+<h2 id="3、歌单模块中的参数设置"><a href="#3、歌单模块中的参数设置" class="headerlink" title="3、歌单模块中的参数设置"></a><strong>3、歌单模块中的参数设置</strong></h2><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>选项</th>
@@ -448,7 +453,8 @@
 <th>描述</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>id</td>
 <td>必须值</td>
 <td>歌曲 id / 播放列表 id / 相册 id / 搜索关键字</td>
@@ -528,7 +534,9 @@
 <td>#ad7a86</td>
 <td>播放器风格色彩设置</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h2 id="4、结语"><a href="#4、结语" class="headerlink" title="4、结语"></a><strong>4、结语</strong></h2><p>关于音乐的板块制作到此结束了，但是当我们换页面时，音乐会停止播放。要做到切换页面时，音乐继续播放，需要安装 <code>Pajx</code> 插件，但是我还没弄懂怎么做，大家可以去搜索一下资料，弄懂了也可以告诉我哦！！！，下一篇我们将介绍怎么获得<code>音乐id</code></p>
 
       
@@ -729,7 +737,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -870,7 +878,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">1.6k</span>
+    <span title="Site words total count">2.6k</span>
   
 </div>
 
@@ -1035,9 +1043,8 @@ setInterval("createtime()",250);
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
 
-<script src="/js/src/photoswipe.min.js?v=5.1.3"></script>
-<script src="/js/src/photoswipe-ui-default.min.js?v=5.1.3"></script>
-
+<script type="text/javascript" src="/js/src/photoswipe.min.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/photoswipe-ui-default.min.js?v=5.1.3"></script>
 
 
   
@@ -1421,6 +1428,8 @@ setInterval("createtime()",250);
   
 
   
+  
+
 
   
 
