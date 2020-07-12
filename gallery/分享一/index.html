@@ -41,11 +41,15 @@
 
 
 
+
   
 
 
 
 
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -110,17 +114,20 @@
 
 
 
-<meta name="description" content="搭建相册连接:搭建相册3D 相册：3D">
 <meta property="og:type" content="website">
-<meta property="og:title" content="照片">
-<meta property="og:url" content="https://paddylin-xum.github.io.git/photos/index.html">
+<meta property="og:title" content="PaddyLin的博客">
+<meta property="og:url" content="https://paddylin-xum.github.io.git/gallery/%E5%88%86%E4%BA%AB%E4%B8%80/index.html">
 <meta property="og:site_name" content="PaddyLin的博客">
-<meta property="og:description" content="搭建相册连接:搭建相册3D 相册：3D">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2018-09-02T13:00:00.000Z">
-<meta property="article:modified_time" content="2020-07-11T14:53:06.503Z">
+<meta property="og:image" content="https://paddylin-xum.github.io.git/gallery/%E5%88%86%E4%BA%AB%E4%B8%80/img/s/a.jpg">
+<meta property="og:image" content="https://paddylin-xum.github.io.git/gallery/%E5%88%86%E4%BA%AB%E4%B8%80/img/s/c.jpg">
+<meta property="og:image" content="https://paddylin-xum.github.io.git/gallery/%E5%88%86%E4%BA%AB%E4%B8%80/img/s/b.jpg">
+<meta property="og:image" content="https://paddylin-xum.github.io.git/gallery/%E5%88%86%E4%BA%AB%E4%B8%80/img/s/d.jpg">
+<meta property="article:published_time" content="2020-07-12T06:47:55.230Z">
+<meta property="article:modified_time" content="2020-07-12T06:47:55.230Z">
 <meta property="article:author" content="Paddy">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://paddylin-xum.github.io.git/gallery/%E5%88%86%E4%BA%AB%E4%B8%80/img/s/a.jpg">
 
 
 
@@ -131,7 +138,7 @@
     scheme: 'Gemini',
     version: '5.1.3',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
-    fancybox: false,
+    fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
@@ -150,7 +157,7 @@
 
 
 
-  <link rel="canonical" href="https://PaddyLin-xum.github.io.git/photos/"/>
+  <link rel="canonical" href="https://PaddyLin-xum.github.io.git/gallery/分享一/"/>
 
 
 
@@ -164,7 +171,7 @@
 
 
  
-  <title>照片 | PaddyLin的博客</title>
+  <title> | PaddyLin的博客</title>
   
 
 
@@ -248,16 +255,6 @@
         </li>
       
         
-        <li class="menu-item menu-item-photos">
-          <a href="/photos" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-picture-o"></i> <br />
-            
-            照片
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-playlist">
           <a href="/playlist" rel="section">
             
@@ -274,6 +271,26 @@
               <i class="menu-item-icon fa fa-fw fa-link"></i> <br />
             
             友链
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-gallery">
+          <a href="/gallery" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-camera"></i> <br />
+            
+            画廊
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-qita">
+          <a href="/qita" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-apple"></i> <br />
+            
+            其他
           </a>
         </li>
       
@@ -337,7 +354,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">照片</h1>
+	<h1 class="post-title" itemprop="name headline"></h1>
 
 
 
@@ -349,7 +366,18 @@
       <div class="post-body">
         
         
-          <p>搭建相册连接:<br><a href="https://zengwu.com.cn/p/2a7ceb64.html" target="_blank" rel="noopener" class="LinkCard">搭建相册</a><br>3D 相册：<br><a href="https://zengwu.com.cn/p/5938519a.html" target="_blank" rel="noopener" class="LinkCard">3D</a></p>
+          <div class="gallery-page">
+    <div class="img-list">
+        <div class="img-column">
+            <a href="img/a.jpg" target="_Blank"><img src="img/s/a.jpg"></a>
+            <a href="img/c.jpg" target="_Blank"><img src="img/s/c.jpg"></a>
+        </div>
+        <div class="img-column">
+            <a href="img/b.jpg" target="_Blank"><img src="img/s/b.jpg"></a>
+            <a href="img/d.jpg" target="_Blank"><img src="img/s/d.jpg"></a>
+        </div>
+    </div>
+</div>
 
         
       </div>
@@ -368,12 +396,6 @@
 
 
           
-  
-    <div class="comments" id="comments">
-      <div id="vcomments"></div>
-    </div>
-  
-
 
         </div>
         
@@ -634,6 +656,8 @@ setInterval("createtime()",250);
 
 
 
+  
+
 
   
 
@@ -664,6 +688,9 @@ setInterval("createtime()",250);
 
   
   <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
   
   <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
@@ -1092,10 +1119,11 @@ setInterval("createtime()",250);
   
 
   <script type="text/javascript" src="/js/src/linkcard.js"></script>
+  <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"position":"right","width":240,"height":350},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
 </html>
 
 <!-- 页面点击小红心 -->
 <script type="text/javascript" src="/js/src/clicklove.js"></script>
 
-<script type="text/javascript" src="/js/src/crash_cheat.js"></script>
+

@@ -1951,7 +1951,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffd7e8;
+  background: #ffff14;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3480,4 +3480,47 @@ div.vcontrol {
 .v .vlist .vcard .vcontent.expand:after {
   content: "点击查看全部" !important;
   font-weight: 400 !important;
+}
+.gallery-page {
+  margin-top: 10px;
+}
+.img-list,
+.gallery-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+.img-column {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.img-column a,
+.gallery-column a {
+  border-bottom: 20px;
+}
+.gallery-item {
+  margin-bottom: -20px;
+}
+.gallery-item p {
+  margin: -25px auto -10px;
+  max-width: 100%;
+  text-align: center;
+  font-size: 100px;
+  color: #222;
+  background: rgba(255,255,255,0.3);
+  border-radius: 10px;
+  border: 3px solid #222;
+  box-shadow: 0 8px 20px -8px rgba(0,0,0,0.3);
+}
+.posts-expand .post-body .gallery-column a img {
+  height: 251px;
+  width: 300px;
+  object-fit: cover;
+}
+@media (max-width: 767px) {
+  .gallery-item p {
+    min-width: 100px;
+    font-size: 17px;
+  }
 }
