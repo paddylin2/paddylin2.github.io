@@ -1,541 +1,248 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>Markdown编辑器推荐</title>
-    <url>/2020/07/07/Mrakdown%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://img-blog.csdnimg.cn/20200707190013492.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<a id="more"></a>
-<h1 id="介绍三款Markdown编辑器"><a href="#介绍三款Markdown编辑器" class="headerlink" title="介绍三款Markdown编辑器"></a>介绍三款Markdown编辑器</h1><hr>
-<p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面，Markdown文件的后缀名便是“.md”</p>
-<h3 id="1、MdEditor是一个在线编辑Markdown文档的编辑器"><a href="#1、MdEditor是一个在线编辑Markdown文档的编辑器" class="headerlink" title="1、MdEditor是一个在线编辑Markdown文档的编辑器"></a>1、MdEditor是一个在线编辑Markdown文档的编辑器</h3><hr>
-<blockquote>
-<ul>
-<li>它能插入多种代码</li>
-</ul>
-</blockquote>
-<p><img src="https://img-blog.csdnimg.cn/20200707180547979.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<blockquote>
-<ul>
-<li>支持数学公式编辑</li>
-</ul>
-</blockquote>
-<p><img src="https://img-blog.csdnimg.cn/20200707180918512.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<blockquote>
-<ul>
-<li>支持流程图</li>
-</ul>
-</blockquote>
-<p><img src="https://img-blog.csdnimg.cn/20200707181221587.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<p>它的许多优点等待你的<a href="http://www.mdeditor.com/" target="_blank" rel="noopener">发现</a></p>
-<h3 id="2、Cmd-Markdown阅读编辑器"><a href="#2、Cmd-Markdown阅读编辑器" class="headerlink" title="2、Cmd_Markdown阅读编辑器"></a>2、Cmd_Markdown阅读编辑器</h3><hr>
-<p>他同样支持流程图编写、支持Late数学公式，话不多说，上图：</p>
-<p><img src="https://img-blog.csdnimg.cn/20200707181849825.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述">这里是下载<a href="https://www.zybuluo.com/cmd/" target="_blank" rel="noopener">链接</a>，还有在线编辑<a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="noopener">网址</a>。</p>
-<h3 id="3、Typora"><a href="#3、Typora" class="headerlink" title="3、Typora"></a>3、Typora</h3><hr>
-<p>这是他的<a href="https://www.typora.io/#" target="_blank" rel="noopener">官网</a>。国内下载较慢，可以自备梯子<br><img src="https://img-blog.csdnimg.cn/20200707182802402.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>支持多个版本<br><img src="https://img-blog.csdnimg.cn/20200707182802186.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>我下载的是windows版本（64位）。它的界面虽然简单：<br><img src="https://img-blog.csdnimg.cn/20200707183547720.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>但是它立马写，就可以看到结果，并可以选择插入代码的语言<br><img src="https://img-blog.csdnimg.cn/20200707183918306.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>而且它还有多种主题：<br><img src="https://img-blog.csdnimg.cn/2020070718420064.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>虽然有这么多的<strong>Markdown</strong>编写软件，但是对于像我这种偷懒人，想把写好的文章直接翻译成<strong>Markdown</strong>格式。就不得不选择CSDN了中的<code>写博客</code>，它可以将文章导出为<code>Markdown格式</code></p>
-]]></content>
-      <tags>
-        <tag>其他</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PaddyLin的博客</title>
-    <url>/2020/07/04/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="我的博客诞生了"><a href="#我的博客诞生了" class="headerlink" title="我的博客诞生了"></a>我的博客诞生了</h2><p>纪念我在2020年7月4日开始接触hexo和github，并学习了搭建博客<br><a href="https://www.liaofuzhan.com/photos/" target="_blank" rel="noopener" class="LinkCard">我的相册——时光留影</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>爬虫第一课</title>
-    <url>/2020/07/05/Python%E7%88%AC%E8%99%AB/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://img-blog.csdnimg.cn/20200706200425139.png#pic_center" alt="霸王别姬"><br><a id="more"></a></p>
-<h2 id="Python爬取豆瓣电影Top250"><a href="#Python爬取豆瓣电影Top250" class="headerlink" title="Python爬取豆瓣电影Top250"></a>Python爬取豆瓣电影Top250</h2><p>这是我参考改写的代码<br><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_movies</span><span class="params">()</span>:</span></span><br><span class="line">    headers=&#123;<span class="string">'user-agent'</span>:<span class="string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:77.0) Gecko/20100101 Firefox/77.0'</span>,<span class="string">'Host'</span>:<span class="string">'movie.douban.com'</span>&#125;</span><br><span class="line">    movie_list1=[]</span><br><span class="line">    movie_list2=[]</span><br><span class="line">    movie_list3=[]</span><br><span class="line">    movie_list4=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,<span class="number">10</span>):</span><br><span class="line">        link=<span class="string">'https://movie.douban.com/top250?start='</span>+str(i*<span class="number">25</span>)</span><br><span class="line">        r=requests.get(link,headers=headers,timeout=<span class="number">10</span>)</span><br><span class="line">        print(str(i+<span class="number">1</span>),<span class="string">'页响应状态码'</span>,r.status_code)</span><br><span class="line"></span><br><span class="line">        soup=BeautifulSoup(r.text,<span class="string">'lxml'</span>)</span><br><span class="line">        <span class="keyword">for</span> t <span class="keyword">in</span> soup.find_all(<span class="string">'div'</span>, <span class="string">'hd'</span>):</span><br><span class="line">            name = t.find(<span class="string">'span'</span>, <span class="string">'title'</span>).get_text()</span><br><span class="line">            movie_list1.append(name)</span><br><span class="line">        <span class="keyword">for</span> t <span class="keyword">in</span> soup.find_all(<span class="string">'div'</span>, <span class="string">'hd'</span>):</span><br><span class="line">            name = t.find(<span class="string">'span'</span>, <span class="string">'other'</span>).get_text()</span><br><span class="line">            movie_list2.append(name)</span><br><span class="line">        <span class="keyword">for</span> t <span class="keyword">in</span> soup.find_all(<span class="string">'div'</span>, <span class="string">'info'</span>):</span><br><span class="line">            info = t.find(<span class="string">'p'</span>).get_text().replace(<span class="string">' '</span>,<span class="string">''</span>)</span><br><span class="line">            movie_list3.append(info)</span><br><span class="line">        <span class="keyword">for</span> t <span class="keyword">in</span> soup.find_all(<span class="string">'div'</span>, <span class="string">'star'</span>):</span><br><span class="line">            fen = t.find(<span class="string">'span'</span>, <span class="string">'rating_num'</span>).get_text()</span><br><span class="line">            movie_list4.append(fen)     </span><br><span class="line">    <span class="keyword">return</span> movie_list1,movie_list2,movie_list3,movie_list4</span><br><span class="line">a,b,c,d=get_movies()</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">import</span> codecs</span><br><span class="line">    <span class="keyword">with</span> codecs.open(<span class="string">'c:\\Users\\lin paddy\\Desktop\\python\\Python爬虫\\豆瓣电影.txt'</span>, <span class="string">'wb'</span>,encoding=<span class="string">'utf-8'</span>) <span class="keyword">as</span> f:</span><br><span class="line">            f.write(<span class="string">'豆瓣电影 Top 250\n'</span>)</span><br><span class="line">            <span class="keyword">for</span> n <span class="keyword">in</span> range(<span class="number">0</span>,<span class="number">250</span>):</span><br><span class="line">                </span><br><span class="line">                f.write(<span class="string">'Top'</span>+str(n+<span class="number">1</span>)+<span class="string">'\n'</span>)</span><br><span class="line">                f.write(<span class="string">'电影名:'</span>+a[n]+b[n]+c[n]+<span class="string">'豆瓣评分'</span>+d[n])</span><br><span class="line">                f.write(<span class="string">'\n\n'</span>)</span><br><span class="line">                </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure></div><br>运行后可以得到下面所示的图片结果：<br><img src="https://img-blog.csdnimg.cn/20200705155231116.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="">                                                                                 </p>
-]]></content>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>P站图片分享1</title>
-    <url>/2020/07/06/%E5%88%86%E4%BA%AB%E4%B8%80/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://img-blog.csdnimg.cn/20200706162859635.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><a id="more"></a></p>
-<h2 id="图片分享"><a href="#图片分享" class="headerlink" title="图片分享"></a>图片分享</h2><p><strong>Picture Share</strong><br><img src="https://img-blog.csdnimg.cn/20200706162904532.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162903133.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162902421.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162901900.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162950121.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162949738.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162949638.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070616294869.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162947934.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-]]></content>
-      <tags>
-        <tag>图片</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>P站图片分享2</title>
-    <url>/2020/07/06/%E5%88%86%E4%BA%AB%E4%BA%8C/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://img-blog.csdnimg.cn/20200706194758499.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><a id="more"></a></p>
-<h2 id="图片分享"><a href="#图片分享" class="headerlink" title="图片分享"></a>图片分享</h2><p><strong>Picture Share</strong><br><img src="https://img-blog.csdnimg.cn/20200706194757859.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706194757459.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706194756497.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706194755284.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706195609505.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706195609290.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706195608503.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706195606535.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706195605674.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-]]></content>
-      <tags>
-        <tag>图片</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>穿乐福鞋的少女特辑</title>
-    <url>/2020/07/07/%E5%88%86%E4%BA%AB%E4%B8%89/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://img-blog.csdnimg.cn/20200707195553945.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><a id="more"></a></p>
-<h2 id="图片分享"><a href="#图片分享" class="headerlink" title="图片分享"></a>图片分享</h2><p><strong>Picture Share</strong><br><img src="https://img-blog.csdnimg.cn/20200707195635204.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200707195635149.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070719563584.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070719563572.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070719563563.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070719563564.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070719563555.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070719563528.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200707195634919.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200707195634836.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-]]></content>
-      <tags>
-        <tag>图片</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>七夕特辑</title>
-    <url>/2020/07/08/%E5%88%86%E4%BA%AB%E5%9B%9B/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://img-blog.csdnimg.cn/20200708205154101.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><a id="more"></a><br><img src="https://img-blog.csdnimg.cn/20200708205220726.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220687.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220628.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220528.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220429.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220414.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220316.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220274.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220256.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20200708205220146.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205219817.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-]]></content>
-      <tags>
-        <tag>图片</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数理逻辑第一章</title>
-    <url>/2020/07/11/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91%E7%AC%AC%E4%B8%80%E7%AB%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>本节主要介绍数理逻辑的基本概念</p>
-<p><img src="https://img-blog.csdnimg.cn/20200711230726452.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt=""><br><a id="more"></a></p>
-<h1 id="命题逻辑的基本概念"><a href="#命题逻辑的基本概念" class="headerlink" title="命题逻辑的基本概念"></a>命题逻辑的基本概念</h1><h2 id="命题及符号化"><a href="#命题及符号化" class="headerlink" title="命题及符号化"></a>命题及符号化</h2><p> <strong>命题</strong>：能够判断真假的陈述句<br> <strong>命题的真值</strong>：真、假<br> <strong>真命题</strong>：真值为真的命题<br> <strong>定义</strong>：设p为命题，复合命题“非p”记为$\rceil p$，p为真当且仅当“非p”是假<br><strong>定义</strong>：设p，q为两个命题，复合命题“p并且q”记为$p\wedge$q,$p\wedge$q为真当且仅当p和q都为真<br><strong>定义</strong>设p，q为两个命题，复合命题“p或q”记为$p\vee$q，$p\vee$q为假当且仅当p和q都为假</p>
-<blockquote>
-<p>注意：数理逻辑的析取运算只能表示自然语言里面的“相容或”，自然语言里面的“排斥或”可以写成($p\wedge\rceil$q)$\vee$$(\rceil p\wedge q)$</p>
-</blockquote>
-<p><strong>定义</strong>：设p，q为两个命题，复合命题“如过p则q”记为$p\to$q，$p\to$q为假当且仅当p为真q为假</p>
-<blockquote>
-<p>注意：蕴涵运算$p\to$q表示的逻辑关系是q是p的必要条件，p是q的充分条件。</p>
-</blockquote>
-<p><strong>定义</strong>：设p，q为两个命题，复合命题“p当且仅当q”记为$p\leftrightarrow$q，$p\leftrightarrow$为真当且仅当p、q都为为假或都为假</p>
-<blockquote>
-<p>注意：$p\leftrightarrow q\Leftrightarrow(p\to q)\wedge(q\to p)$</p>
-</blockquote>
-<h2 id="命题公式及其赋值"><a href="#命题公式及其赋值" class="headerlink" title="命题公式及其赋值"></a>命题公式及其赋值</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><blockquote>
-<p>命题常项：确指或具体的命题<br>命题变项：不确指或抽象的命题<br>命题公式：将命题变项用连接词或圆括号按一定逻辑关系连接起来的符号串</p>
-</blockquote>
-<p><strong>定义</strong>：(合式公式Well-Formed Formulas）<br>（1）单个命题变项是合式公式，并称为原子命题公式。<br>（2）若A是合式公式，则($\rceil$ A)也是合式公式。<br>（3）若A，B是合式公式，则(A $\vee$B)，(A $\wedge$ B)，(A $\to$B)，(A$\leftrightarrow$ B)也是合式公式。<br>（4）由有限次地应用(1)~(3)形成的符号串是合式公式。</p>
-<blockquote>
-<p>注意：合式公式在命题逻辑中也称为命题公式，并简称为公式。</p>
-</blockquote>
-<p><strong>定义</strong>：（公式的层次）<br>（1）若公式A是单个的命题变项，则称A为0层合式公式。<br>（2）若公式A的层次为k，则称A是k层公式。<br>（3）称A是n+1(n≥0)层公式是指下列情况之一：</p>
-<blockquote>
-<p>(a) A= $\rceil$ B,B是n层公式；<br> (b) A=B$\wedge$C,其中B,C分别为i层和j层公式,且n=max(i,j) ；<br> (c ) A=B $\vee$C,其中B,C的层次及n同(b);<br> (d) A=B $\to$C,其中B,C的层次及n同(b);<br> (e) A=B $\leftrightarrow$C,其中B,C的层次及n同(b);</p>
-</blockquote>
-<p><strong>解释</strong>：将公式中的每个命题变项都指定一个具体的命题，抽象的公式就具有了实际的意义，成了命题，具有了真值，这称为公式的解释</p>
-<p><strong>定义</strong>：（公式的赋值）<br>设$p_1 ，p_2 ，…，p_n$是出现在公式A中的全部的命题变项，给$p_1，p_2，…，p_n$各指定一个真值，称为对A的一个赋值。将n个命题变项按下标顺序或字典顺序排列后，赋值就相当于一长为n 的0，1字符串。</p>
-<blockquote>
-<p>若指定的一组值使A的真值为1，则称这组值为A 的成真赋值。<br>若指定的一组值使A的真值为0，则称这组值为A 的成假赋值。</p>
-</blockquote>
-<p><strong>定义</strong>：（公式的分类）<br>（1）若A在其各种赋值下的取值均为真，则称A是重言式或永真式。<br>（2）若A在其各种赋值下的取值均为假，则称A是矛盾式或永假式。<br>（3）若A不是矛盾式，则称A为可满足式。<br>（4）若A是可满足式，且至少存在一个成假赋值，则称A为非重言式的可满足式。</p>
-<blockquote>
-<p>真值表的作用：<br>（1）表示出公式的成真或成假赋值。<br>（2）判断公式类型：<br>(a)若真值表最后一列全为1，则为重言式；<br>(b)若真值表最后一列全为0，则为矛盾式；<br>(c )若真值表最后一列至少有一个1，则为可满足式；<br>(d)若真值表最后一列至少有一个1和一个0，则为非重言的可满足式。</p>
-</blockquote>
-]]></content>
-      <tags>
-        <tag>数理逻辑</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>添加音乐播放器</title>
-    <url>/2020/07/08/%E7%94%9F%E6%88%90%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://img-blog.csdnimg.cn/20200708130413972.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<a id="more"></a>
-<h1 id="博客制作单独页面音乐播放器"><a href="#博客制作单独页面音乐播放器" class="headerlink" title="博客制作单独页面音乐播放器"></a>博客制作单独页面音乐播放器</h1><hr>
-<p>首先我们给出效果图<br><img src="https://img-blog.csdnimg.cn/20200708121933181.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="">接下来让我们开始操作吧！！！</p>
-<h2 id="1、添加“我的音乐”模块"><a href="#1、添加“我的音乐”模块" class="headerlink" title="1、添加“我的音乐”模块"></a><strong>1、添加“我的音乐”模块</strong></h2><p>在<code>Git Bash</code>中执行代码<br><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="code"><pre><span class="line">$ hexo new page playlist</span><br></pre></td></tr></table></figure></div><br>之后会在博客<code>sourse</code>目录下生成文件<code>playlist</code>，修改里面<code>index</code>文件如下</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 歌单</span><br><span class="line">date: 2020-07-08 10:08:04</span><br><span class="line"><span class="built_in">type</span>: <span class="string">"playlist"</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure></div>
-<p>我引用的主题为<code>spfk</code>，我们在<code>theme\spfk\lanhuages</code>下找到<code>zh-Hans.yml</code><br>并在<code>menu</code>下添加<code>playlist: 歌单</code></p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  menu: 菜单</span><br><span class="line">  home: 首页</span><br><span class="line">  archives: 归档</span><br><span class="line">  categories: 分类</span><br><span class="line">  playlist: 歌单</span><br></pre></td></tr></table></figure></div>
-<h2 id="2、添加-hexo-tag-aplayer-插件"><a href="#2、添加-hexo-tag-aplayer-插件" class="headerlink" title="2、添加 hexo-tag-aplayer 插件"></a><strong>2、添加 hexo-tag-aplayer 插件</strong></h2><p>安装执行<br><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="code"><pre><span class="line">$ npm install --save hexo-tag-aplayer</span><br></pre></td></tr></table></figure></div><br>在 Hexo 配置文件<code>_config.yml</code>中设置</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="code"><pre><span class="line">aplayer:</span><br><span class="line">   meting: true</span><br></pre></td></tr></table></figure></div>
-<p>接着就可以使用 MetingJS 播放器了，例如我们在 Hexo的<code>sourse\playlist\index</code>中添加歌单模块</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="code"><pre><span class="line">&#123;% meting <span class="string">"523845661"</span> <span class="string">"netease"</span> <span class="string">"playlist"</span> <span class="string">"theme:#FF4081"</span> <span class="string">"mode:circulation"</span> <span class="string">"mutex:true"</span> <span class="string">"listmaxheight:340px"</span> <span class="string">"preload:auto"</span> %&#125;</span><br></pre></td></tr></table></figure></div>
-<p>和</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="code"><pre><span class="line">&#123;% meting <span class="string">"547791232"</span> <span class="string">"netease"</span> <span class="string">"playlist"</span> <span class="string">"theme:#FF4081"</span> <span class="string">"mode:circulation"</span> <span class="string">"mutex:true"</span> <span class="string">"listmaxheight:340px"</span> <span class="string">"preload:auto"</span> %&#125;</span><br></pre></td></tr></table></figure></div>
-<p>找到博客中的“我的音乐”就可以看到我们第一张图中的结果</p>
-<h2 id="3、歌单模块中的参数设置"><a href="#3、歌单模块中的参数设置" class="headerlink" title="3、歌单模块中的参数设置"></a><strong>3、歌单模块中的参数设置</strong></h2><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>默认值</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>id</td>
-<td>必须值</td>
-<td>歌曲 id / 播放列表 id / 相册 id / 搜索关键字</td>
-</tr>
-<tr>
-<td>server</td>
-<td>必须值</td>
-<td>音乐平台: netease, tencent, kugou, xiami, baidu</td>
-</tr>
-<tr>
-<td>type</td>
-<td>必须值</td>
-<td>song, playlist, album, search, artist</td>
-</tr>
-<tr>
-<td>fixed</td>
-<td>false</td>
-<td>开启固定模式</td>
-</tr>
-<tr>
-<td>mini</td>
-<td>false</td>
-<td>开启迷你模式</td>
-</tr>
-<tr>
-<td>loop</td>
-<td>all</td>
-<td>列表循环模式：all, one,none</td>
-</tr>
-<tr>
-<td>order</td>
-<td>list</td>
-<td>列表播放模式： list, random</td>
-</tr>
-<tr>
-<td>volume</td>
-<td>0.7</td>
-<td>播放器音量</td>
-</tr>
-<tr>
-<td>lrctype</td>
-<td>0</td>
-<td>歌词格式类型</td>
-</tr>
-<tr>
-<td>listfolded</td>
-<td>false</td>
-<td>指定音乐播放列表是否折叠</td>
-</tr>
-<tr>
-<td>storagename</td>
-<td>metingjs</td>
-<td>LocalStorage 中存储播放器设定的键名</td>
-</tr>
-<tr>
-<td>autoplay</td>
-<td>true</td>
-<td>自动播放，移动端浏览器暂时不支持此功能</td>
-</tr>
-<tr>
-<td>mutex</td>
-<td>true</td>
-<td>该选项开启时，如果同页面有其他 aplayer 播放，该播放器会暂停</td>
-</tr>
-<tr>
-<td>listmaxheight</td>
-<td>340px</td>
-<td>播放列表的最大长度</td>
-</tr>
-<tr>
-<td>preload</td>
-<td>auto</td>
-<td>音乐文件预载入模式，可选项： none, metadata, auto</td>
-</tr>
-<tr>
-<td>theme</td>
-<td>#ad7a86</td>
-<td>播放器风格色彩设置</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="4、结语"><a href="#4、结语" class="headerlink" title="4、结语"></a><strong>4、结语</strong></h2><p>关于音乐的板块制作到此结束了，但是当我们换页面时，音乐会停止播放。要做到切换页面时，音乐继续播放，需要安装 <code>Pajx</code> 插件，但是我还没弄懂怎么做，大家可以去搜索一下资料，弄懂了也可以告诉我哦！！！，下一篇我们将介绍怎么获得<code>音乐id</code></p>
-]]></content>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数理逻辑第二章</title>
-    <url>/2020/07/12/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91%E7%AC%AC%E4%BA%8C%E7%AB%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="第一节"><a href="#第一节" class="headerlink" title="第一节"></a>第一节</h1><p><strong>定义</strong>：设A,B是两个命题公式，若A，B构成的等价式A $\leftrightarrow$ B为重言式，则称A与B是等值的，记作A$\Leftrightarrow$ B。</p>
-<blockquote class="question">注：A$\Leftrightarrow$ 1,则A为重言式， A$\Leftrightarrow$ 0,则A为矛盾式 </blockquote>
-
-<p> 判断两个公式等值的方法</p>
-<h2 id="真值表法"><a href="#真值表法" class="headerlink" title="真值表法"></a>真值表法</h2><p>例如判断p$\to$(q$\to$r)和（p$\to$q)$\to$r是否相等</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>p</th>
-<th>q</th>
-<th>r</th>
-<th>p$\wedge$q</th>
-<th>q$\to$r</th>
-<th>p$\to$(q$\to$r)</th>
-<th>(p$\to$q)$\to$r</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>由此可知两式是等值式。但是用真值表，工作量比较大。</p>
-<h2 id="利用已知等值式代换得到新的等值式"><a href="#利用已知等值式代换得到新的等值式" class="headerlink" title="利用已知等值式代换得到新的等值式"></a>利用已知等值式代换得到新的等值式</h2>]]></content>
-      <tags>
-        <tag>数理逻辑</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>画廊（相册）制作</title>
-    <url>/2020/07/12/%E7%94%BB%E5%BB%8A%EF%BC%88%E7%9B%B8%E5%86%8C%EF%BC%89%E5%88%B6%E4%BD%9C/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>史上最简单博客相册制作<br><img src="https://img-blog.csdnimg.cn/20200712174249594.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><a id="more"></a></p>
-<h1 id="建立相册经历"><a href="#建立相册经历" class="headerlink" title="建立相册经历"></a>建立相册经历</h1><p>本人比较轴，为了建立博客相册，在百度、360等浏览器上找了多种方法，也试了很多方法，但是多于不太懂前端的人来说，即使这种方法失败了，也不知道原因。但是建立相册的决心不倒，我花了四天的时间一直捣鼓这个东西终于找到了下面这种方法，但是我依葫芦画瓢做了一番，发现还是不能实现，于是稍微改了其中一些代码，总算是完成了(ಥ _ ಥ)(ಥ _ ಥ)</p>
-<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><ul>
-<li>本节内容是基于实现本地保存图片功能前提记录的笔记，如果是用图床外链，可以跳过所有涉及到 <code>img</code> 文件夹以及 <code>img/s</code> 文件夹的步骤。</li>
-<li>本相册的所有功能均仅测试了在 <code>hexo-theme-next</code> 下实现的效果，使用其它主题时部分布局尺寸数据可能会出现偏差，需要自行根据主题设置修改</li>
-</ul>
-<h1 id="创建目录"><a href="#创建目录" class="headerlink" title="创建目录"></a>创建目录</h1><ul>
-<li>在 git bash 中输入命令 hexo new page gallery；</li>
-<li>在 hexo/sourse/gallery 目录下建立你需要的分类相册文件夹；</li>
-<li>进入 hexo/sourse/gallery 目录，新建 img 文件夹用来存放相册封面；</li>
-<li>在每个相册文件夹中创建 img 文件夹用来存放大图，以及 img/s 文件夹用来存放缩略图。</li>
-</ul>
-<blockquote>
-<p>注意：img/s 文件夹可以省略不建，用文件名-s.jpg 的格式重命名缩略图即可。</p>
-</blockquote>
-<h1 id="图片处理"><a href="#图片处理" class="headerlink" title="图片处理"></a>图片处理</h1><h2 id="原图处理"><a href="#原图处理" class="headerlink" title="原图处理"></a>原图处理</h2><ul>
-<li>将需要上传的图片放入 <code>gallery/相册名/img</code> 文件夹中，为了加载速度建议压缩至 <code>1mb</code> 以下，使用 <code>jpg</code> 格式保存；</li>
-<li>除了文件大小以外没有其它要求，但是为了方便后续页面编辑，建议将文件以容易辨识的方式重命名，例如<code>日期-图片名.jpg</code>。</li>
-</ul>
-<h2 id="缩略图处理"><a href="#缩略图处理" class="headerlink" title="缩略图处理"></a>缩略图处理</h2><ul>
-<li>将 <code>gallery/相册名/img</code> 下的所有图片复制到 <code>gallery/相册名/img/s</code> 文件夹中，使用 PS 等其它处理工具压缩图片大小；</li>
-<li>建议宽度为 300px，最终输出文件大小在 30kb 左右，高度无要求</li>
-</ul>
-<h1 id="相册主界面"><a href="#相册主界面" class="headerlink" title="相册主界面"></a>相册主界面</h1><ul>
-<li>打开 <code>gallery/index.md</code>，将 title 设置成你需要的相册页面名称；</li>
-<li>（可选）在日期下方加上 <code>comments: false</code> 关闭评论；</li>
-<li>复制以下代码粘贴至正文，并按需求修改相册描述、相册名、相册文件夹名以及封面图文件名</li>
-</ul>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;center&gt;！相册描述【此行可删除】&lt;/center&gt;</span><br><span class="line">&lt;center&gt;自定义分隔符【此行可删除】&lt;/center&gt;</span><br><span class="line">&lt;div class="gallery-page"&gt;</span><br><span class="line">	&lt;div class="gallery-list"&gt;</span><br><span class="line">		&lt;div class="gallery-column"&gt;</span><br><span class="line">			&lt;div class="gallery-item"&gt;</span><br><span class="line">				&lt;a href="【！相册文件夹名】"&gt;&lt;img src="img/【！封面图文件名】.jpg"&gt;</span><br><span class="line">				&lt;/a&gt;</span><br><span class="line">				&lt;p&gt;- ！相册1 -&lt;/p&gt;</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">			&lt;div class="gallery-item"&gt;</span><br><span class="line">				&lt;a href="【！相册文件夹名】"&gt;&lt;img src="img/【！封面图文件名】.jpg"&gt;</span><br><span class="line">				&lt;/a&gt;</span><br><span class="line">				&lt;p&gt;- ！相册2 -&lt;/p&gt;</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		&lt;div class="gallery-column"&gt;</span><br><span class="line">			&lt;div class="gallery-item"&gt;</span><br><span class="line">				&lt;a href="sample"&gt;&lt;img src="img/sample.jpg"&gt;</span><br><span class="line">				&lt;/a&gt;</span><br><span class="line">				&lt;p&gt;- 相册名 -&lt;/p&gt;</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		&lt;div class="gallery-column"&gt;</span><br><span class="line">			&lt;div class="gallery-item"&gt;</span><br><span class="line">				&lt;a href="sample"&gt;&lt;img src="img/sample.jpg"&gt;</span><br><span class="line">				&lt;/a&gt;</span><br><span class="line">				&lt;p&gt;- 相册名 -&lt;/p&gt;</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;center&gt;自定义分割线【此行可删除】&lt;/center&gt;</span><br></pre></td></tr></table></figure>
-<ol>
-<li>需要使用外链的场合，将 <code>&lt;img src=&quot;img/【封面图文件名】.jpg&quot;&gt;</code> 中的内容替换为图床外链地址即可；</li>
-<li>代码中 <code>&lt;div class=&quot;gallery-column&quot;&gt;</code> 元素为分列显示相册的列数，可按需要增减；</li>
-<li>新增相册时请确认代码添加在 <code>&lt;div class=&quot;gallery-column&quot;&gt;</code> 元素内部，否则会造成显示错误。</li>
-</ol>
-<h1 id="分类相册界面"><a href="#分类相册界面" class="headerlink" title="分类相册界面"></a>分类相册界面</h1><ul>
-<li>打开 <code>gallery/相册名/index.md</code>，将 title 设置成你需要的相册页面名称；</li>
-<li>（可选）在日期下方加上 <code>comments: false</code> 关闭评论；</li>
-<li><p>复制以下代码粘贴至正文，并按需求修改相册描述、图片名以及缩略图文件名；</p>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;center&gt;！相册描述【此行可删除】&lt;/center&gt;</span><br><span class="line">&lt;center&gt;自定义分隔符【此行可删除】&lt;/center&gt;</span><br><span class="line">&lt;div class="gallery-page"&gt;</span><br><span class="line">	&lt;div class="img-list"&gt;</span><br><span class="line">		&lt;div class="img-column"&gt;</span><br><span class="line">			&lt;a href="img/【！图片名1】.jpg" target="_Blank"&gt;&lt;img src="img/s/【！缩略图文件名1】.jpg"&gt;&lt;/a&gt;</span><br><span class="line">			&lt;a href="img/【！图片名2】.jpg" target="_Blank"&gt;&lt;img src="img/s/【！缩略图文件名2】.jpg"&gt;&lt;/a&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		&lt;div class="img-column"&gt;</span><br><span class="line">			&lt;a href="img/sample.jpg" target="_Blank"&gt;&lt;img src="img/s/sample.jpg"&gt;&lt;/a&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		&lt;div class="img-column"&gt;</span><br><span class="line">			&lt;a href="img/sample.jpg" target="_Blank"&gt;&lt;img src="img/s/sample.jpg"&gt;&lt;/a&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;center&gt;自定义分割线【此行可删除】&lt;/center&gt;</span><br></pre></td></tr></table></figure>
-<ol>
-<li>需要使用外链的场合，将 <code>&lt;img src=&quot;img/【图片名】.jpg&quot;&gt;</code> 中的内容替换为图床外链地址即可，如果图床加载速度够快可以用同一个链接填充缩略图部分；</li>
-<li>代码中 <code>&lt;div class=&quot;img-column&quot;&gt;</code> 元素为分列显示图片的列数，可按需要增减；</li>
-<li>添加图片时请确认代码添加在 <code>&lt;div class=&quot;img-column&quot;&gt;</code> 元素内部，否则会造成显示错误。</li>
-</ol>
-</li>
-</ul>
-<h1 id="CSS样式"><a href="#CSS样式" class="headerlink" title="CSS样式"></a>CSS样式</h1><p> 在<code>custom.styl</code> 中加入如下代码：</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="CSS"><figure class="iseeu highlight /css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*gallery*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-class">.gallery-page</span> &#123;</span><br><span class="line">	<span class="attribute">margin-top</span>: -<span class="number">50px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.img-list</span>,</span><br><span class="line"><span class="selector-class">.gallery-list</span> &#123;</span><br><span class="line">	<span class="attribute">display</span>: flex;</span><br><span class="line">	<span class="attribute">flex-direction</span>: row;</span><br><span class="line">	<span class="attribute">flex-wrap</span>: nowrap;</span><br><span class="line">	<span class="attribute">align-items</span>: flex-start;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.img-column</span> &#123;</span><br><span class="line">	<span class="attribute">display</span>: flex;</span><br><span class="line">	<span class="attribute">flex-direction</span>: column-reverse;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.img-column</span> <span class="selector-tag">a</span>,</span><br><span class="line"><span class="selector-class">.gallery-column</span> <span class="selector-tag">a</span> &#123;</span><br><span class="line">	<span class="attribute">border-bottom</span>: <span class="number">0px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.gallery-item</span> &#123;</span><br><span class="line">	<span class="attribute">margin-bottom</span>: -<span class="number">50px</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.gallery-item</span> <span class="selector-tag">p</span> &#123;</span><br><span class="line">	<span class="attribute">margin</span>: -<span class="number">25px</span> auto -<span class="number">10px</span>;</span><br><span class="line">	<span class="attribute">max-width</span>: <span class="number">50%</span>;</span><br><span class="line">	<span class="attribute">text-align</span>: center;</span><br><span class="line">	<span class="attribute">font-size</span>: <span class="number">15px</span>;</span><br><span class="line">	<span class="attribute">color</span>: $black-deep;</span><br><span class="line">	<span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,.<span class="number">3</span>);</span><br><span class="line">	<span class="attribute">border-radius</span>: <span class="number">7px</span>;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">1px</span> solid $black-deep;</span><br><span class="line">	<span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">8px</span> <span class="number">20px</span> -<span class="number">8px</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,.<span class="number">3</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.posts-expand</span> <span class="selector-class">.post-body</span> <span class="selector-class">.gallery-column</span> <span class="selector-tag">a</span> <span class="selector-tag">img</span> &#123;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">250px</span>;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">	<span class="attribute">object-fit</span>: cover;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@media</span> (<span class="attribute">max-width:</span> <span class="number">767px</span>)&#123;</span><br><span class="line">	<span class="selector-class">.gallery-item</span> <span class="selector-tag">p</span> &#123;</span><br><span class="line">		<span class="attribute">min-width</span>: <span class="number">75px</span>;</span><br><span class="line">		<span class="attribute">font-size</span>: <span class="number">13px</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-<p>}</p>
-<ol>
-<li>@media 标签内的样式是防止移动端浏览时相册名被强制换行的，建议保留；</li>
-<li>其余样式除了 flex 相关行与 object-fit 样式以外，均可根据需要自行更改，在此不作赘述。</li>
-</ol>
-<h1 id="改进"><a href="#改进" class="headerlink" title="改进"></a>改进</h1><p>以上方法来自大佬：<a href="https://www.liaofuzhan.com/photos/" target="_blank" rel="noopener" class="LinkCard">†少女癌†</a><br>但是我用了之后发现点击图片不能进入相册的二级目录，于是就在代码上做文章，经过多次试验后我终于成功了，废话不多说，上码：</p>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">---</span></span><br><span class="line"><span class="selector-tag">title</span>: 我的画廊终于开通啦！！！</span><br><span class="line"><span class="selector-tag">date</span>: 2020<span class="selector-tag">-07-12</span> 13<span class="selector-pseudo">:13</span><span class="selector-pseudo">:25</span></span><br><span class="line"><span class="selector-tag">comments</span>: <span class="selector-tag">false</span></span><br><span class="line"><span class="selector-tag">---</span></span><br><span class="line">&lt;div class="gallery-page"&gt;</span><br><span class="line">	&lt;div class="gallery-list"&gt;</span><br><span class="line">		&lt;div class="gallery-column"&gt;</span><br><span class="line">			&lt;div class="gallery-item"&gt;</span><br><span class="line">	     		   &lt;a&gt;&lt;img src="img/相册一.jpg"&gt;&lt;/a&gt;</span><br><span class="line">				&lt;a href="分享一"&gt;&lt;center&gt; 分享一&lt;/center&gt;&lt;/a&gt;</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">		&lt;/div&gt;		</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<p>上面代码是在<code>source/gallery/index.md</code>中修改，结果图为<br><img src="https://img-blog.csdnimg.cn/20200712165727661.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述">点击<code>分享一</code>即可进入：<br><img src="https://img-blog.csdnimg.cn/20200712165803824.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-]]></content>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>自定义“引用”板块</title>
-    <url>/2020/07/11/%E8%87%AA%E5%AE%9A%E4%B9%89%E2%80%9C%E5%BC%95%E7%94%A8%E2%80%9D%E6%9D%BF%E5%9D%97/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>摆脱单一引用块使用的困扰<br><img src="https://img-blog.csdnimg.cn/2020071123043061.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><a id="more"></a></p>
-<h1 id="自定义“引用”板块"><a href="#自定义“引用”板块" class="headerlink" title="自定义“引用”板块"></a>自定义“引用”板块</h1><h2 id="启发"><a href="#启发" class="headerlink" title="启发"></a>启发</h2><hr>
-<p>自从为了方便编写Md文件，我一直在用CSDN写文章，但我一直困扰于如何使用更加引人注目的<code>引用板块</code>，因为在CSDN中引用板块样子如下</p>
-<blockquote>
-<p>内容:又学废了</p>
-</blockquote>
-<p>经过多方努力，我终于在大佬reuixiy的博客<br><a href="https://io-oi.me/tech/hexo-next-optimization/#%E4%B8%BB%E9%A2%98%E8%87%AA%E5%B8%A6%E6%A0%B7%E5%BC%8F-%E4%BB%A3%E7%A0%81%E5%9D%97%E9%AB%98%E4%BA%AE" target="_blank" rel="noopener" class="LinkCard">reuixiy</a><br>里面找到了答案。首先在文件位置：<code>/blog/themes/next/source/css/_custom/custom.styl</code>中添加如下代码</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="CSS"><figure class="iseeu highlight /css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">blockquote</span><span class="selector-class">.question</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#BA55D3</span>;</span><br><span class="line">    <span class="attribute">border-left</span>: <span class="number">4px</span> solid <span class="built_in">rgb</span>(<span class="number">16</span>, <span class="number">152</span>, <span class="number">173</span>);</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">250</span>, <span class="number">240</span>, <span class="number">230</span>);</span><br><span class="line">    <span class="attribute">border-top-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    <span class="attribute">border-bottom-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    <span class="attribute">margin-bottom</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-<p>其中</p>
-<p>1）文字颜色改 <code>color</code> 的值<br>2）背景色改 <code>background-color</code> 的值<br>3）边框颜色和粗细改 <code>border-left</code> 的值</p>
-<p>在文章中这样使用：</p>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;blockquote class="question"&gt;内容：又学废了&lt;/blockquote&gt;</span><br></pre></td></tr></table></figure>
-<p>结果为</p>
-<blockquote class="question">内容：又学废了</blockquote>
-
-<h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><hr>
-<p>基于对上面的理解。我又添加了如下代码</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="CSS"><figure class="iseeu highlight /css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">blockquote</span><span class="selector-class">.moli</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>:  <span class="number">#FF7F00</span>;</span><br><span class="line">    <span class="attribute">border-left</span>: <span class="number">4px</span> solid <span class="built_in">rgb</span>(<span class="number">16</span>, <span class="number">152</span>, <span class="number">173</span>);</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">205</span>, <span class="number">197</span>, <span class="number">191</span>);</span><br><span class="line">    <span class="attribute">border-top-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    <span class="attribute">border-bottom-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    <span class="attribute">margin-bottom</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-<p>在文章中运行结果为：</p>
-<blockquote class="moli">内容：又学废了</blockquote>
-
-<p>最后附上RGB颜色对照表：<br><a href="https://tool.oschina.net/commons?type=3" target="_blank" rel="noopener" class="LinkCard">RGB</a></p>
-]]></content>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>获得音乐 ID</title>
-    <url>/2020/07/08/%E8%8E%B7%E5%BE%97%E9%9F%B3%E4%B9%90ID/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="http://5b0988e595225.cdn.sohucs.com/images/20170913/3b1ae15485a74bd1b97482706eec5804.jpeg" alt=""></p>
-<a id="more"></a>
-<h1 id="获取音乐连接（ID）"><a href="#获取音乐连接（ID）" class="headerlink" title="获取音乐连接（ID）"></a>获取音乐连接（ID）</h1><h2 id="1、首先介绍音乐地址中的ID位置"><a href="#1、首先介绍音乐地址中的ID位置" class="headerlink" title="1、首先介绍音乐地址中的ID位置"></a>1、首先介绍音乐地址中的ID位置</h2><hr>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>音乐软件</th>
-<th>音乐地址</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>网易</td>
-<td><a href="http://music.163.com/#/song?id=`25906124`" target="_blank" rel="noopener">http://music.163.com/#/song?id=`25906124`</a></td>
-</tr>
-<tr>
-<td>ＱＱ</td>
-<td><a href="http://y.qq.com/n/yqq/song/`002B2EAA3brD5b`.html" target="_blank" rel="noopener">http://y.qq.com/n/yqq/song/`002B2EAA3brD5b`.html</a></td>
-</tr>
-<tr>
-<td>酷狗</td>
-<td><a href="http://m.kugou.com/play/info/`08228af3cb404e8a4e7e9871bf543ff6`" target="_blank" rel="noopener">http://m.kugou.com/play/info/`08228af3cb404e8a4e7e9871bf543ff6`</a></td>
-</tr>
-<tr>
-<td>酷我</td>
-<td><a href="http://www.kuwo.cn/yinyue/`382425`/" target="_blank" rel="noopener">http://www.kuwo.cn/yinyue/`382425`/</a></td>
-</tr>
-<tr>
-<td>虾米</td>
-<td><a href="http://www.xiami.com/song/`2113248`" target="_blank" rel="noopener">http://www.xiami.com/song/`2113248`</a></td>
-</tr>
-<tr>
-<td>百度</td>
-<td><a href="http://music.baidu.com/song/`556113`" target="_blank" rel="noopener">http://music.baidu.com/song/`556113`</a></td>
-</tr>
-<tr>
-<td>一听</td>
-<td><a href="http://www.1ting.com/player/b6/player_`220513`.html" target="_blank" rel="noopener">http://www.1ting.com/player/b6/player_`220513`.html</a></td>
-</tr>
-<tr>
-<td>咪咕</td>
-<td><a href="http://music.migu.cn/#/song/`1002531572`/P7Z1Y1L1N1/3/001002C" target="_blank" rel="noopener">http://music.migu.cn/#/song/`1002531572`/P7Z1Y1L1N1/3/001002C</a></td>
-</tr>
-<tr>
-<td>荔枝</td>
-<td><a href="http://www.lizhi.fm/1947925/`2498707770886461446`" target="_blank" rel="noopener">http://www.lizhi.fm/1947925/`2498707770886461446`</a></td>
-</tr>
-<tr>
-<td>蜻蜓</td>
-<td><a href="http://www.qingting.fm/channels/`158696`/programs/`5266259`" target="_blank" rel="noopener">http://www.qingting.fm/channels/`158696`/programs/`5266259`</a></td>
-</tr>
-<tr>
-<td>喜马拉雅</td>
-<td><a href="http://www.ximalaya.com/51701370/sound/`24755731`" target="_blank" rel="noopener">http://www.ximalaya.com/51701370/sound/`24755731`</a> </td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>上面比较特殊的是蜻蜓的 ID 为：158696|5266259</p>
-<h2 id="2、网易音乐的-ID-其他获取办法"><a href="#2、网易音乐的-ID-其他获取办法" class="headerlink" title="2、网易音乐的 ID 其他获取办法"></a>2、网易音乐的 ID 其他获取办法</h2><hr>
-<p>打开网页版的网易云音乐，找到需要的歌或者歌单，点击<code>生成外链播放器</code></p>
-<blockquote>
-<p>单曲</p>
-</blockquote>
-<p><img src="https://img-blog.csdnimg.cn/2020070819345668.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<blockquote>
-<p>歌单</p>
-</blockquote>
-<p><img src="https://img-blog.csdnimg.cn/20200708193456437.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<p>然后我们得到的 <code>HTML 代码</code>中就有<code>ID</code></p>
-<p><img src="https://img-blog.csdnimg.cn/20200708201919593.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br> 如果出现了下图版权问题</p>
-<p> <img src="https://img-blog.csdnimg.cn/20200708194009499.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br> 我们可以在<code>谷歌浏览器</code>或者<code>Firfox浏览器</code>打开该页面，右击页面任何地方打开元素检查，并找到字样<code>生产外链播放器</code>，如图</p>
-<p> <img src="https://img-blog.csdnimg.cn/20200708194406414.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述">他旁边的1404596131就是我们要找的 ID</p>
-<h2 id="3、自建歌单怎么找外链播放器"><a href="#3、自建歌单怎么找外链播放器" class="headerlink" title="3、自建歌单怎么找外链播放器"></a>3、自建歌单怎么找外链播放器</h2><hr>
-<p> 如图是我自己的歌单</p>
-<p> <img src="https://img-blog.csdnimg.cn/20200708194658547.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述">里面并没有<code>生成外链播放器</code>，那么我们点击<code>分享</code>键并分享，然后点击动态并找到刚才分享的歌单，点进去<br> <img src="https://img-blog.csdnimg.cn/20200708194958698.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br> 我们就可以看到<code>生成外链播放器</code></p>
-<p><img src="https://img-blog.csdnimg.cn/20200708195127108.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-]]></content>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
+<search> 
+  
+  
+    
+    <entry>
+      <title>数理逻辑第二章</title>
+      <link href="/2020/07/12/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
+      <url>/2020/07/12/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91%E7%AC%AC%E4%BA%8C%E7%AB%A0/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="第一节"><a href="#第一节" class="headerlink" title="第一节"></a>第一节</h1><p><strong>定义</strong>：设A,B是两个命题公式，若A，B构成的等价式A $\leftrightarrow$ B为重言式，则称A与B是等值的，记作A$\Leftrightarrow$ B。</p><blockquote class="question">注：A$\Leftrightarrow$ 1,则A为重言式， A$\Leftrightarrow$ 0,则A为矛盾式 </blockquote><p> 判断两个公式等值的方法</p><h2 id="真值表法"><a href="#真值表法" class="headerlink" title="真值表法"></a>真值表法</h2><p>例如判断p$\to$(q$\to$r)和（p$\to$q)$\to$r是否相等</p><div class="table-container"><table><thead><tr><th>p</th><th>q</th><th>r</th><th>p$\wedge$q</th><th>q$\to$r</th><th>p$\to$(q$\to$r)</th><th>(p$\to$q)$\to$r</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td></tr><tr><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td></tr><tr><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr><tr><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td></tr><tr><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td></tr><tr><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td></tr><tr><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td></tr><tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr></tbody></table></div><p>由此可知两式是等值式。但是用真值表，工作量比较大。</p><h2 id="利用已知等值式代换得到新的等值式"><a href="#利用已知等值式代换得到新的等值式" class="headerlink" title="利用已知等值式代换得到新的等值式"></a>利用已知等值式代换得到新的等值式</h2>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 数理逻辑 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>画廊（相册）制作</title>
+      <link href="/2020/07/12/%E7%94%BB%E5%BB%8A%EF%BC%88%E7%9B%B8%E5%86%8C%EF%BC%89%E5%88%B6%E4%BD%9C/"/>
+      <url>/2020/07/12/%E7%94%BB%E5%BB%8A%EF%BC%88%E7%9B%B8%E5%86%8C%EF%BC%89%E5%88%B6%E4%BD%9C/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>史上最简单博客相册制作<br><img src="https://img-blog.csdnimg.cn/20200712174249594.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><a id="more"></a></p><h1 id="建立相册经历"><a href="#建立相册经历" class="headerlink" title="建立相册经历"></a>建立相册经历</h1><p>本人比较轴，为了建立博客相册，在百度、360等浏览器上找了多种方法，也试了很多方法，但是多于不太懂前端的人来说，即使这种方法失败了，也不知道原因。但是建立相册的决心不倒，我花了四天的时间一直捣鼓这个东西终于找到了下面这种方法，但是我依葫芦画瓢做了一番，发现还是不能实现，于是稍微改了其中一些代码，总算是完成了(ಥ _ ಥ)(ಥ _ ಥ)</p><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><ul><li>本节内容是基于实现本地保存图片功能前提记录的笔记，如果是用图床外链，可以跳过所有涉及到 <code>img</code> 文件夹以及 <code>img/s</code> 文件夹的步骤。</li><li>本相册的所有功能均仅测试了在 <code>hexo-theme-next</code> 下实现的效果，使用其它主题时部分布局尺寸数据可能会出现偏差，需要自行根据主题设置修改</li></ul><h1 id="创建目录"><a href="#创建目录" class="headerlink" title="创建目录"></a>创建目录</h1><ul><li>在 git bash 中输入命令 hexo new page gallery；</li><li>在 hexo/sourse/gallery 目录下建立你需要的分类相册文件夹；</li><li>进入 hexo/sourse/gallery 目录，新建 img 文件夹用来存放相册封面；</li><li>在每个相册文件夹中创建 img 文件夹用来存放大图，以及 img/s 文件夹用来存放缩略图。</li></ul><blockquote><p>注意：img/s 文件夹可以省略不建，用文件名-s.jpg 的格式重命名缩略图即可。</p></blockquote><h1 id="图片处理"><a href="#图片处理" class="headerlink" title="图片处理"></a>图片处理</h1><h2 id="原图处理"><a href="#原图处理" class="headerlink" title="原图处理"></a>原图处理</h2><ul><li>将需要上传的图片放入 <code>gallery/相册名/img</code> 文件夹中，为了加载速度建议压缩至 <code>1mb</code> 以下，使用 <code>jpg</code> 格式保存；</li><li>除了文件大小以外没有其它要求，但是为了方便后续页面编辑，建议将文件以容易辨识的方式重命名，例如<code>日期-图片名.jpg</code>。</li></ul><h2 id="缩略图处理"><a href="#缩略图处理" class="headerlink" title="缩略图处理"></a>缩略图处理</h2><ul><li>将 <code>gallery/相册名/img</code> 下的所有图片复制到 <code>gallery/相册名/img/s</code> 文件夹中，使用 PS 等其它处理工具压缩图片大小；</li><li>建议宽度为 300px，最终输出文件大小在 30kb 左右，高度无要求</li></ul><h1 id="相册主界面"><a href="#相册主界面" class="headerlink" title="相册主界面"></a>相册主界面</h1><ul><li>打开 <code>gallery/index.md</code>，将 title 设置成你需要的相册页面名称；</li><li>（可选）在日期下方加上 <code>comments: false</code> 关闭评论；</li><li>复制以下代码粘贴至正文，并按需求修改相册描述、相册名、相册文件夹名以及封面图文件名</li></ul><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">&lt;center&gt;！相册描述【此行可删除】&lt;/center&gt;</span><br><span class="line">&lt;center&gt;自定义分隔符【此行可删除】&lt;/center&gt;</span><br><span class="line">&lt;div class="gallery-page"&gt;</span><br><span class="line">&lt;div class="gallery-list"&gt;</span><br><span class="line">&lt;div class="gallery-column"&gt;</span><br><span class="line">&lt;div class="gallery-item"&gt;</span><br><span class="line">&lt;a href="【！相册文件夹名】"&gt;&lt;img src="img/【！封面图文件名】.jpg"&gt;</span><br><span class="line">&lt;/a&gt;</span><br><span class="line">&lt;p&gt;- ！相册1 -&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class="gallery-item"&gt;</span><br><span class="line">&lt;a href="【！相册文件夹名】"&gt;&lt;img src="img/【！封面图文件名】.jpg"&gt;</span><br><span class="line">&lt;/a&gt;</span><br><span class="line">&lt;p&gt;- ！相册2 -&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class="gallery-column"&gt;</span><br><span class="line">&lt;div class="gallery-item"&gt;</span><br><span class="line">&lt;a href="sample"&gt;&lt;img src="img/sample.jpg"&gt;</span><br><span class="line">&lt;/a&gt;</span><br><span class="line">&lt;p&gt;- 相册名 -&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class="gallery-column"&gt;</span><br><span class="line">&lt;div class="gallery-item"&gt;</span><br><span class="line">&lt;a href="sample"&gt;&lt;img src="img/sample.jpg"&gt;</span><br><span class="line">&lt;/a&gt;</span><br><span class="line">&lt;p&gt;- 相册名 -&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;center&gt;自定义分割线【此行可删除】&lt;/center&gt;</span><br></pre></td></tr></table></figure><ol><li>需要使用外链的场合，将 <code>&lt;img src=&quot;img/【封面图文件名】.jpg&quot;&gt;</code> 中的内容替换为图床外链地址即可；</li><li>代码中 <code>&lt;div class=&quot;gallery-column&quot;&gt;</code> 元素为分列显示相册的列数，可按需要增减；</li><li>新增相册时请确认代码添加在 <code>&lt;div class=&quot;gallery-column&quot;&gt;</code> 元素内部，否则会造成显示错误。</li></ol><h1 id="分类相册界面"><a href="#分类相册界面" class="headerlink" title="分类相册界面"></a>分类相册界面</h1><ul><li>打开 <code>gallery/相册名/index.md</code>，将 title 设置成你需要的相册页面名称；</li><li>（可选）在日期下方加上 <code>comments: false</code> 关闭评论；</li><li><p>复制以下代码粘贴至正文，并按需求修改相册描述、图片名以及缩略图文件名；</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;center&gt;！相册描述【此行可删除】&lt;/center&gt;</span><br><span class="line">&lt;center&gt;自定义分隔符【此行可删除】&lt;/center&gt;</span><br><span class="line">&lt;div class="gallery-page"&gt;</span><br><span class="line">&lt;div class="img-list"&gt;</span><br><span class="line">&lt;div class="img-column"&gt;</span><br><span class="line">&lt;a href="img/【！图片名1】.jpg" target="_Blank"&gt;&lt;img src="img/s/【！缩略图文件名1】.jpg"&gt;&lt;/a&gt;</span><br><span class="line">&lt;a href="img/【！图片名2】.jpg" target="_Blank"&gt;&lt;img src="img/s/【！缩略图文件名2】.jpg"&gt;&lt;/a&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class="img-column"&gt;</span><br><span class="line">&lt;a href="img/sample.jpg" target="_Blank"&gt;&lt;img src="img/s/sample.jpg"&gt;&lt;/a&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class="img-column"&gt;</span><br><span class="line">&lt;a href="img/sample.jpg" target="_Blank"&gt;&lt;img src="img/s/sample.jpg"&gt;&lt;/a&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;center&gt;自定义分割线【此行可删除】&lt;/center&gt;</span><br></pre></td></tr></table></figure><ol><li>需要使用外链的场合，将 <code>&lt;img src=&quot;img/【图片名】.jpg&quot;&gt;</code> 中的内容替换为图床外链地址即可，如果图床加载速度够快可以用同一个链接填充缩略图部分；</li><li>代码中 <code>&lt;div class=&quot;img-column&quot;&gt;</code> 元素为分列显示图片的列数，可按需要增减；</li><li>添加图片时请确认代码添加在 <code>&lt;div class=&quot;img-column&quot;&gt;</code> 元素内部，否则会造成显示错误。</li></ol></li></ul><h1 id="CSS样式"><a href="#CSS样式" class="headerlink" title="CSS样式"></a>CSS样式</h1><p> 在<code>custom.styl</code> 中加入如下代码：</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="CSS"><figure class="iseeu highlight /css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*gallery*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-class">.gallery-page</span> &#123;</span><br><span class="line"><span class="attribute">margin-top</span>: -<span class="number">50px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.img-list</span>,</span><br><span class="line"><span class="selector-class">.gallery-list</span> &#123;</span><br><span class="line"><span class="attribute">display</span>: flex;</span><br><span class="line"><span class="attribute">flex-direction</span>: row;</span><br><span class="line"><span class="attribute">flex-wrap</span>: nowrap;</span><br><span class="line"><span class="attribute">align-items</span>: flex-start;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.img-column</span> &#123;</span><br><span class="line"><span class="attribute">display</span>: flex;</span><br><span class="line"><span class="attribute">flex-direction</span>: column-reverse;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.img-column</span> <span class="selector-tag">a</span>,</span><br><span class="line"><span class="selector-class">.gallery-column</span> <span class="selector-tag">a</span> &#123;</span><br><span class="line"><span class="attribute">border-bottom</span>: <span class="number">0px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.gallery-item</span> &#123;</span><br><span class="line"><span class="attribute">margin-bottom</span>: -<span class="number">50px</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.gallery-item</span> <span class="selector-tag">p</span> &#123;</span><br><span class="line"><span class="attribute">margin</span>: -<span class="number">25px</span> auto -<span class="number">10px</span>;</span><br><span class="line"><span class="attribute">max-width</span>: <span class="number">50%</span>;</span><br><span class="line"><span class="attribute">text-align</span>: center;</span><br><span class="line"><span class="attribute">font-size</span>: <span class="number">15px</span>;</span><br><span class="line"><span class="attribute">color</span>: $black-deep;</span><br><span class="line"><span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,.<span class="number">3</span>);</span><br><span class="line"><span class="attribute">border-radius</span>: <span class="number">7px</span>;</span><br><span class="line"><span class="attribute">border</span>: <span class="number">1px</span> solid $black-deep;</span><br><span class="line"><span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">8px</span> <span class="number">20px</span> -<span class="number">8px</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,.<span class="number">3</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.posts-expand</span> <span class="selector-class">.post-body</span> <span class="selector-class">.gallery-column</span> <span class="selector-tag">a</span> <span class="selector-tag">img</span> &#123;</span><br><span class="line"><span class="attribute">height</span>: <span class="number">250px</span>;</span><br><span class="line"><span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line"><span class="attribute">object-fit</span>: cover;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@media</span> (<span class="attribute">max-width:</span> <span class="number">767px</span>)&#123;</span><br><span class="line"><span class="selector-class">.gallery-item</span> <span class="selector-tag">p</span> &#123;</span><br><span class="line"><span class="attribute">min-width</span>: <span class="number">75px</span>;</span><br><span class="line"><span class="attribute">font-size</span>: <span class="number">13px</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div><p>}</p><ol><li>@media 标签内的样式是防止移动端浏览时相册名被强制换行的，建议保留；</li><li>其余样式除了 flex 相关行与 object-fit 样式以外，均可根据需要自行更改，在此不作赘述。</li></ol><h1 id="改进"><a href="#改进" class="headerlink" title="改进"></a>改进</h1><p>以上方法来自大佬：<a href="https://www.liaofuzhan.com/photos/" target="_blank" rel="noopener" class="LinkCard">†少女癌†</a><br>但是我用了之后发现点击图片不能进入相册的二级目录，于是就在代码上做文章，经过多次试验后我终于成功了，废话不多说，上码：</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">---</span></span><br><span class="line"><span class="selector-tag">title</span>: 我的画廊终于开通啦！！！</span><br><span class="line"><span class="selector-tag">date</span>: 2020<span class="selector-tag">-07-12</span> 13<span class="selector-pseudo">:13</span><span class="selector-pseudo">:25</span></span><br><span class="line"><span class="selector-tag">comments</span>: <span class="selector-tag">false</span></span><br><span class="line"><span class="selector-tag">---</span></span><br><span class="line">&lt;div class="gallery-page"&gt;</span><br><span class="line">&lt;div class="gallery-list"&gt;</span><br><span class="line">&lt;div class="gallery-column"&gt;</span><br><span class="line">&lt;div class="gallery-item"&gt;</span><br><span class="line">        &lt;a&gt;&lt;img src="img/相册一.jpg"&gt;&lt;/a&gt;</span><br><span class="line">&lt;a href="分享一"&gt;&lt;center&gt; 分享一&lt;/center&gt;&lt;/a&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure><p>上面代码是在<code>source/gallery/index.md</code>中修改，结果图为<br><img src="https://img-blog.csdnimg.cn/20200712165727661.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述">点击<code>分享一</code>即可进入：<br><img src="https://img-blog.csdnimg.cn/20200712165803824.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>自定义“引用”板块</title>
+      <link href="/2020/07/11/%E8%87%AA%E5%AE%9A%E4%B9%89%E2%80%9C%E5%BC%95%E7%94%A8%E2%80%9D%E6%9D%BF%E5%9D%97/"/>
+      <url>/2020/07/11/%E8%87%AA%E5%AE%9A%E4%B9%89%E2%80%9C%E5%BC%95%E7%94%A8%E2%80%9D%E6%9D%BF%E5%9D%97/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>摆脱单一引用块使用的困扰<br><img src="https://img-blog.csdnimg.cn/2020071123043061.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><a id="more"></a></p><h1 id="自定义“引用”板块"><a href="#自定义“引用”板块" class="headerlink" title="自定义“引用”板块"></a>自定义“引用”板块</h1><h2 id="启发"><a href="#启发" class="headerlink" title="启发"></a>启发</h2><hr><p>自从为了方便编写Md文件，我一直在用CSDN写文章，但我一直困扰于如何使用更加引人注目的<code>引用板块</code>，因为在CSDN中引用板块样子如下</p><blockquote><p>内容:又学废了</p></blockquote><p>经过多方努力，我终于在大佬reuixiy的博客<br><a href="https://io-oi.me/tech/hexo-next-optimization/#%E4%B8%BB%E9%A2%98%E8%87%AA%E5%B8%A6%E6%A0%B7%E5%BC%8F-%E4%BB%A3%E7%A0%81%E5%9D%97%E9%AB%98%E4%BA%AE" target="_blank" rel="noopener" class="LinkCard">reuixiy</a><br>里面找到了答案。首先在文件位置：<code>/blog/themes/next/source/css/_custom/custom.styl</code>中添加如下代码</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="CSS"><figure class="iseeu highlight /css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">blockquote</span><span class="selector-class">.question</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#BA55D3</span>;</span><br><span class="line">    <span class="attribute">border-left</span>: <span class="number">4px</span> solid <span class="built_in">rgb</span>(<span class="number">16</span>, <span class="number">152</span>, <span class="number">173</span>);</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">250</span>, <span class="number">240</span>, <span class="number">230</span>);</span><br><span class="line">    <span class="attribute">border-top-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    <span class="attribute">border-bottom-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    <span class="attribute">margin-bottom</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div><p>其中</p><p>1）文字颜色改 <code>color</code> 的值<br>2）背景色改 <code>background-color</code> 的值<br>3）边框颜色和粗细改 <code>border-left</code> 的值</p><p>在文章中这样使用：</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;blockquote class="question"&gt;内容：又学废了&lt;/blockquote&gt;</span><br></pre></td></tr></table></figure><p>结果为</p><blockquote class="question">内容：又学废了</blockquote><h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><hr><p>基于对上面的理解。我又添加了如下代码</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="CSS"><figure class="iseeu highlight /css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">blockquote</span><span class="selector-class">.moli</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>:  <span class="number">#FF7F00</span>;</span><br><span class="line">    <span class="attribute">border-left</span>: <span class="number">4px</span> solid <span class="built_in">rgb</span>(<span class="number">16</span>, <span class="number">152</span>, <span class="number">173</span>);</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">205</span>, <span class="number">197</span>, <span class="number">191</span>);</span><br><span class="line">    <span class="attribute">border-top-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    <span class="attribute">border-bottom-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    <span class="attribute">margin-bottom</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div><p>在文章中运行结果为：</p><blockquote class="moli">内容：又学废了</blockquote><p>最后附上RGB颜色对照表：<br><a href="https://tool.oschina.net/commons?type=3" target="_blank" rel="noopener" class="LinkCard">RGB</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>数理逻辑第一章</title>
+      <link href="/2020/07/11/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91%E7%AC%AC%E4%B8%80%E7%AB%A0/"/>
+      <url>/2020/07/11/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91%E7%AC%AC%E4%B8%80%E7%AB%A0/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>本节主要介绍数理逻辑的基本概念</p><p><img src="https://img-blog.csdnimg.cn/20200711230726452.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt=""><br><a id="more"></a></p><h1 id="命题逻辑的基本概念"><a href="#命题逻辑的基本概念" class="headerlink" title="命题逻辑的基本概念"></a>命题逻辑的基本概念</h1><h2 id="命题及符号化"><a href="#命题及符号化" class="headerlink" title="命题及符号化"></a>命题及符号化</h2><p> <strong>命题</strong>：能够判断真假的陈述句<br> <strong>命题的真值</strong>：真、假<br> <strong>真命题</strong>：真值为真的命题<br> <strong>定义</strong>：设p为命题，复合命题“非p”记为$\rceil p$，p为真当且仅当“非p”是假<br><strong>定义</strong>：设p，q为两个命题，复合命题“p并且q”记为$p\wedge$q,$p\wedge$q为真当且仅当p和q都为真<br><strong>定义</strong>设p，q为两个命题，复合命题“p或q”记为$p\vee$q，$p\vee$q为假当且仅当p和q都为假</p><blockquote><p>注意：数理逻辑的析取运算只能表示自然语言里面的“相容或”，自然语言里面的“排斥或”可以写成($p\wedge\rceil$q)$\vee$$(\rceil p\wedge q)$</p></blockquote><p><strong>定义</strong>：设p，q为两个命题，复合命题“如过p则q”记为$p\to$q，$p\to$q为假当且仅当p为真q为假</p><blockquote><p>注意：蕴涵运算$p\to$q表示的逻辑关系是q是p的必要条件，p是q的充分条件。</p></blockquote><p><strong>定义</strong>：设p，q为两个命题，复合命题“p当且仅当q”记为$p\leftrightarrow$q，$p\leftrightarrow$为真当且仅当p、q都为为假或都为假</p><blockquote><p>注意：$p\leftrightarrow q\Leftrightarrow(p\to q)\wedge(q\to p)$</p></blockquote><h2 id="命题公式及其赋值"><a href="#命题公式及其赋值" class="headerlink" title="命题公式及其赋值"></a>命题公式及其赋值</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><blockquote><p>命题常项：确指或具体的命题<br>命题变项：不确指或抽象的命题<br>命题公式：将命题变项用连接词或圆括号按一定逻辑关系连接起来的符号串</p></blockquote><p><strong>定义</strong>：(合式公式Well-Formed Formulas）<br>（1）单个命题变项是合式公式，并称为原子命题公式。<br>（2）若A是合式公式，则($\rceil$ A)也是合式公式。<br>（3）若A，B是合式公式，则(A $\vee$B)，(A $\wedge$ B)，(A $\to$B)，(A$\leftrightarrow$ B)也是合式公式。<br>（4）由有限次地应用(1)~(3)形成的符号串是合式公式。</p><blockquote><p>注意：合式公式在命题逻辑中也称为命题公式，并简称为公式。</p></blockquote><p><strong>定义</strong>：（公式的层次）<br>（1）若公式A是单个的命题变项，则称A为0层合式公式。<br>（2）若公式A的层次为k，则称A是k层公式。<br>（3）称A是n+1(n≥0)层公式是指下列情况之一：</p><blockquote><p>(a) A= $\rceil$ B,B是n层公式；<br> (b) A=B$\wedge$C,其中B,C分别为i层和j层公式,且n=max(i,j) ；<br> (c ) A=B $\vee$C,其中B,C的层次及n同(b);<br> (d) A=B $\to$C,其中B,C的层次及n同(b);<br> (e) A=B $\leftrightarrow$C,其中B,C的层次及n同(b);</p></blockquote><p><strong>解释</strong>：将公式中的每个命题变项都指定一个具体的命题，抽象的公式就具有了实际的意义，成了命题，具有了真值，这称为公式的解释</p><p><strong>定义</strong>：（公式的赋值）<br>设$p_1 ，p_2 ，…，p_n$是出现在公式A中的全部的命题变项，给$p_1，p_2，…，p_n$各指定一个真值，称为对A的一个赋值。将n个命题变项按下标顺序或字典顺序排列后，赋值就相当于一长为n 的0，1字符串。</p><blockquote><p>若指定的一组值使A的真值为1，则称这组值为A 的成真赋值。<br>若指定的一组值使A的真值为0，则称这组值为A 的成假赋值。</p></blockquote><p><strong>定义</strong>：（公式的分类）<br>（1）若A在其各种赋值下的取值均为真，则称A是重言式或永真式。<br>（2）若A在其各种赋值下的取值均为假，则称A是矛盾式或永假式。<br>（3）若A不是矛盾式，则称A为可满足式。<br>（4）若A是可满足式，且至少存在一个成假赋值，则称A为非重言式的可满足式。</p><blockquote><p>真值表的作用：<br>（1）表示出公式的成真或成假赋值。<br>（2）判断公式类型：<br>(a)若真值表最后一列全为1，则为重言式；<br>(b)若真值表最后一列全为0，则为矛盾式；<br>(c )若真值表最后一列至少有一个1，则为可满足式；<br>(d)若真值表最后一列至少有一个1和一个0，则为非重言的可满足式。</p></blockquote>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 数理逻辑 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>七夕特辑</title>
+      <link href="/2020/07/08/%E5%88%86%E4%BA%AB%E5%9B%9B/"/>
+      <url>/2020/07/08/%E5%88%86%E4%BA%AB%E5%9B%9B/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://img-blog.csdnimg.cn/20200708205154101.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><a id="more"></a><br><img src="https://img-blog.csdnimg.cn/20200708205220726.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220687.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220628.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220528.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220429.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220414.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220316.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220274.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220256.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p><img src="https://img-blog.csdnimg.cn/20200708205220146.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205219817.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 图片 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>获得音乐 ID</title>
+      <link href="/2020/07/08/%E8%8E%B7%E5%BE%97%E9%9F%B3%E4%B9%90ID/"/>
+      <url>/2020/07/08/%E8%8E%B7%E5%BE%97%E9%9F%B3%E4%B9%90ID/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="http://5b0988e595225.cdn.sohucs.com/images/20170913/3b1ae15485a74bd1b97482706eec5804.jpeg" alt=""></p><a id="more"></a><h1 id="获取音乐连接（ID）"><a href="#获取音乐连接（ID）" class="headerlink" title="获取音乐连接（ID）"></a>获取音乐连接（ID）</h1><h2 id="1、首先介绍音乐地址中的ID位置"><a href="#1、首先介绍音乐地址中的ID位置" class="headerlink" title="1、首先介绍音乐地址中的ID位置"></a>1、首先介绍音乐地址中的ID位置</h2><hr><div class="table-container"><table><thead><tr><th>音乐软件</th><th>音乐地址</th></tr></thead><tbody><tr><td>网易</td><td><a href="http://music.163.com/#/song?id=`25906124`" target="_blank" rel="noopener">http://music.163.com/#/song?id=`25906124`</a></td></tr><tr><td>ＱＱ</td><td><a href="http://y.qq.com/n/yqq/song/`002B2EAA3brD5b`.html" target="_blank" rel="noopener">http://y.qq.com/n/yqq/song/`002B2EAA3brD5b`.html</a></td></tr><tr><td>酷狗</td><td><a href="http://m.kugou.com/play/info/`08228af3cb404e8a4e7e9871bf543ff6`" target="_blank" rel="noopener">http://m.kugou.com/play/info/`08228af3cb404e8a4e7e9871bf543ff6`</a></td></tr><tr><td>酷我</td><td><a href="http://www.kuwo.cn/yinyue/`382425`/" target="_blank" rel="noopener">http://www.kuwo.cn/yinyue/`382425`/</a></td></tr><tr><td>虾米</td><td><a href="http://www.xiami.com/song/`2113248`" target="_blank" rel="noopener">http://www.xiami.com/song/`2113248`</a></td></tr><tr><td>百度</td><td><a href="http://music.baidu.com/song/`556113`" target="_blank" rel="noopener">http://music.baidu.com/song/`556113`</a></td></tr><tr><td>一听</td><td><a href="http://www.1ting.com/player/b6/player_`220513`.html" target="_blank" rel="noopener">http://www.1ting.com/player/b6/player_`220513`.html</a></td></tr><tr><td>咪咕</td><td><a href="http://music.migu.cn/#/song/`1002531572`/P7Z1Y1L1N1/3/001002C" target="_blank" rel="noopener">http://music.migu.cn/#/song/`1002531572`/P7Z1Y1L1N1/3/001002C</a></td></tr><tr><td>荔枝</td><td><a href="http://www.lizhi.fm/1947925/`2498707770886461446`" target="_blank" rel="noopener">http://www.lizhi.fm/1947925/`2498707770886461446`</a></td></tr><tr><td>蜻蜓</td><td><a href="http://www.qingting.fm/channels/`158696`/programs/`5266259`" target="_blank" rel="noopener">http://www.qingting.fm/channels/`158696`/programs/`5266259`</a></td></tr><tr><td>喜马拉雅</td><td><a href="http://www.ximalaya.com/51701370/sound/`24755731`" target="_blank" rel="noopener">http://www.ximalaya.com/51701370/sound/`24755731`</a> </td></tr></tbody></table></div><p>上面比较特殊的是蜻蜓的 ID 为：158696|5266259</p><h2 id="2、网易音乐的-ID-其他获取办法"><a href="#2、网易音乐的-ID-其他获取办法" class="headerlink" title="2、网易音乐的 ID 其他获取办法"></a>2、网易音乐的 ID 其他获取办法</h2><hr><p>打开网页版的网易云音乐，找到需要的歌或者歌单，点击<code>生成外链播放器</code></p><blockquote><p>单曲</p></blockquote><p><img src="https://img-blog.csdnimg.cn/2020070819345668.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p><blockquote><p>歌单</p></blockquote><p><img src="https://img-blog.csdnimg.cn/20200708193456437.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p><p>然后我们得到的 <code>HTML 代码</code>中就有<code>ID</code></p><p><img src="https://img-blog.csdnimg.cn/20200708201919593.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br> 如果出现了下图版权问题</p><p> <img src="https://img-blog.csdnimg.cn/20200708194009499.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br> 我们可以在<code>谷歌浏览器</code>或者<code>Firfox浏览器</code>打开该页面，右击页面任何地方打开元素检查，并找到字样<code>生产外链播放器</code>，如图</p><p> <img src="https://img-blog.csdnimg.cn/20200708194406414.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述">他旁边的1404596131就是我们要找的 ID</p><h2 id="3、自建歌单怎么找外链播放器"><a href="#3、自建歌单怎么找外链播放器" class="headerlink" title="3、自建歌单怎么找外链播放器"></a>3、自建歌单怎么找外链播放器</h2><hr><p> 如图是我自己的歌单</p><p> <img src="https://img-blog.csdnimg.cn/20200708194658547.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述">里面并没有<code>生成外链播放器</code>，那么我们点击<code>分享</code>键并分享，然后点击动态并找到刚才分享的歌单，点进去<br> <img src="https://img-blog.csdnimg.cn/20200708194958698.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br> 我们就可以看到<code>生成外链播放器</code></p><p><img src="https://img-blog.csdnimg.cn/20200708195127108.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>添加音乐播放器</title>
+      <link href="/2020/07/08/%E7%94%9F%E6%88%90%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/"/>
+      <url>/2020/07/08/%E7%94%9F%E6%88%90%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://img-blog.csdnimg.cn/20200708130413972.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><a id="more"></a><h1 id="博客制作单独页面音乐播放器"><a href="#博客制作单独页面音乐播放器" class="headerlink" title="博客制作单独页面音乐播放器"></a>博客制作单独页面音乐播放器</h1><hr><p>首先我们给出效果图<br><img src="https://img-blog.csdnimg.cn/20200708121933181.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="">接下来让我们开始操作吧！！！</p><h2 id="1、添加“我的音乐”模块"><a href="#1、添加“我的音乐”模块" class="headerlink" title="1、添加“我的音乐”模块"></a><strong>1、添加“我的音乐”模块</strong></h2><p>在<code>Git Bash</code>中执行代码<br><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page playlist</span><br></pre></td></tr></table></figure></div><br>之后会在博客<code>sourse</code>目录下生成文件<code>playlist</code>，修改里面<code>index</code>文件如下</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 歌单</span><br><span class="line">date: 2020-07-08 10:08:04</span><br><span class="line"><span class="built_in">type</span>: <span class="string">"playlist"</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure></div><p>我引用的主题为<code>spfk</code>，我们在<code>theme\spfk\lanhuages</code>下找到<code>zh-Hans.yml</code><br>并在<code>menu</code>下添加<code>playlist: 歌单</code></p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  menu: 菜单</span><br><span class="line">  home: 首页</span><br><span class="line">  archives: 归档</span><br><span class="line">  categories: 分类</span><br><span class="line">  playlist: 歌单</span><br></pre></td></tr></table></figure></div><h2 id="2、添加-hexo-tag-aplayer-插件"><a href="#2、添加-hexo-tag-aplayer-插件" class="headerlink" title="2、添加 hexo-tag-aplayer 插件"></a><strong>2、添加 hexo-tag-aplayer 插件</strong></h2><p>安装执行<br><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --save hexo-tag-aplayer</span><br></pre></td></tr></table></figure></div><br>在 Hexo 配置文件<code>_config.yml</code>中设置</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">aplayer:</span><br><span class="line">   meting: true</span><br></pre></td></tr></table></figure></div><p>接着就可以使用 MetingJS 播放器了，例如我们在 Hexo的<code>sourse\playlist\index</code>中添加歌单模块</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% meting <span class="string">"523845661"</span> <span class="string">"netease"</span> <span class="string">"playlist"</span> <span class="string">"theme:#FF4081"</span> <span class="string">"mode:circulation"</span> <span class="string">"mutex:true"</span> <span class="string">"listmaxheight:340px"</span> <span class="string">"preload:auto"</span> %&#125;</span><br></pre></td></tr></table></figure></div><p>和</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% meting <span class="string">"547791232"</span> <span class="string">"netease"</span> <span class="string">"playlist"</span> <span class="string">"theme:#FF4081"</span> <span class="string">"mode:circulation"</span> <span class="string">"mutex:true"</span> <span class="string">"listmaxheight:340px"</span> <span class="string">"preload:auto"</span> %&#125;</span><br></pre></td></tr></table></figure></div><p>找到博客中的“我的音乐”就可以看到我们第一张图中的结果</p><h2 id="3、歌单模块中的参数设置"><a href="#3、歌单模块中的参数设置" class="headerlink" title="3、歌单模块中的参数设置"></a><strong>3、歌单模块中的参数设置</strong></h2><div class="table-container"><table><thead><tr><th>选项</th><th>默认值</th><th>描述</th></tr></thead><tbody><tr><td>id</td><td>必须值</td><td>歌曲 id / 播放列表 id / 相册 id / 搜索关键字</td></tr><tr><td>server</td><td>必须值</td><td>音乐平台: netease, tencent, kugou, xiami, baidu</td></tr><tr><td>type</td><td>必须值</td><td>song, playlist, album, search, artist</td></tr><tr><td>fixed</td><td>false</td><td>开启固定模式</td></tr><tr><td>mini</td><td>false</td><td>开启迷你模式</td></tr><tr><td>loop</td><td>all</td><td>列表循环模式：all, one,none</td></tr><tr><td>order</td><td>list</td><td>列表播放模式： list, random</td></tr><tr><td>volume</td><td>0.7</td><td>播放器音量</td></tr><tr><td>lrctype</td><td>0</td><td>歌词格式类型</td></tr><tr><td>listfolded</td><td>false</td><td>指定音乐播放列表是否折叠</td></tr><tr><td>storagename</td><td>metingjs</td><td>LocalStorage 中存储播放器设定的键名</td></tr><tr><td>autoplay</td><td>true</td><td>自动播放，移动端浏览器暂时不支持此功能</td></tr><tr><td>mutex</td><td>true</td><td>该选项开启时，如果同页面有其他 aplayer 播放，该播放器会暂停</td></tr><tr><td>listmaxheight</td><td>340px</td><td>播放列表的最大长度</td></tr><tr><td>preload</td><td>auto</td><td>音乐文件预载入模式，可选项： none, metadata, auto</td></tr><tr><td>theme</td><td>#ad7a86</td><td>播放器风格色彩设置</td></tr></tbody></table></div><h2 id="4、结语"><a href="#4、结语" class="headerlink" title="4、结语"></a><strong>4、结语</strong></h2><p>关于音乐的板块制作到此结束了，但是当我们换页面时，音乐会停止播放。要做到切换页面时，音乐继续播放，需要安装 <code>Pajx</code> 插件，但是我还没弄懂怎么做，大家可以去搜索一下资料，弄懂了也可以告诉我哦！！！，下一篇我们将介绍怎么获得<code>音乐id</code></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>穿乐福鞋的少女特辑</title>
+      <link href="/2020/07/07/%E5%88%86%E4%BA%AB%E4%B8%89/"/>
+      <url>/2020/07/07/%E5%88%86%E4%BA%AB%E4%B8%89/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://img-blog.csdnimg.cn/20200707195553945.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><a id="more"></a></p><h2 id="图片分享"><a href="#图片分享" class="headerlink" title="图片分享"></a>图片分享</h2><p><strong>Picture Share</strong><br><img src="https://img-blog.csdnimg.cn/20200707195635204.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200707195635149.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070719563584.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070719563572.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070719563563.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070719563564.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070719563555.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070719563528.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200707195634919.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200707195634836.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 图片 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Markdown编辑器推荐</title>
+      <link href="/2020/07/07/Mrakdown%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+      <url>/2020/07/07/Mrakdown%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://img-blog.csdnimg.cn/20200707190013492.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><a id="more"></a><h1 id="介绍三款Markdown编辑器"><a href="#介绍三款Markdown编辑器" class="headerlink" title="介绍三款Markdown编辑器"></a>介绍三款Markdown编辑器</h1><hr><p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面，Markdown文件的后缀名便是“.md”</p><h3 id="1、MdEditor是一个在线编辑Markdown文档的编辑器"><a href="#1、MdEditor是一个在线编辑Markdown文档的编辑器" class="headerlink" title="1、MdEditor是一个在线编辑Markdown文档的编辑器"></a>1、MdEditor是一个在线编辑Markdown文档的编辑器</h3><hr><blockquote><ul><li>它能插入多种代码</li></ul></blockquote><p><img src="https://img-blog.csdnimg.cn/20200707180547979.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p><blockquote><ul><li>支持数学公式编辑</li></ul></blockquote><p><img src="https://img-blog.csdnimg.cn/20200707180918512.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p><blockquote><ul><li>支持流程图</li></ul></blockquote><p><img src="https://img-blog.csdnimg.cn/20200707181221587.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p><p>它的许多优点等待你的<a href="http://www.mdeditor.com/" target="_blank" rel="noopener">发现</a></p><h3 id="2、Cmd-Markdown阅读编辑器"><a href="#2、Cmd-Markdown阅读编辑器" class="headerlink" title="2、Cmd_Markdown阅读编辑器"></a>2、Cmd_Markdown阅读编辑器</h3><hr><p>他同样支持流程图编写、支持Late数学公式，话不多说，上图：</p><p><img src="https://img-blog.csdnimg.cn/20200707181849825.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述">这里是下载<a href="https://www.zybuluo.com/cmd/" target="_blank" rel="noopener">链接</a>，还有在线编辑<a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="noopener">网址</a>。</p><h3 id="3、Typora"><a href="#3、Typora" class="headerlink" title="3、Typora"></a>3、Typora</h3><hr><p>这是他的<a href="https://www.typora.io/#" target="_blank" rel="noopener">官网</a>。国内下载较慢，可以自备梯子<br><img src="https://img-blog.csdnimg.cn/20200707182802402.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>支持多个版本<br><img src="https://img-blog.csdnimg.cn/20200707182802186.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>我下载的是windows版本（64位）。它的界面虽然简单：<br><img src="https://img-blog.csdnimg.cn/20200707183547720.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>但是它立马写，就可以看到结果，并可以选择插入代码的语言<br><img src="https://img-blog.csdnimg.cn/20200707183918306.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>而且它还有多种主题：<br><img src="https://img-blog.csdnimg.cn/2020070718420064.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>虽然有这么多的<strong>Markdown</strong>编写软件，但是对于像我这种偷懒人，想把写好的文章直接翻译成<strong>Markdown</strong>格式。就不得不选择CSDN了中的<code>写博客</code>，它可以将文章导出为<code>Markdown格式</code></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 其他 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>P站图片分享2</title>
+      <link href="/2020/07/06/%E5%88%86%E4%BA%AB%E4%BA%8C/"/>
+      <url>/2020/07/06/%E5%88%86%E4%BA%AB%E4%BA%8C/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://img-blog.csdnimg.cn/20200706194758499.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><a id="more"></a></p><h2 id="图片分享"><a href="#图片分享" class="headerlink" title="图片分享"></a>图片分享</h2><p><strong>Picture Share</strong><br><img src="https://img-blog.csdnimg.cn/20200706194757859.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706194757459.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706194756497.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706194755284.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706195609505.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706195609290.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706195608503.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706195606535.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706195605674.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 图片 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>P站图片分享1</title>
+      <link href="/2020/07/06/%E5%88%86%E4%BA%AB%E4%B8%80/"/>
+      <url>/2020/07/06/%E5%88%86%E4%BA%AB%E4%B8%80/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://img-blog.csdnimg.cn/20200706162859635.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><a id="more"></a></p><h2 id="图片分享"><a href="#图片分享" class="headerlink" title="图片分享"></a>图片分享</h2><p><strong>Picture Share</strong><br><img src="https://img-blog.csdnimg.cn/20200706162904532.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162903133.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162902421.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162901900.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162950121.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162949738.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162949638.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070616294869.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162947934.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 图片 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>爬虫第一课</title>
+      <link href="/2020/07/05/Python%E7%88%AC%E8%99%AB/"/>
+      <url>/2020/07/05/Python%E7%88%AC%E8%99%AB/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://img-blog.csdnimg.cn/20200706200425139.png#pic_center" alt="霸王别姬"><br><a id="more"></a></p><h2 id="Python爬取豆瓣电影Top250"><a href="#Python爬取豆瓣电影Top250" class="headerlink" title="Python爬取豆瓣电影Top250"></a>Python爬取豆瓣电影Top250</h2><p>这是我参考改写的代码<br><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_movies</span><span class="params">()</span>:</span></span><br><span class="line">    headers=&#123;<span class="string">'user-agent'</span>:<span class="string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:77.0) Gecko/20100101 Firefox/77.0'</span>,<span class="string">'Host'</span>:<span class="string">'movie.douban.com'</span>&#125;</span><br><span class="line">    movie_list1=[]</span><br><span class="line">    movie_list2=[]</span><br><span class="line">    movie_list3=[]</span><br><span class="line">    movie_list4=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,<span class="number">10</span>):</span><br><span class="line">        link=<span class="string">'https://movie.douban.com/top250?start='</span>+str(i*<span class="number">25</span>)</span><br><span class="line">        r=requests.get(link,headers=headers,timeout=<span class="number">10</span>)</span><br><span class="line">        print(str(i+<span class="number">1</span>),<span class="string">'页响应状态码'</span>,r.status_code)</span><br><span class="line"></span><br><span class="line">        soup=BeautifulSoup(r.text,<span class="string">'lxml'</span>)</span><br><span class="line">        <span class="keyword">for</span> t <span class="keyword">in</span> soup.find_all(<span class="string">'div'</span>, <span class="string">'hd'</span>):</span><br><span class="line">            name = t.find(<span class="string">'span'</span>, <span class="string">'title'</span>).get_text()</span><br><span class="line">            movie_list1.append(name)</span><br><span class="line">        <span class="keyword">for</span> t <span class="keyword">in</span> soup.find_all(<span class="string">'div'</span>, <span class="string">'hd'</span>):</span><br><span class="line">            name = t.find(<span class="string">'span'</span>, <span class="string">'other'</span>).get_text()</span><br><span class="line">            movie_list2.append(name)</span><br><span class="line">        <span class="keyword">for</span> t <span class="keyword">in</span> soup.find_all(<span class="string">'div'</span>, <span class="string">'info'</span>):</span><br><span class="line">            info = t.find(<span class="string">'p'</span>).get_text().replace(<span class="string">' '</span>,<span class="string">''</span>)</span><br><span class="line">            movie_list3.append(info)</span><br><span class="line">        <span class="keyword">for</span> t <span class="keyword">in</span> soup.find_all(<span class="string">'div'</span>, <span class="string">'star'</span>):</span><br><span class="line">            fen = t.find(<span class="string">'span'</span>, <span class="string">'rating_num'</span>).get_text()</span><br><span class="line">            movie_list4.append(fen)     </span><br><span class="line">    <span class="keyword">return</span> movie_list1,movie_list2,movie_list3,movie_list4</span><br><span class="line">a,b,c,d=get_movies()</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">import</span> codecs</span><br><span class="line">    <span class="keyword">with</span> codecs.open(<span class="string">'c:\\Users\\lin paddy\\Desktop\\python\\Python爬虫\\豆瓣电影.txt'</span>, <span class="string">'wb'</span>,encoding=<span class="string">'utf-8'</span>) <span class="keyword">as</span> f:</span><br><span class="line">            f.write(<span class="string">'豆瓣电影 Top 250\n'</span>)</span><br><span class="line">            <span class="keyword">for</span> n <span class="keyword">in</span> range(<span class="number">0</span>,<span class="number">250</span>):</span><br><span class="line">                </span><br><span class="line">                f.write(<span class="string">'Top'</span>+str(n+<span class="number">1</span>)+<span class="string">'\n'</span>)</span><br><span class="line">                f.write(<span class="string">'电影名:'</span>+a[n]+b[n]+c[n]+<span class="string">'豆瓣评分'</span>+d[n])</span><br><span class="line">                f.write(<span class="string">'\n\n'</span>)</span><br><span class="line">                </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure></div><br>运行后可以得到下面所示的图片结果：<br><img src="https://img-blog.csdnimg.cn/20200705155231116.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="">                                                                                 </p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>PaddyLin的博客</title>
+      <link href="/2020/07/04/hello-world/"/>
+      <url>/2020/07/04/hello-world/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="我的博客诞生了"><a href="#我的博客诞生了" class="headerlink" title="我的博客诞生了"></a>我的博客诞生了</h2><p>纪念我在2020年7月4日开始接触hexo和github，并学习了搭建博客<br><a href="https://www.liaofuzhan.com/photos/" target="_blank" rel="noopener" class="LinkCard">我的相册——时光留影</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
 </search>
