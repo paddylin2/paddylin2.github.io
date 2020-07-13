@@ -167,8 +167,22 @@
 </div>
 
 
+<div id="tp-weather-widget"></div>
+<script>
+  (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
+  window.SeniverseWeatherWidget('show', {
+    flavor: "bubble",
+    location: "WS7GQBRNR6V8",
+    geolocation: true,
+    language: "zh-Hans",
+    unit: "c",
+    theme: "auto",
+    token: "341136ed-8b04-4e7c-a2c9-d4e95eabd8a7",
+    hover: "enabled",
+    container: "tp-weather-widget"
+  })
+</script>
 
- 
   <title>标签 | PaddyLin的博客</title>
   
 
@@ -409,7 +423,7 @@
                 5 tags in total
             </div>
             <div class="tag-cloud-tags">
-              <a href="/tags/Hexo/" style="font-size: 30px; color: #111">Hexo</a> <a href="/tags/Python/" style="font-size: 12px; color: #ccc">Python</a> <a href="/tags/%E5%85%B6%E4%BB%96/" style="font-size: 12px; color: #ccc">其他</a> <a href="/tags/%E5%9B%BE%E7%89%87/" style="font-size: 30px; color: #111">图片</a> <a href="/tags/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91/" style="font-size: 12px; color: #ccc">数理逻辑</a>
+              <a href="/tags/Hexo/" style="font-size: 30px; color: #111">Hexo</a> <a href="/tags/Python/" style="font-size: 12px; color: #ccc">Python</a> <a href="/tags/%E5%85%B6%E4%BB%96/" style="font-size: 12px; color: #ccc">其他</a> <a href="/tags/%E5%9B%BE%E7%89%87/" style="font-size: 30px; color: #111">图片</a> <a href="/tags/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91/" style="font-size: 21px; color: #6f6f6f">数理逻辑</a>
             </div>
           </div>
         
@@ -475,7 +489,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -601,7 +615,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">4.7k</span>
+    <span title="Site words total count">4.9k</span>
   
 </div>
 
