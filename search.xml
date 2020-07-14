@@ -258,7 +258,7 @@
   <entry>
     <title>数理逻辑第二章</title>
     <url>/2020/07/12/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91%E7%AC%AC%E4%BA%8C%E7%AB%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>未完！！！待续<br><img src="https://img-blog.csdnimg.cn/20200713202337417.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><a id="more"></a></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>这章主要讲了等值式和范式及其应用<br><img src="https://img-blog.csdnimg.cn/20200713202337417.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><a id="more"></a></p>
 <h1 id="第一节、等值式"><a href="#第一节、等值式" class="headerlink" title="第一节、等值式"></a>第一节、等值式</h1><p><strong>定义</strong>：设A,B是两个命题公式，若A，B构成的等价式A $\leftrightarrow$ B为重言式，则称A与B是等值的，记作A$\Leftrightarrow$ B。</p>
 <blockquote class="question">注：A$\Leftrightarrow$ 1,则A为重言式， A$\Leftrightarrow$ 0,则A为矛盾式 </blockquote>
 
@@ -378,7 +378,7 @@
 <li>矛盾律：<br>A$\wedge\rceil$A⟺0</li>
 <li>蕴含等值式：<br>A$\to$B⟺$\rceil$A$\vee$B</li>
 <li>等价等值式<br>A$\leftrightarrow$B⟺(A$\to$B)$\wedge$(B$\to$A)</li>
-<li>假言易位(逆否命题)<br>A$\to$B⟺$\rceil$B$\to\rceil$A</li>
+<li>假言易位(逆否命题)<br>A$\to$B⟺$\rceil$B$\leftrightarrow\rceil$A</li>
 <li>等价否定等值式<br>A$\leftrightarrow$B⟺$\rceil$A$\to\rceil$B</li>
 <li>归谬论(前提AAA错误)：<br>(A$\leftrightarrow$B)$\wedge$(A$\leftrightarrow\rceil$B)⟺$\rceil$A</li>
 </ul>
@@ -393,15 +393,38 @@
 <p>原式$\Leftrightarrow\rceil$((p$\to$q)$\wedge$p)$\vee$q<br>$\Leftrightarrow\rceil$(($\rceil$p$\vee$q)$\wedge$p)$\vee$q<br>$\Leftrightarrow\rceil$($\rceil$p$\vee$q)$\vee\rceil$p$\vee$q<br>$\Leftrightarrow$(p$\wedge\rceil$q)$\vee\rceil$p$\vee$q<br>$\Leftrightarrow$(p$\vee\rceil$q)$\wedge$($\rceil$p$\vee\rceil$q)$\vee$q<br>$\Leftrightarrow$1$\wedge$($\rceil$p$\vee\rceil$q)$\vee$q<br>$\Leftrightarrow$($\rceil$p$\vee\rceil$q)$\vee$q<br>$\Leftrightarrow\rceil$p$\vee(\rceil$q$\vee$q)<br>$\Leftrightarrow\rceil$p$\vee$1<br>$\Leftrightarrow$1</p>
 </blockquote>
 <h3 id="文字断案问题"><a href="#文字断案问题" class="headerlink" title="文字断案问题"></a>文字断案问题</h3><p>具体分析看课件</p>
-<h1 id="析取范式与合取范式"><a href="#析取范式与合取范式" class="headerlink" title="析取范式与合取范式"></a>析取范式与合取范式</h1><p><strong>文字</strong>：命题变式及其否定式统称为文字。如$p$和$\rceil p$<br><strong>简单析取式</strong>：仅有有限个文字组成的析取式。如$p \vee q$<br><strong>简单合取式</strong>：仅有有限个文字组成的合取式。如$p \wedge q$</p>
-<blockquote>
-<p>为方便起见，有时候用$A_i$表示一个简单析取/合取式</p>
-</blockquote>
-<p><strong>定理</strong>：</p>
+<h1 id="第二节、析取范式与合取范式"><a href="#第二节、析取范式与合取范式" class="headerlink" title="第二节、析取范式与合取范式"></a>第二节、析取范式与合取范式</h1><h2 id="基本铺垫"><a href="#基本铺垫" class="headerlink" title="基本铺垫"></a>基本铺垫</h2><p><strong>文字</strong>：命题变式及其否定式统称为文字。如$p$和$\rceil p$<br><strong>简单析取式</strong>：仅有有限个文字组成的析取式。如$p \vee q$<br><strong>简单合取式</strong>：仅有有限个文字组成的合取式。如$p \wedge q$<br> <blockquote class="question">为方便起见，有时候用$A_i$表示一个简单析取/合取式</blockquote></p>
+<p><strong>定理</strong>：一个简单析取式是重言式$\Leftrightarrow$它同时含有某个命题变项及其否定式；一个简单合取式是矛盾式$\Leftrightarrow$它同时含有某个命题变项及其否定式。</p>
+<p><strong>析取范式</strong>：由有限个简单合取式构成的析取式。<br><strong>合取范式</strong>：由有限个简单析取式构成的合取式。<br><strong>范式</strong>：析取范式与合取范式统称为范式。</p>
+ <blockquote class="question">注：一个简单合取式既是析取范式，又是合取范式；一个简单析取式既是合取范式，又是析取范式</blockquote>
+
+<p><strong>定理</strong>：(1)一个析取范式是矛盾式$\Leftrightarrow$它的每个简单合取式都是矛盾式。(2)一个合取范式是重言式$\Leftrightarrow$它的每个简单析取式都是重言式。</p>
+<p><strong>定理</strong>: (范式存在定理)任一个命题公式都存在着与之等值的析取范式与合取范式。<br><strong>步骤</strong>:</p>
 <ol>
-<li>一个简单析取式是重言式$\Leftrightarrow$它同时含有某个命题变项及其否定式。</li>
-<li>一个简单合取式是矛盾式$\Leftrightarrow$它同时含有某个命题变项及其否定式。</li>
+<li>消去连接词$\to$、$\Leftrightarrow$<blockquote>
+<p>A $\to$B $\Leftrightarrow$($\rceil$ A $\vee$ B)<br>A$\leftrightarrow$B $\Leftrightarrow$( $\rceil$A $\vee$ B) $\wedge$ (A $\vee\rceil$  B)</p>
+</blockquote>
+</li>
+<li>否定联接词的消去或内移。</li>
+<li>利用分配律</li>
 </ol>
+<p><strong>定义</strong>:在含有n个命题变项的简单合（析）取式中，每个命题变项和它的否定不同时出现，而二者之一必出现且仅出现一次，且第i个命题变项或它的否定式出现在从左算起的第i位上（若命题变项无角标，就按字母顺序），称这样的简单合（析）取式为极小（大）项。</p>
+<p><strong>定理</strong>：(1)每个极小项，如$p_1$ $\wedge$ $p_2$ $\wedge$ $p_3$ $\wedge\cdots\wedge$ $p_n$,有且仅有一个成真赋值，若成真赋值所对应的二进制数转化为十进制数为i，就将所对应的极小项记作$m_i$。(2)每个极大项，如$p_1$ $\vee$ $p_2$ $\vee$ $p_3$ $\vee\cdots\vee$ $p_n$,有且仅有一个成假赋值，若成假赋值所对应的二进制数转化为十进制数为i，就将所对应的极大项记作$M_i$。</p>
+<p><strong>定理</strong>:(极小项与极大项关系)设$m_i$和$M_i$是命题变项$p_1$,$p_2$,$\cdots$,$p_n$形成的极小项和极大项，则$\rceil$ $m_i$ $\Leftrightarrow$ $M_i$，$\rceil$ $M_i$ $\Leftrightarrow$ $m_i$</p>
+<p><strong>定义</strong>:设由n个命题变项构成的析（合）取范式中所有的简单合（析）取式都是极小（大）项，则且无重复出现，则称该析（合）取范式为主析（合）取范式。</p>
+<p><strong>定理</strong>:任何命题公式都存在着与之等值的主析取范式和主合取范式，并且（在不计极小（大）项的顺序的前提下）是唯一的。</p>
+<p><strong>结论</strong>:主析取范式的极小项的下标（对应的0，1符号串）恰为原命题公式的成真赋值，而主合取范式的极大项的下标（对应的0，1符号串）恰为原命题公式的成假赋值。它们二者是互“补”的<br> <blockquote class="question">因此，当命题变项比较少时，可以求真值表法来求主范式</blockquote></p>
+<h2 id="主析取范式的用途（主合取范式类似讨论）"><a href="#主析取范式的用途（主合取范式类似讨论）" class="headerlink" title="主析取范式的用途（主合取范式类似讨论）"></a>主析取范式的用途（主合取范式类似讨论）</h2><ol>
+<li>求公式的成真/成假赋值：若公式A中含有n个命题变项，且A的主析取范式含s个极小项，则A有s个成真赋值，有$2^n$-s个成假赋值。</li>
+<li>判断公式的类型：<ul>
+<li>A为重言式$\Leftrightarrow$A的主析取范式含全部$2^n$个极小项。</li>
+<li>A为矛盾式$\Leftrightarrow$A的主析取范式不含任何极小项。 </li>
+<li>A为满足式$\Leftrightarrow$A的主析取范式至少含1个极小项。   </li>
+</ul>
+</li>
+<li>判断两个命题公式是否等值。设公式A、B中共含有n个命题变项，按n个命题变项求出A、B的主析取范式$M$、$N$。 若$M$=$N$ ，则A$\Leftrightarrow$B，否则A、B不等值</li>
+</ol>
+<blockquote class="question">注：重言式不含极大项，其主合取范式记为1。矛盾式不含极小项，其主析取范式记为0。</blockquote>
 ]]></content>
       <tags>
         <tag>数理逻辑</tag>
