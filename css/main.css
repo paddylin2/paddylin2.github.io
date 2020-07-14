@@ -1881,7 +1881,7 @@ pre .javascript .function {
   margin-top: 0;
   text-align: center;
   font-size: 13px;
-  color: #999;
+  color: #00bcd4;
 }
 .site-state {
   overflow: hidden;
@@ -1909,7 +1909,7 @@ pre .javascript .function {
 }
 .site-state-item-name {
   font-size: 13px;
-  color: #999;
+  color: #222;
 }
 .feed-link {
   margin-top: 20px;
@@ -1951,7 +1951,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffff8f;
+  background: #69baff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2871,7 +2871,7 @@ pre .javascript .function {
 .site-meta {
   padding: 20px 0;
   color: #fff;
-  background: #222;
+  background: rgba(102,102,102,0.7);
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .site-meta {
@@ -2927,7 +2927,7 @@ pre .javascript .function {
 }
 .menu .menu-item a:hover,
 .menu-item-active a {
-  background: #f9f9f9;
+  background: rgba(128,128,0,0.5);
   border-bottom-color: #fff;
 }
 .menu .menu-item br {
@@ -2945,7 +2945,7 @@ pre .javascript .function {
   background-color: #bbb;
 }
 .btn-bar {
-  background-color: #fff;
+  background-color: #000;
 }
 .site-nav-toggle {
   left: 20px;
@@ -3284,6 +3284,11 @@ pre .javascript .function {
 body {
   color: #000;
 }
+blockquote {
+  padding: 0 15px;
+  color: #795548;
+  border-left: 4px solid #9e9e9e;
+}
 blockquote.question {
   color: #ba55d3;
   border-left: 4px solid #1098ad;
@@ -3529,4 +3534,16 @@ div.vcontrol {
 }
 :link {
   cursor: url("/images/pointer.cur"), auto;
+}
+#veditor {
+  background-image: url("https://cdn.jsdelivr.net/gh/drew233/cdn/20200409110727.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: rgba(255,255,255,0);
+  resize: vertical;
+}
+#veditor:focus {
+  background-position-y: 200px;
+  transition: all 0.2s ease-in-out 0s;
 }
