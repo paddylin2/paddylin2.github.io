@@ -1951,7 +1951,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d9e2ec;
+  background: #46ffcb;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3604,16 +3604,16 @@ div.vcontrol {
   color: #d9534f;
 }
 .words {
-  font-size: 50px;
-  font-weight: bold;
-  text-transform: uppercase;
-  fill: none;
+  font-size: 35px;
+  font-weight: initial;
+  text-transform: initial;
+  fill: #000;
   stroke-width: 3px;
   stroke-dasharray: 35, 125;
   animation-name: drawing;
   animation-duration: 6s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-timing-function: ease-out;
 }
 .words-1 {
   stroke: #00bfff;
