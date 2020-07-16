@@ -23,6 +23,48 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo增加时钟挂件</title>
+    <url>/2020/07/16/Hexo%E5%A2%9E%E5%8A%A0%E6%97%B6%E9%92%9F%E6%8C%82%E4%BB%B6/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>时钟show<br><img src="https://img-blog.csdnimg.cn/20200716193834162.gif#pic_center" alt="在这里插入图片描述"><br><a id="more"></a></p>
+<h1 id="第一款时钟（人体时钟）"><a href="#第一款时钟（人体时钟）" class="headerlink" title="第一款时钟（人体时钟）"></a>第一款时钟（人体时钟）</h1><p><img src="https://img-blog.csdnimg.cn/20200716175535356.gif#pic_center" alt="在这里插入图片描述"><br>它分为两种，一种是背景透明的：<br><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="C"><figure class="iseeu highlight /c"><table><tr><td class="code"><pre><span class="line">&lt;script charset=<span class="string">"Shift_JIS"</span> src=<span class="string">"http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></div><br>另一种是白色背景的：</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="C"><figure class="iseeu highlight /c"><table><tr><td class="code"><pre><span class="line">&lt;script charset=<span class="string">"Shift_JIS"</span> src=<span class="string">"http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_wh.js"</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></div>
+<p>想用哪个就把哪个代码放在想用的位置就可以了。不过我想说的问题是如果你的网站申请了<code>SSL证书</code>，那么这个挂件可能就不能显示，根据网站的错误信息提示是因为其中的<code>http</code>不是加密运输<code>https</code>。因此我想了一个办法：</p>
+<ul>
+<li><p>在网页输入网址<code>http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js</code>会看到以下代码</p>
+  <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVASCRIPT"><figure class="iseeu highlight /javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/******************************************************************************</span></span><br><span class="line"><span class="comment">	初期設定</span></span><br><span class="line"><span class="comment">******************************************************************************/</span></span><br><span class="line"><span class="keyword">var</span> swfUrl = <span class="string">"http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.swf"</span>;</span><br><span class="line"><span class="keyword">var</span> swfTitle = <span class="string">"honehoneclock"</span>;</span><br><span class="line"><span class="comment">// 実行</span></span><br><span class="line">LoadBlogParts();</span><br><span class="line"><span class="comment">/******************************************************************************</span></span><br><span class="line"><span class="comment">	入力		なし</span></span><br><span class="line"><span class="comment">	出力		document.writeによるHTML出力</span></span><br><span class="line"><span class="comment">******************************************************************************/</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">LoadBlogParts</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> sUrl = swfUrl;</span><br><span class="line">	<span class="keyword">var</span> sHtml = <span class="string">""</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="160" height="70" id="'</span> + swfTitle + <span class="string">'" align="middle"&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;param name="allowScriptAccess" value="always" /&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;param name="movie" value="'</span> + sUrl + <span class="string">'" /&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;param name="quality" value="high" /&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;param name="bgcolor" value="#ffffff" /&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;param name="wmode" value="transparent" /&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;embed wmode="transparent" src="'</span> + sUrl + <span class="string">'" quality="high" bgcolor="#ffffff" width="160" height="70" name="'</span> + swfTitle + <span class="string">'" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" /&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;/object&gt;'</span>;</span><br><span class="line">	<span class="built_in">document</span>.write(sHtml);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
+<li>根据测试将上述代码中第二个和第三个<code>http</code>变成<code>https</code>不影响网站浏览，但是第一个<code>http</code>不行，因此我用迅雷把这个flash下载了下来存放在路径<code>\themes\next\source\js\src</code>，并在该路径下创建文件<code>honehone_clock_tr.js</code>,代码如下  <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVASCRIPT"><figure class="iseeu highlight /javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/******************************************************************************</span></span><br><span class="line"><span class="comment">	初期設定</span></span><br><span class="line"><span class="comment">******************************************************************************/</span></span><br><span class="line"><span class="keyword">var</span> swfUrl = <span class="string">"js/src/honehone_clock.swf"</span>;</span><br><span class="line"><span class="keyword">var</span> swfTitle = <span class="string">"honehoneclock"</span>;</span><br><span class="line"><span class="comment">// 実行</span></span><br><span class="line">LoadBlogParts();</span><br><span class="line"><span class="comment">/******************************************************************************</span></span><br><span class="line"><span class="comment">	入力		なし</span></span><br><span class="line"><span class="comment">	出力		document.writeによるHTML出力</span></span><br><span class="line"><span class="comment">******************************************************************************/</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">LoadBlogParts</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> sUrl = swfUrl;</span><br><span class="line">	<span class="keyword">var</span> sHtml = <span class="string">""</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="https://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="160" height="70" id="'</span> + swfTitle + <span class="string">'" align="middle"&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;param name="allowScriptAccess" value="always" /&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;param name="movie" value="'</span> + sUrl + <span class="string">'" /&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;param name="quality" value="high" /&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;param name="bgcolor" value="#ffffff" /&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;param name="wmode" value="transparent" /&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;embed wmode="transparent" src="'</span> + sUrl + <span class="string">'" quality="high" bgcolor="#ffffff" width="160" height="70" name="'</span> + swfTitle + <span class="string">'" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash" pluginspage="https://www.macromedia.com/go/getflashplayer" /&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;/object&gt;'</span>;</span><br><span class="line">	<span class="built_in">document</span>.write(sHtml);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
+<li><p>然后我在<code>\next\layout\_custom\sidebar.swig</code>文件中引用</p>
+  <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVASCRIPT"><figure class="iseeu highlight /javascript"><table><tr><td class="code"><pre><span class="line">&lt;script charset=<span class="string">"Shift_JIS"</span> src=<span class="string">"js/src/honehone_clock_tr.js"</span>&gt;&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></div>
+<p>hexo s就可以本地看结果。</p>
+</li>
+</ul>
+<h1 id="第二款时钟（霓虹灯时钟）"><a href="#第二款时钟（霓虹灯时钟）" class="headerlink" title="第二款时钟（霓虹灯时钟）"></a>第二款时钟（霓虹灯时钟）</h1><ul>
+<li>在/themes/next/layout/_custom/ 目录下，打开sidebar.swig文件，添加如下内容： <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVASCRIPT"><figure class="iseeu highlight /javascript"><table><tr><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">    &lt;svg&gt;</span><br><span class="line">        &lt;text id=<span class="string">"time"</span> text-anchor=<span class="string">"middle"</span> x=<span class="string">"36%"</span> y=<span class="string">"80%"</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"words words-1"</span>&gt;&lt;<span class="regexp">/text&gt;</span></span><br><span class="line"><span class="regexp">        &lt;text id="time" text-anchor="middle" x="36%" y="80%" class="words words-2"&gt;&lt;/</span>text&gt;</span><br><span class="line">        &lt;text id=<span class="string">"time"</span> text-anchor=<span class="string">"middle"</span> x=<span class="string">"36%"</span> y=<span class="string">"80%"</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"words words-3"</span>&gt;&lt;<span class="regexp">/text&gt;</span></span><br><span class="line"><span class="regexp">        &lt;text id="time" text-anchor="middle" x="36%" y="80%" class="words words-4"&gt;&lt;/</span>text&gt;</span><br><span class="line">    &lt;<span class="regexp">/svg&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">showtime</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> noatime = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">    <span class="keyword">var</span> h = noatime.getHours(),</span><br><span class="line">        m = noatime.getMinutes(),</span><br><span class="line">        s = noatime.getSeconds();</span><br><span class="line">    h=checktime(h);</span><br><span class="line">    m=checktime(m);</span><br><span class="line">    s=checktime(s);</span><br><span class="line">  <span class="keyword">return</span> h+<span class="string">":"</span>+m+<span class="string">":"</span>+s;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">checktime</span>(<span class="params">x</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(x&lt;<span class="number">10</span>)&#123;</span><br><span class="line">    x=<span class="string">"0"</span>+x;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> div1=<span class="built_in">document</span>.getElementsByTagName(<span class="string">"text"</span>);</span><br><span class="line">setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i <span class="keyword">in</span> div1)&#123;</span><br><span class="line">      div1[i].innerHTML=showtime();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;,<span class="number">1000</span>);</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></div></li>
+<li>/themes/next/source/css/_custom/目录下,打开custom.styl文件，添加如下内容：  <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVASCRIPT"><figure class="iseeu highlight /javascript"><table><tr><td class="code"><pre><span class="line">.words&#123;</span><br><span class="line">    font-size: <span class="number">50</span>px;</span><br><span class="line">    font-weight: bold;</span><br><span class="line">    text-transform: uppercase;</span><br><span class="line">    fill: none;</span><br><span class="line">    stroke-width: <span class="number">3</span>px;</span><br><span class="line">    stroke-dasharray: <span class="number">35</span>,<span class="number">125</span>;</span><br><span class="line">    animation-name: drawing;</span><br><span class="line">    animation-duration: <span class="number">6</span>s;</span><br><span class="line">    animation-iteration-count: infinite;</span><br><span class="line">    animation-timing-<span class="function"><span class="keyword">function</span>: <span class="title">linear</span>;</span></span><br><span class="line"><span class="function">&#125;</span></span><br><span class="line"><span class="function">.<span class="title">words</span>-1</span>&#123;</span><br><span class="line">    stroke: deepskyblue;</span><br><span class="line">    text-shadow: <span class="number">0</span> <span class="number">0</span> <span class="number">15</span>px deepskyblue;</span><br><span class="line">    animation-delay: <span class="number">-1.5</span>s;</span><br><span class="line">&#125;</span><br><span class="line">.words<span class="number">-2</span>&#123;</span><br><span class="line">    stroke: lightseagreen;</span><br><span class="line">    text-shadow: <span class="number">0</span> <span class="number">0</span> <span class="number">15</span>px lightseagreen;</span><br><span class="line">    animation-delay: <span class="number">-3</span>s;</span><br><span class="line">&#125;</span><br><span class="line">.words<span class="number">-3</span>&#123;</span><br><span class="line">    stroke: orange;</span><br><span class="line">    text-shadow: <span class="number">0</span> <span class="number">0</span> <span class="number">15</span>px orange;</span><br><span class="line">    animation-delay: <span class="number">-4.5</span>s;</span><br><span class="line">&#125;</span><br><span class="line">.words<span class="number">-4</span>&#123;</span><br><span class="line">    stroke: purple;</span><br><span class="line">    text-shadow: <span class="number">0</span> <span class="number">0</span> <span class="number">15</span>px purple;</span><br><span class="line">    animation-delay: <span class="number">-6</span>s;</span><br><span class="line">&#125;</span><br><span class="line">@keyframes drawing &#123;</span><br><span class="line">    <span class="number">100</span>%&#123;</span><br><span class="line">        stroke-dashoffset: <span class="number">-160</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
+<li>之后就可以通过hexo s命令本地运行一下查看一下效果了</li>
+</ul>
+<h1 id="第三款时钟（canvas粒子时钟1）"><a href="#第三款时钟（canvas粒子时钟1）" class="headerlink" title="第三款时钟（canvas粒子时钟1）"></a>第三款时钟（canvas粒子时钟1）</h1><p>效果图：<br><img src="https://img-blog.csdnimg.cn/20200716183536298.gif#pic_center" alt="在这里插入图片描述"></p>
+<ul>
+<li>在 /themes/next/layout/_custom/ 目录下，新建 clock.swig 文件，内容如下：<br><a href="https://github.com/PaddyLin-xum/wenjian/blob/master/clock.swig" target="_blank" rel="noopener">clock.swig</a></li>
+<li>在 /themes/next/layout/_macro/sidebar.swig 中引入：  <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVASCRIPT"><figure class="iseeu highlight /javascript"><table><tr><td class="code"><pre><span class="line">&#123;% include <span class="string">'../_custom/clock.swig'</span> %&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<p>这是加在侧栏底部，大家可以根据自己需要加入相应位置。</p>
+<h1 id="第四款时钟（canvas粒子时钟2）"><a href="#第四款时钟（canvas粒子时钟2）" class="headerlink" title="第四款时钟（canvas粒子时钟2）"></a>第四款时钟（canvas粒子时钟2）</h1><p>效果如下<br><img src="https://img-blog.csdnimg.cn/20200716185727168.gif#pic_center" alt="在这里插入图片描述"></p>
+<ul>
+<li>在 /themes/next/layout/_custom/ 目录下，新建 biao.swig 文件，内容如下：<br><a href="https://github.com/PaddyLin-xum/wenjian/blob/master/biao.swig" target="_blank" rel="noopener">biao.swig</a></li>
+<li>在 /themes/next/layout/_macro/sidebar.swig 中引入：  <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVASCRIPT"><figure class="iseeu highlight /javascript"><table><tr><td class="code"><pre><span class="line">&#123;% include <span class="string">'../_custom/biao.swig'</span> %&#125;</span><br></pre></td></tr></table></figure></div>
+这是加在侧栏底部，大家可以根据自己需要加入相应位置。</li>
+</ul>
+<h1 id="第五款时钟"><a href="#第五款时钟" class="headerlink" title="第五款时钟"></a>第五款时钟</h1><p><img src="https://img-blog.csdnimg.cn/2020071619492930.gif#pic_center" alt="在这里插入图片描述"></p>
+<p>在需要位置插入以下代码</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVASCRIPT"><figure class="iseeu highlight /javascript"><table><tr><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">    &lt;iframe src=<span class="string">"http://cdn.abowman.com/widgets/pendulumclock/pendulumClockV2.swf"</span> width=<span class="string">"300"</span> height=<span class="string">"225"</span> scrolling=<span class="string">"NO"</span> frameborder=<span class="string">"0"</span>&gt;&lt;<span class="regexp">/iframe&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br></pre></td></tr></table></figure></div></h2><h1 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h1><p><a href="https://www.liaofuzhan.com/posts/2114475547.html" target="_blank" rel="noopener" class="LinkCard">Leaface的博客</a><br><a href="https://hasaik.com/posts/ab21860c.html" target="_blank" rel="noopener" class="LinkCard">银河小徐的博客</a><br><a href="https://blog.csdn.net/xwmrqqq/article/details/105612763" target="_blank" rel="noopener" class="LinkCard">CSDN：在下摸鱼怪</a></p>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown编辑器推荐</title>
     <url>/2020/07/07/Mrakdown%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://img-blog.csdnimg.cn/20200707190013492.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
@@ -63,31 +105,6 @@
       </tags>
   </entry>
   <entry>
-    <title>五款Hexo音乐播放器推荐</title>
-    <url>/2020/07/15/%E4%BA%94%E6%AC%BEHexo%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://img-blog.csdnimg.cn/20200715175140290.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><a id="more"></a></p>
-<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>本来已经在自己博客菜单界面加了音乐一栏，这个是用Aplayer插件做出来的，但是只能在单页听歌，若切换页面，音乐会暂停。苦恼于此，我在网上查了很久发现了<code>明月浩空播放器</code>，便一发不可收拾的发现了很多有趣的东西。现在就分享一下我的成果：</p>
-<h2 id="明月浩空播放器"><a href="#明月浩空播放器" class="headerlink" title="明月浩空播放器"></a>明月浩空播放器</h2><p>此播放器分为免费和收费两种，免费的只能添加一个播放器，只能添加一个歌单，且歌单不能自定义，这就很丧良心了，但是如果单纯装饰一下博客，这倒是够用了，毕竟它里面的歌单也不是太差。这是他的连接：<br><a href="https://myhkw.cn/" target="_blank" rel="noopener" class="LinkCard">明月浩空</a><br>当然，如果你视金钱如粪土，也可以购买以解锁更多的功能<br><img src="https://img-blog.csdnimg.cn/20200715170703875.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<h2 id="明月浩空播放器破解版"><a href="#明月浩空播放器破解版" class="headerlink" title="明月浩空播放器破解版"></a>明月浩空播放器破解版</h2><p>据说现在好像是不能用了，破解后的名字是<code>绚丽彩虹播放器</code>，不过我还是搜到一点关于他的消息，也许比较厉害的小伙伴还能找到怎么用呢。<br><a href="http://xxwl1.com/index.php/archives/14/" target="_blank" rel="noopener" class="LinkCard">破解版</a></p>
-<h2 id="宅音乐播放器"><a href="#宅音乐播放器" class="headerlink" title="宅音乐播放器"></a>宅音乐播放器</h2><p>它是在明月浩空免费版的基础上改的，目前他还在优化中，不过他却是免费的，能自己添加歌曲和歌单。我自己用了一下，在切换页面的时候会重新播放歌曲，感觉不太友好，不过我有看到其他网页的可以不中断播放（可能自己的技术不到家，或者需要什么插件吧！）<br><a href="https://player.ilt.me/" target="_blank" rel="noopener" class="LinkCard">宅音乐播放器</a><br><img src="https://img-blog.csdnimg.cn/20200715171851171.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<h2 id="梨花带雨播放器"><a href="#梨花带雨播放器" class="headerlink" title="梨花带雨播放器"></a>梨花带雨播放器</h2><p>这是我目前找到的完全免费，且功能可以与付费版的<code>明月浩空播放器</code>相比较的一款播放器了。但是它歌单id的查找不怎么精确，建议按照单曲歌的id添加歌曲。不过它能实现在切换页面的时候，歌曲继续播放（中间可能会暂停播放一下）<br><a href="https://music.m0x.cn/" target="_blank" rel="noopener" class="LinkCard">梨花带雨播放器</a><br>以下是我的界面<br><img src="https://img-blog.csdnimg.cn/20200715172652568.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<h2 id="沛霖音乐播放器"><a href="#沛霖音乐播放器" class="headerlink" title="沛霖音乐播放器"></a>沛霖音乐播放器</h2><p>额。。。。。。。。。这个我不知但我为什么注册不了，问了站长，但是没得到回复。暂且先搁置在这里吧！<br><a href="https://music.ailcc.com/?#" target="_blank" rel="noopener" class="LinkCard">H5播放器</a><br><img src="https://img-blog.csdnimg.cn/20200715174118478.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-]]></content>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>P站图片分享1</title>
-    <url>/2020/07/06/%E5%88%86%E4%BA%AB%E4%B8%80/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://img-blog.csdnimg.cn/20200706162859635.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><a id="more"></a></p>
-<h2 id="图片分享"><a href="#图片分享" class="headerlink" title="图片分享"></a>图片分享</h2><p><strong>Picture Share</strong><br><img src="https://img-blog.csdnimg.cn/20200706162904532.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162903133.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162902421.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162901900.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162950121.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162949738.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162949638.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070616294869.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162947934.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-]]></content>
-      <tags>
-        <tag>图片</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>爬虫第一课</title>
     <url>/2020/07/05/Python%E7%88%AC%E8%99%AB/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://img-blog.csdnimg.cn/20200706200425139.png#pic_center" alt="霸王别姬"><br><a id="more"></a></p>
@@ -98,20 +115,16 @@
       </tags>
   </entry>
   <entry>
-    <title>穿乐福鞋的少女特辑</title>
-    <url>/2020/07/07/%E5%88%86%E4%BA%AB%E4%B8%89/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://img-blog.csdnimg.cn/20200707195553945.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><a id="more"></a></p>
-<h2 id="图片分享"><a href="#图片分享" class="headerlink" title="图片分享"></a>图片分享</h2><p><strong>Picture Share</strong><br><img src="https://img-blog.csdnimg.cn/20200707195635204.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200707195635149.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070719563584.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070719563572.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070719563563.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070719563564.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070719563555.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070719563528.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200707195634919.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200707195634836.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+    <title>PaddyLin的博客</title>
+    <url>/2020/07/04/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="我的博客诞生了"><a href="#我的博客诞生了" class="headerlink" title="我的博客诞生了"></a>我的博客诞生了</h2><p>纪念我在2020年7月4日开始接触hexo和github，并学习了搭建博客</p>
 ]]></content>
-      <tags>
-        <tag>图片</tag>
-      </tags>
   </entry>
   <entry>
-    <title>七夕特辑</title>
-    <url>/2020/07/08/%E5%88%86%E4%BA%AB%E5%9B%9B/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://img-blog.csdnimg.cn/20200708205154101.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><a id="more"></a><br><img src="https://img-blog.csdnimg.cn/20200708205220726.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220687.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220628.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220528.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220429.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220414.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220316.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220274.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220256.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20200708205220146.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205219817.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+    <title>P站图片分享1</title>
+    <url>/2020/07/06/%E5%88%86%E4%BA%AB%E4%B8%80/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://img-blog.csdnimg.cn/20200706162859635.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><a id="more"></a></p>
+<h2 id="图片分享"><a href="#图片分享" class="headerlink" title="图片分享"></a>图片分享</h2><p><strong>Picture Share</strong><br><img src="https://img-blog.csdnimg.cn/20200706162904532.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162903133.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162902421.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162901900.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162950121.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162949738.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162949638.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070616294869.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200706162947934.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 ]]></content>
       <tags>
         <tag>图片</tag>
@@ -125,6 +138,31 @@
 ]]></content>
       <tags>
         <tag>图片</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>穿乐福鞋的少女特辑</title>
+    <url>/2020/07/07/%E5%88%86%E4%BA%AB%E4%B8%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://img-blog.csdnimg.cn/20200707195553945.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><a id="more"></a></p>
+<h2 id="图片分享"><a href="#图片分享" class="headerlink" title="图片分享"></a>图片分享</h2><p><strong>Picture Share</strong><br><img src="https://img-blog.csdnimg.cn/20200707195635204.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200707195635149.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070719563584.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070719563572.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070719563563.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070719563564.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070719563555.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020070719563528.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200707195634919.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200707195634836.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+]]></content>
+      <tags>
+        <tag>图片</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>五款Hexo音乐播放器推荐</title>
+    <url>/2020/07/15/%E4%BA%94%E6%AC%BEHexo%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://img-blog.csdnimg.cn/20200715175140290.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><a id="more"></a></p>
+<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>本来已经在自己博客菜单界面加了音乐一栏，这个是用Aplayer插件做出来的，但是只能在单页听歌，若切换页面，音乐会暂停。苦恼于此，我在网上查了很久发现了<code>明月浩空播放器</code>，便一发不可收拾的发现了很多有趣的东西。现在就分享一下我的成果：</p>
+<h2 id="明月浩空播放器"><a href="#明月浩空播放器" class="headerlink" title="明月浩空播放器"></a>明月浩空播放器</h2><p>此播放器分为免费和收费两种，免费的只能添加一个播放器，只能添加一个歌单，且歌单不能自定义，这就很丧良心了，但是如果单纯装饰一下博客，这倒是够用了，毕竟它里面的歌单也不是太差。这是他的连接：<br><a href="https://myhkw.cn/" target="_blank" rel="noopener" class="LinkCard">明月浩空</a><br>当然，如果你视金钱如粪土，也可以购买以解锁更多的功能<br><img src="https://img-blog.csdnimg.cn/20200715170703875.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<h2 id="明月浩空播放器破解版"><a href="#明月浩空播放器破解版" class="headerlink" title="明月浩空播放器破解版"></a>明月浩空播放器破解版</h2><p>据说现在好像是不能用了，破解后的名字是<code>绚丽彩虹播放器</code>，不过我还是搜到一点关于他的消息，也许比较厉害的小伙伴还能找到怎么用呢。<br><a href="http://xxwl1.com/index.php/archives/14/" target="_blank" rel="noopener" class="LinkCard">破解版</a></p>
+<h2 id="宅音乐播放器"><a href="#宅音乐播放器" class="headerlink" title="宅音乐播放器"></a>宅音乐播放器</h2><p>它是在明月浩空免费版的基础上改的，目前他还在优化中，不过他却是免费的，能自己添加歌曲和歌单。我自己用了一下，在切换页面的时候会重新播放歌曲，感觉不太友好，不过我有看到其他网页的可以不中断播放（可能自己的技术不到家，或者需要什么插件吧！）<br><a href="https://player.ilt.me/" target="_blank" rel="noopener" class="LinkCard">宅音乐播放器</a><br><img src="https://img-blog.csdnimg.cn/20200715171851171.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<h2 id="梨花带雨播放器"><a href="#梨花带雨播放器" class="headerlink" title="梨花带雨播放器"></a>梨花带雨播放器</h2><p>这是我目前找到的完全免费，且功能可以与付费版的<code>明月浩空播放器</code>相比较的一款播放器了。但是它歌单id的查找不怎么精确，建议按照单曲歌的id添加歌曲。不过它能实现在切换页面的时候，歌曲继续播放（中间可能会暂停播放一下）<br><a href="https://music.m0x.cn/" target="_blank" rel="noopener" class="LinkCard">梨花带雨播放器</a><br>以下是我的界面<br><img src="https://img-blog.csdnimg.cn/20200715172652568.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<h2 id="沛霖音乐播放器"><a href="#沛霖音乐播放器" class="headerlink" title="沛霖音乐播放器"></a>沛霖音乐播放器</h2><p>额。。。。。。。。。这个我不知但我为什么注册不了，问了站长，但是没得到回复。暂且先搁置在这里吧！<br><a href="https://music.ailcc.com/?#" target="_blank" rel="noopener" class="LinkCard">H5播放器</a><br><img src="https://img-blog.csdnimg.cn/20200715174118478.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -170,120 +208,13 @@
       </tags>
   </entry>
   <entry>
-    <title>添加音乐播放器</title>
-    <url>/2020/07/08/%E7%94%9F%E6%88%90%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://img-blog.csdnimg.cn/20200708130413972.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<a id="more"></a>
-<h1 id="博客制作单独页面音乐播放器"><a href="#博客制作单独页面音乐播放器" class="headerlink" title="博客制作单独页面音乐播放器"></a>博客制作单独页面音乐播放器</h1><hr>
-<p>首先我们给出效果图<br><img src="https://img-blog.csdnimg.cn/20200708121933181.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="">接下来让我们开始操作吧！！！</p>
-<h2 id="1、添加“我的音乐”模块"><a href="#1、添加“我的音乐”模块" class="headerlink" title="1、添加“我的音乐”模块"></a><strong>1、添加“我的音乐”模块</strong></h2><p>在<code>Git Bash</code>中执行代码<br><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="code"><pre><span class="line">$ hexo new page playlist</span><br></pre></td></tr></table></figure></div><br>之后会在博客<code>sourse</code>目录下生成文件<code>playlist</code>，修改里面<code>index</code>文件如下</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 歌单</span><br><span class="line">date: 2020-07-08 10:08:04</span><br><span class="line"><span class="built_in">type</span>: <span class="string">"playlist"</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure></div>
-<p>我引用的主题为<code>spfk</code>，我们在<code>theme\spfk\lanhuages</code>下找到<code>zh-Hans.yml</code><br>并在<code>menu</code>下添加<code>playlist: 歌单</code></p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  menu: 菜单</span><br><span class="line">  home: 首页</span><br><span class="line">  archives: 归档</span><br><span class="line">  categories: 分类</span><br><span class="line">  playlist: 歌单</span><br></pre></td></tr></table></figure></div>
-<h2 id="2、添加-hexo-tag-aplayer-插件"><a href="#2、添加-hexo-tag-aplayer-插件" class="headerlink" title="2、添加 hexo-tag-aplayer 插件"></a><strong>2、添加 hexo-tag-aplayer 插件</strong></h2><p>安装执行<br><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="code"><pre><span class="line">$ npm install --save hexo-tag-aplayer</span><br></pre></td></tr></table></figure></div><br>在 Hexo 配置文件<code>_config.yml</code>中设置</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="code"><pre><span class="line">aplayer:</span><br><span class="line">   meting: true</span><br></pre></td></tr></table></figure></div>
-<p>接着就可以使用 MetingJS 播放器了，例如我们在 Hexo的<code>sourse\playlist\index</code>中添加歌单模块</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="code"><pre><span class="line">&#123;% meting <span class="string">"523845661"</span> <span class="string">"netease"</span> <span class="string">"playlist"</span> <span class="string">"theme:#FF4081"</span> <span class="string">"mode:circulation"</span> <span class="string">"mutex:true"</span> <span class="string">"listmaxheight:340px"</span> <span class="string">"preload:auto"</span> %&#125;</span><br></pre></td></tr></table></figure></div>
-<p>和</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="code"><pre><span class="line">&#123;% meting <span class="string">"547791232"</span> <span class="string">"netease"</span> <span class="string">"playlist"</span> <span class="string">"theme:#FF4081"</span> <span class="string">"mode:circulation"</span> <span class="string">"mutex:true"</span> <span class="string">"listmaxheight:340px"</span> <span class="string">"preload:auto"</span> %&#125;</span><br></pre></td></tr></table></figure></div>
-<p>找到博客中的“我的音乐”就可以看到我们第一张图中的结果</p>
-<h2 id="3、歌单模块中的参数设置"><a href="#3、歌单模块中的参数设置" class="headerlink" title="3、歌单模块中的参数设置"></a><strong>3、歌单模块中的参数设置</strong></h2><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>默认值</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>id</td>
-<td>必须值</td>
-<td>歌曲 id / 播放列表 id / 相册 id / 搜索关键字</td>
-</tr>
-<tr>
-<td>server</td>
-<td>必须值</td>
-<td>音乐平台: netease, tencent, kugou, xiami, baidu</td>
-</tr>
-<tr>
-<td>type</td>
-<td>必须值</td>
-<td>song, playlist, album, search, artist</td>
-</tr>
-<tr>
-<td>fixed</td>
-<td>false</td>
-<td>开启固定模式</td>
-</tr>
-<tr>
-<td>mini</td>
-<td>false</td>
-<td>开启迷你模式</td>
-</tr>
-<tr>
-<td>loop</td>
-<td>all</td>
-<td>列表循环模式：all, one,none</td>
-</tr>
-<tr>
-<td>order</td>
-<td>list</td>
-<td>列表播放模式： list, random</td>
-</tr>
-<tr>
-<td>volume</td>
-<td>0.7</td>
-<td>播放器音量</td>
-</tr>
-<tr>
-<td>lrctype</td>
-<td>0</td>
-<td>歌词格式类型</td>
-</tr>
-<tr>
-<td>listfolded</td>
-<td>false</td>
-<td>指定音乐播放列表是否折叠</td>
-</tr>
-<tr>
-<td>storagename</td>
-<td>metingjs</td>
-<td>LocalStorage 中存储播放器设定的键名</td>
-</tr>
-<tr>
-<td>autoplay</td>
-<td>true</td>
-<td>自动播放，移动端浏览器暂时不支持此功能</td>
-</tr>
-<tr>
-<td>mutex</td>
-<td>true</td>
-<td>该选项开启时，如果同页面有其他 aplayer 播放，该播放器会暂停</td>
-</tr>
-<tr>
-<td>listmaxheight</td>
-<td>340px</td>
-<td>播放列表的最大长度</td>
-</tr>
-<tr>
-<td>preload</td>
-<td>auto</td>
-<td>音乐文件预载入模式，可选项： none, metadata, auto</td>
-</tr>
-<tr>
-<td>theme</td>
-<td>#ad7a86</td>
-<td>播放器风格色彩设置</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="4、结语"><a href="#4、结语" class="headerlink" title="4、结语"></a><strong>4、结语</strong></h2><p>关于音乐的板块制作到此结束了，但是当我们换页面时，音乐会停止播放。要做到切换页面时，音乐继续播放，需要安装 <code>Pajx</code> 插件，但是我还没弄懂怎么做，大家可以去搜索一下资料，弄懂了也可以告诉我哦！！！，下一篇我们将介绍怎么获得<code>音乐id</code></p>
+    <title>七夕特辑</title>
+    <url>/2020/07/08/%E5%88%86%E4%BA%AB%E5%9B%9B/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://img-blog.csdnimg.cn/20200708205154101.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><a id="more"></a><br><img src="https://img-blog.csdnimg.cn/20200708205220726.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220687.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220628.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220528.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220429.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220414.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220316.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220274.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205220256.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/20200708205220146.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200708205219817.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 ]]></content>
       <tags>
-        <tag>Hexo</tag>
+        <tag>图片</tag>
       </tags>
   </entry>
   <entry>
@@ -526,48 +457,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo增加时钟挂件</title>
-    <url>/2020/07/16/Hexo%E5%A2%9E%E5%8A%A0%E6%97%B6%E9%92%9F%E6%8C%82%E4%BB%B6/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>时钟show<br><img src="https://img-blog.csdnimg.cn/20200716193834162.gif#pic_center" alt="在这里插入图片描述"><br><a id="more"></a></p>
-<h1 id="第一款时钟（人体时钟）"><a href="#第一款时钟（人体时钟）" class="headerlink" title="第一款时钟（人体时钟）"></a>第一款时钟（人体时钟）</h1><p><img src="https://img-blog.csdnimg.cn/20200716175535356.gif#pic_center" alt="在这里插入图片描述"><br>它分为两种，一种是背景透明的：<br><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="C"><figure class="iseeu highlight /c"><table><tr><td class="code"><pre><span class="line">&lt;script charset=<span class="string">"Shift_JIS"</span> src=<span class="string">"http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></div><br>另一种是白色背景的：</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="C"><figure class="iseeu highlight /c"><table><tr><td class="code"><pre><span class="line">&lt;script charset=<span class="string">"Shift_JIS"</span> src=<span class="string">"http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_wh.js"</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></div>
-<p>想用哪个就把哪个代码放在想用的位置就可以了。不过我想说的问题是如果你的网站申请了<code>SSL证书</code>，那么这个挂件可能就不能显示，根据网站的错误信息提示是因为其中的<code>http</code>不是加密运输<code>https</code>。因此我想了一个办法：</p>
-<ul>
-<li><p>在网页输入网址<code>http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js</code>会看到以下代码</p>
-  <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVASCRIPT"><figure class="iseeu highlight /javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/******************************************************************************</span></span><br><span class="line"><span class="comment">	初期設定</span></span><br><span class="line"><span class="comment">******************************************************************************/</span></span><br><span class="line"><span class="keyword">var</span> swfUrl = <span class="string">"http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.swf"</span>;</span><br><span class="line"><span class="keyword">var</span> swfTitle = <span class="string">"honehoneclock"</span>;</span><br><span class="line"><span class="comment">// 実行</span></span><br><span class="line">LoadBlogParts();</span><br><span class="line"><span class="comment">/******************************************************************************</span></span><br><span class="line"><span class="comment">	入力		なし</span></span><br><span class="line"><span class="comment">	出力		document.writeによるHTML出力</span></span><br><span class="line"><span class="comment">******************************************************************************/</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">LoadBlogParts</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> sUrl = swfUrl;</span><br><span class="line">	<span class="keyword">var</span> sHtml = <span class="string">""</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="160" height="70" id="'</span> + swfTitle + <span class="string">'" align="middle"&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;param name="allowScriptAccess" value="always" /&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;param name="movie" value="'</span> + sUrl + <span class="string">'" /&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;param name="quality" value="high" /&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;param name="bgcolor" value="#ffffff" /&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;param name="wmode" value="transparent" /&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;embed wmode="transparent" src="'</span> + sUrl + <span class="string">'" quality="high" bgcolor="#ffffff" width="160" height="70" name="'</span> + swfTitle + <span class="string">'" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" /&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;/object&gt;'</span>;</span><br><span class="line">	<span class="built_in">document</span>.write(sHtml);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
-<li>根据测试将上述代码中第二个和第三个<code>http</code>变成<code>https</code>不影响网站浏览，但是第一个<code>http</code>不行，因此我用迅雷把这个flash下载了下来存放在路径<code>\themes\next\source\js\src</code>，并在该路径下创建文件<code>honehone_clock_tr.js</code>,代码如下  <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVASCRIPT"><figure class="iseeu highlight /javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/******************************************************************************</span></span><br><span class="line"><span class="comment">	初期設定</span></span><br><span class="line"><span class="comment">******************************************************************************/</span></span><br><span class="line"><span class="keyword">var</span> swfUrl = <span class="string">"js/src/honehone_clock.swf"</span>;</span><br><span class="line"><span class="keyword">var</span> swfTitle = <span class="string">"honehoneclock"</span>;</span><br><span class="line"><span class="comment">// 実行</span></span><br><span class="line">LoadBlogParts();</span><br><span class="line"><span class="comment">/******************************************************************************</span></span><br><span class="line"><span class="comment">	入力		なし</span></span><br><span class="line"><span class="comment">	出力		document.writeによるHTML出力</span></span><br><span class="line"><span class="comment">******************************************************************************/</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">LoadBlogParts</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> sUrl = swfUrl;</span><br><span class="line">	<span class="keyword">var</span> sHtml = <span class="string">""</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="https://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="160" height="70" id="'</span> + swfTitle + <span class="string">'" align="middle"&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;param name="allowScriptAccess" value="always" /&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;param name="movie" value="'</span> + sUrl + <span class="string">'" /&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;param name="quality" value="high" /&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;param name="bgcolor" value="#ffffff" /&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;param name="wmode" value="transparent" /&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;embed wmode="transparent" src="'</span> + sUrl + <span class="string">'" quality="high" bgcolor="#ffffff" width="160" height="70" name="'</span> + swfTitle + <span class="string">'" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash" pluginspage="https://www.macromedia.com/go/getflashplayer" /&gt;'</span>;</span><br><span class="line">	sHtml += <span class="string">'&lt;/object&gt;'</span>;</span><br><span class="line">	<span class="built_in">document</span>.write(sHtml);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
-<li><p>然后我在<code>\next\layout\_custom\sidebar.swig</code>文件中引用</p>
-  <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVASCRIPT"><figure class="iseeu highlight /javascript"><table><tr><td class="code"><pre><span class="line">&lt;script charset=<span class="string">"Shift_JIS"</span> src=<span class="string">"js/src/honehone_clock_tr.js"</span>&gt;&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></div>
-<p>hexo s就可以本地看结果。</p>
-</li>
-</ul>
-<h1 id="第二款时钟（霓虹灯时钟）"><a href="#第二款时钟（霓虹灯时钟）" class="headerlink" title="第二款时钟（霓虹灯时钟）"></a>第二款时钟（霓虹灯时钟）</h1><ul>
-<li>在/themes/next/layout/_custom/ 目录下，打开sidebar.swig文件，添加如下内容： <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVASCRIPT"><figure class="iseeu highlight /javascript"><table><tr><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">    &lt;svg&gt;</span><br><span class="line">        &lt;text id=<span class="string">"time"</span> text-anchor=<span class="string">"middle"</span> x=<span class="string">"36%"</span> y=<span class="string">"80%"</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"words words-1"</span>&gt;&lt;<span class="regexp">/text&gt;</span></span><br><span class="line"><span class="regexp">        &lt;text id="time" text-anchor="middle" x="36%" y="80%" class="words words-2"&gt;&lt;/</span>text&gt;</span><br><span class="line">        &lt;text id=<span class="string">"time"</span> text-anchor=<span class="string">"middle"</span> x=<span class="string">"36%"</span> y=<span class="string">"80%"</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"words words-3"</span>&gt;&lt;<span class="regexp">/text&gt;</span></span><br><span class="line"><span class="regexp">        &lt;text id="time" text-anchor="middle" x="36%" y="80%" class="words words-4"&gt;&lt;/</span>text&gt;</span><br><span class="line">    &lt;<span class="regexp">/svg&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">showtime</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> noatime = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">    <span class="keyword">var</span> h = noatime.getHours(),</span><br><span class="line">        m = noatime.getMinutes(),</span><br><span class="line">        s = noatime.getSeconds();</span><br><span class="line">    h=checktime(h);</span><br><span class="line">    m=checktime(m);</span><br><span class="line">    s=checktime(s);</span><br><span class="line">  <span class="keyword">return</span> h+<span class="string">":"</span>+m+<span class="string">":"</span>+s;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">checktime</span>(<span class="params">x</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(x&lt;<span class="number">10</span>)&#123;</span><br><span class="line">    x=<span class="string">"0"</span>+x;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> div1=<span class="built_in">document</span>.getElementsByTagName(<span class="string">"text"</span>);</span><br><span class="line">setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i <span class="keyword">in</span> div1)&#123;</span><br><span class="line">      div1[i].innerHTML=showtime();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;,<span class="number">1000</span>);</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></div></li>
-<li>/themes/next/source/css/_custom/目录下,打开custom.styl文件，添加如下内容：  <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVASCRIPT"><figure class="iseeu highlight /javascript"><table><tr><td class="code"><pre><span class="line">.words&#123;</span><br><span class="line">    font-size: <span class="number">50</span>px;</span><br><span class="line">    font-weight: bold;</span><br><span class="line">    text-transform: uppercase;</span><br><span class="line">    fill: none;</span><br><span class="line">    stroke-width: <span class="number">3</span>px;</span><br><span class="line">    stroke-dasharray: <span class="number">35</span>,<span class="number">125</span>;</span><br><span class="line">    animation-name: drawing;</span><br><span class="line">    animation-duration: <span class="number">6</span>s;</span><br><span class="line">    animation-iteration-count: infinite;</span><br><span class="line">    animation-timing-<span class="function"><span class="keyword">function</span>: <span class="title">linear</span>;</span></span><br><span class="line"><span class="function">&#125;</span></span><br><span class="line"><span class="function">.<span class="title">words</span>-1</span>&#123;</span><br><span class="line">    stroke: deepskyblue;</span><br><span class="line">    text-shadow: <span class="number">0</span> <span class="number">0</span> <span class="number">15</span>px deepskyblue;</span><br><span class="line">    animation-delay: <span class="number">-1.5</span>s;</span><br><span class="line">&#125;</span><br><span class="line">.words<span class="number">-2</span>&#123;</span><br><span class="line">    stroke: lightseagreen;</span><br><span class="line">    text-shadow: <span class="number">0</span> <span class="number">0</span> <span class="number">15</span>px lightseagreen;</span><br><span class="line">    animation-delay: <span class="number">-3</span>s;</span><br><span class="line">&#125;</span><br><span class="line">.words<span class="number">-3</span>&#123;</span><br><span class="line">    stroke: orange;</span><br><span class="line">    text-shadow: <span class="number">0</span> <span class="number">0</span> <span class="number">15</span>px orange;</span><br><span class="line">    animation-delay: <span class="number">-4.5</span>s;</span><br><span class="line">&#125;</span><br><span class="line">.words<span class="number">-4</span>&#123;</span><br><span class="line">    stroke: purple;</span><br><span class="line">    text-shadow: <span class="number">0</span> <span class="number">0</span> <span class="number">15</span>px purple;</span><br><span class="line">    animation-delay: <span class="number">-6</span>s;</span><br><span class="line">&#125;</span><br><span class="line">@keyframes drawing &#123;</span><br><span class="line">    <span class="number">100</span>%&#123;</span><br><span class="line">        stroke-dashoffset: <span class="number">-160</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
-<li>之后就可以通过hexo s命令本地运行一下查看一下效果了</li>
-</ul>
-<h1 id="第三款时钟（canvas粒子时钟1）"><a href="#第三款时钟（canvas粒子时钟1）" class="headerlink" title="第三款时钟（canvas粒子时钟1）"></a>第三款时钟（canvas粒子时钟1）</h1><p>效果图：<br><img src="https://img-blog.csdnimg.cn/20200716183536298.gif#pic_center" alt="在这里插入图片描述"></p>
-<ul>
-<li>在 /themes/next/layout/_custom/ 目录下，新建 clock.swig 文件，内容如下：<br><a href="https://github.com/PaddyLin-xum/wenjian/blob/master/clock.swig" target="_blank" rel="noopener">clock.swig</a></li>
-<li>在 /themes/next/layout/_macro/sidebar.swig 中引入：  <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVASCRIPT"><figure class="iseeu highlight /javascript"><table><tr><td class="code"><pre><span class="line">&#123;% include <span class="string">'../_custom/clock.swig'</span> %&#125;</span><br></pre></td></tr></table></figure></div>
-</li>
-</ul>
-<p>这是加在侧栏底部，大家可以根据自己需要加入相应位置。</p>
-<h1 id="第四款时钟（canvas粒子时钟2）"><a href="#第四款时钟（canvas粒子时钟2）" class="headerlink" title="第四款时钟（canvas粒子时钟2）"></a>第四款时钟（canvas粒子时钟2）</h1><p>效果如下<br><img src="https://img-blog.csdnimg.cn/20200716185727168.gif#pic_center" alt="在这里插入图片描述"></p>
-<ul>
-<li>在 /themes/next/layout/_custom/ 目录下，新建 biao.swig 文件，内容如下：<br><a href="https://github.com/PaddyLin-xum/wenjian/blob/master/biao.swig" target="_blank" rel="noopener">biao.swig</a></li>
-<li>在 /themes/next/layout/_macro/sidebar.swig 中引入：  <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVASCRIPT"><figure class="iseeu highlight /javascript"><table><tr><td class="code"><pre><span class="line">&#123;% include <span class="string">'../_custom/biao.swig'</span> %&#125;</span><br></pre></td></tr></table></figure></div>
-这是加在侧栏底部，大家可以根据自己需要加入相应位置。</li>
-</ul>
-<h1 id="第五款时钟"><a href="#第五款时钟" class="headerlink" title="第五款时钟"></a>第五款时钟</h1><p><img src="https://img-blog.csdnimg.cn/2020071619492930.gif#pic_center" alt="在这里插入图片描述"></p>
-<p>在需要位置插入以下代码</p>
-<h2 id=""><a href="#" class="headerlink" title=""></a><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVASCRIPT"><figure class="iseeu highlight /javascript"><table><tr><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">    &lt;iframe src=<span class="string">"http://cdn.abowman.com/widgets/pendulumclock/pendulumClockV2.swf"</span> width=<span class="string">"300"</span> height=<span class="string">"225"</span> scrolling=<span class="string">"NO"</span> frameborder=<span class="string">"0"</span>&gt;&lt;<span class="regexp">/iframe&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br></pre></td></tr></table></figure></div></h2><h1 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h1><p><a href="https://www.liaofuzhan.com/posts/2114475547.html" target="_blank" rel="noopener" class="LinkCard">Leaface的博客</a><br><a href="https://hasaik.com/posts/ab21860c.html" target="_blank" rel="noopener" class="LinkCard">银河小徐的博客</a><br><a href="https://blog.csdn.net/xwmrqqq/article/details/105612763" target="_blank" rel="noopener" class="LinkCard">CSDN：在下摸鱼怪</a></p>
-]]></content>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>自定义“引用”板块</title>
     <url>/2020/07/11/%E8%87%AA%E5%AE%9A%E4%B9%89%E2%80%9C%E5%BC%95%E7%94%A8%E2%80%9D%E6%9D%BF%E5%9D%97/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>摆脱单一引用块使用的困扰<br><img src="https://img-blog.csdnimg.cn/2020071123043061.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><a id="more"></a></p>
@@ -684,9 +573,120 @@
       </tags>
   </entry>
   <entry>
-    <title>PaddyLin的博客</title>
-    <url>/2020/07/04/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="我的博客诞生了"><a href="#我的博客诞生了" class="headerlink" title="我的博客诞生了"></a>我的博客诞生了</h2><p>纪念我在2020年7月4日开始接触hexo和github，并学习了搭建博客</p>
+    <title>添加音乐播放器</title>
+    <url>/2020/07/08/%E7%94%9F%E6%88%90%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://img-blog.csdnimg.cn/20200708130413972.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<a id="more"></a>
+<h1 id="博客制作单独页面音乐播放器"><a href="#博客制作单独页面音乐播放器" class="headerlink" title="博客制作单独页面音乐播放器"></a>博客制作单独页面音乐播放器</h1><hr>
+<p>首先我们给出效果图<br><img src="https://img-blog.csdnimg.cn/20200708121933181.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="">接下来让我们开始操作吧！！！</p>
+<h2 id="1、添加“我的音乐”模块"><a href="#1、添加“我的音乐”模块" class="headerlink" title="1、添加“我的音乐”模块"></a><strong>1、添加“我的音乐”模块</strong></h2><p>在<code>Git Bash</code>中执行代码<br><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="code"><pre><span class="line">$ hexo new page playlist</span><br></pre></td></tr></table></figure></div><br>之后会在博客<code>sourse</code>目录下生成文件<code>playlist</code>，修改里面<code>index</code>文件如下</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 歌单</span><br><span class="line">date: 2020-07-08 10:08:04</span><br><span class="line"><span class="built_in">type</span>: <span class="string">"playlist"</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure></div>
+<p>我引用的主题为<code>spfk</code>，我们在<code>theme\spfk\lanhuages</code>下找到<code>zh-Hans.yml</code><br>并在<code>menu</code>下添加<code>playlist: 歌单</code></p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  menu: 菜单</span><br><span class="line">  home: 首页</span><br><span class="line">  archives: 归档</span><br><span class="line">  categories: 分类</span><br><span class="line">  playlist: 歌单</span><br></pre></td></tr></table></figure></div>
+<h2 id="2、添加-hexo-tag-aplayer-插件"><a href="#2、添加-hexo-tag-aplayer-插件" class="headerlink" title="2、添加 hexo-tag-aplayer 插件"></a><strong>2、添加 hexo-tag-aplayer 插件</strong></h2><p>安装执行<br><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="code"><pre><span class="line">$ npm install --save hexo-tag-aplayer</span><br></pre></td></tr></table></figure></div><br>在 Hexo 配置文件<code>_config.yml</code>中设置</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="code"><pre><span class="line">aplayer:</span><br><span class="line">   meting: true</span><br></pre></td></tr></table></figure></div>
+<p>接着就可以使用 MetingJS 播放器了，例如我们在 Hexo的<code>sourse\playlist\index</code>中添加歌单模块</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="code"><pre><span class="line">&#123;% meting <span class="string">"523845661"</span> <span class="string">"netease"</span> <span class="string">"playlist"</span> <span class="string">"theme:#FF4081"</span> <span class="string">"mode:circulation"</span> <span class="string">"mutex:true"</span> <span class="string">"listmaxheight:340px"</span> <span class="string">"preload:auto"</span> %&#125;</span><br></pre></td></tr></table></figure></div>
+<p>和</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PYTHON"><figure class="iseeu highlight /python"><table><tr><td class="code"><pre><span class="line">&#123;% meting <span class="string">"547791232"</span> <span class="string">"netease"</span> <span class="string">"playlist"</span> <span class="string">"theme:#FF4081"</span> <span class="string">"mode:circulation"</span> <span class="string">"mutex:true"</span> <span class="string">"listmaxheight:340px"</span> <span class="string">"preload:auto"</span> %&#125;</span><br></pre></td></tr></table></figure></div>
+<p>找到博客中的“我的音乐”就可以看到我们第一张图中的结果</p>
+<h2 id="3、歌单模块中的参数设置"><a href="#3、歌单模块中的参数设置" class="headerlink" title="3、歌单模块中的参数设置"></a><strong>3、歌单模块中的参数设置</strong></h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>默认值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>必须值</td>
+<td>歌曲 id / 播放列表 id / 相册 id / 搜索关键字</td>
+</tr>
+<tr>
+<td>server</td>
+<td>必须值</td>
+<td>音乐平台: netease, tencent, kugou, xiami, baidu</td>
+</tr>
+<tr>
+<td>type</td>
+<td>必须值</td>
+<td>song, playlist, album, search, artist</td>
+</tr>
+<tr>
+<td>fixed</td>
+<td>false</td>
+<td>开启固定模式</td>
+</tr>
+<tr>
+<td>mini</td>
+<td>false</td>
+<td>开启迷你模式</td>
+</tr>
+<tr>
+<td>loop</td>
+<td>all</td>
+<td>列表循环模式：all, one,none</td>
+</tr>
+<tr>
+<td>order</td>
+<td>list</td>
+<td>列表播放模式： list, random</td>
+</tr>
+<tr>
+<td>volume</td>
+<td>0.7</td>
+<td>播放器音量</td>
+</tr>
+<tr>
+<td>lrctype</td>
+<td>0</td>
+<td>歌词格式类型</td>
+</tr>
+<tr>
+<td>listfolded</td>
+<td>false</td>
+<td>指定音乐播放列表是否折叠</td>
+</tr>
+<tr>
+<td>storagename</td>
+<td>metingjs</td>
+<td>LocalStorage 中存储播放器设定的键名</td>
+</tr>
+<tr>
+<td>autoplay</td>
+<td>true</td>
+<td>自动播放，移动端浏览器暂时不支持此功能</td>
+</tr>
+<tr>
+<td>mutex</td>
+<td>true</td>
+<td>该选项开启时，如果同页面有其他 aplayer 播放，该播放器会暂停</td>
+</tr>
+<tr>
+<td>listmaxheight</td>
+<td>340px</td>
+<td>播放列表的最大长度</td>
+</tr>
+<tr>
+<td>preload</td>
+<td>auto</td>
+<td>音乐文件预载入模式，可选项： none, metadata, auto</td>
+</tr>
+<tr>
+<td>theme</td>
+<td>#ad7a86</td>
+<td>播放器风格色彩设置</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="4、结语"><a href="#4、结语" class="headerlink" title="4、结语"></a><strong>4、结语</strong></h2><p>关于音乐的板块制作到此结束了，但是当我们换页面时，音乐会停止播放。要做到切换页面时，音乐继续播放，需要安装 <code>Pajx</code> 插件，但是我还没弄懂怎么做，大家可以去搜索一下资料，弄懂了也可以告诉我哦！！！，下一篇我们将介绍怎么获得<code>音乐id</code></p>
 ]]></content>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
   </entry>
 </search>
