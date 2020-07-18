@@ -13,7 +13,7 @@
     var defaults = {
 
             // 宽度
-            width: 340,
+            width: 280,
             // 高度, 不包含头部，头部固定高度
             height: 280,
 

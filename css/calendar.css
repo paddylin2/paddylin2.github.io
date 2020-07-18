@@ -1,5 +1,5 @@
 .calendar {
-    width: 340px;
+    width: 280px;
     height: 330px;
 }
 .calendar-modal {
@@ -78,7 +78,7 @@
 }
 .calendar-arrow,
 .calendar-display {
-    color: #222;
+    color: #ddd;
 }
 .calendar li[disabled] {
     color: #bbb;
