@@ -1,5 +1,4 @@
 $(function(){
-$('#zzsc').html('<canvas id="canvas"></canvas>');
 var WINDOW_WIDTH = 920;
 		var WINDOW_HEIGHT = 400;
 		var RADIUS = 7; //球半径
