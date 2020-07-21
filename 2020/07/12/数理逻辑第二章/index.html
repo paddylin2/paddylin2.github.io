@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>数理逻辑第二章 | PaddyLin的博客</title><meta name="description" content="这章主要讲了等值式和范式及其应用"><meta name="keywords" content="数理逻辑"><meta name="author" content="Paddy"><meta name="copyright" content="Paddy"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.PNG"><link rel="canonical" href="https://www.paddylin.top/2020/07/12/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91%E7%AC%AC%E4%BA%8C%E7%AB%A0/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"><link rel="preconnect" href="//busuanzi.ibruce.info"><meta property="og:type" content="article"><meta property="og:title" content="数理逻辑第二章"><meta property="og:url" content="https://www.paddylin.top/2020/07/12/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91%E7%AC%AC%E4%BA%8C%E7%AB%A0/"><meta property="og:site_name" content="PaddyLin的博客"><meta property="og:description" content="这章主要讲了等值式和范式及其应用"><meta property="og:image" content="https://img-blog.csdnimg.cn/20200713202337417.PNG"><meta property="article:published_time" content="2020-07-12T15:34:11.732Z"><meta property="article:modified_time" content="2020-07-19T11:06:22.466Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>数理逻辑第二章 | PaddyLin的博客</title><meta name="description" content="这章主要讲了等值式和范式及其应用"><meta name="keywords" content="数理逻辑"><meta name="author" content="Paddy"><meta name="copyright" content="Paddy"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.PNG"><link rel="canonical" href="https://www.paddylin.top/2020/07/12/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91%E7%AC%AC%E4%BA%8C%E7%AB%A0/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="数理逻辑第二章"><meta property="og:url" content="https://www.paddylin.top/2020/07/12/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91%E7%AC%AC%E4%BA%8C%E7%AB%A0/"><meta property="og:site_name" content="PaddyLin的博客"><meta property="og:description" content="这章主要讲了等值式和范式及其应用"><meta property="og:image" content="https://img-blog.csdnimg.cn/20200713202337417.PNG"><meta property="article:published_time" content="2020-07-12T15:34:11.732Z"><meta property="article:modified_time" content="2020-07-19T11:06:22.466Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
   document.documentElement.setAttribute('data-theme', 'dark')
   if (document.querySelector('meta[name="theme-color"]') !== null) {
     document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
@@ -52,7 +52,260 @@ if (autoChangeMode === '1') {
 } else {
   if (t === 'dark') activateDarkMode()
   else if (t === 'light') activateLightMode()
-}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="prev" title="五款Hexo音乐播放器推荐" href="https://www.paddylin.top/2020/07/15/%E4%BA%94%E6%AC%BEHexo%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E6%8E%A8%E8%8D%90/"><link rel="next" title="画廊（相册）制作" href="https://www.paddylin.top/2020/07/12/%E7%94%BB%E5%BB%8A%EF%BC%88%E7%9B%B8%E5%86%8C%EF%BC%89%E5%88%B6%E4%BD%9C/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG={root:"/",algolia:void 0,localSearch:{path:"search.xml",languages:{hits_empty:"We didn't find any results for the search: ${query}"}},translate:{defaultEncoding:2,translateDelay:0,msgToTraditionalChinese:"繁",msgToSimplifiedChinese:"簡"},copy:{success:"Copy successfully",error:"Copy error",noSupport:"The browser does not support"},bookmark:{message_prev:"Press",message_next:"to bookmark this page"},runtime_unit:"days",runtime:!0,copyright:void 0,ClickShowText:void 0,medium_zoom:!1,fancybox:!0,Snackbar:{bookmark:{message_prev:"Press",message_next:"to bookmark this page"},chs_to_cht:"Traditional Chinese Activated Manually",cht_to_chs:"Simplified Chinese Activated Manually",day_to_night:"Dark Mode Activated Manually",night_to_day:"Light Mode Activated Manually",bgLight:"#49b1f5",bgDark:"#121212",position:"bottom-left"},justifiedGallery:{js:"https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js",css:"https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css"},baiduPush:!1,highlightCopy:!0,highlightLang:!0,isPhotoFigcaption:!1,islazyload:!0,isanchor:!1}</script><script>var GLOBAL_CONFIG_SITE={isPost:!0,isHome:!1,isHighlightShrink:!1,isSidebar:!0}</script><noscript><style>#nav{opacity:1}.justified-gallery img{opacity:1}</style></noscript><link rel="stylesheet" href="//at.alicdn.com/t/font_1953542_wn6asyp7en.css"><link rel="stylesheet" href="/css/background.css"><link rel="stylesheet" href="/css/xiangce.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"><script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script><script src="js/zzsc.js"></script><script src="js/jquery-1.8.3.min.js"></script><meta name="generator" content="Hexo 4.2.1"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">Loading...</div></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/author.jpg" onerror='onerror=null,src="/img/friend_404.gif"' alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">Articles</div><div class="length_num">20</div></a></div></div><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/tags/"><div class="headline">Tags</div><div class="length_num">5</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i> <span>首页</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw iconfont icon-bilibili"></i> <span>b站</span></a></div><div class="menus_item"><a class="site-page" href="/playlist"><i class="fa-fw fas fa-music"></i> <span>音乐</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i> <span>友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i> <span>关于我</span></a></div><div class="menus_item"><a class="site-page" href="/gallery"><i class="fa-fw fas fa-camera"></i> <span>画廊</span></a></div><div class="menus_item"><a class="site-page" href="/shige"><i class="fa-fw fas fa-heartbeat"></i> <span>诗歌</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw iconfont icon-douban"></i> <span>豆瓣</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/books"><i class="fa-fw fas fa-book"></i> <span>图书</span></a></li><li><a class="site-page" href="/movies"><i class="fa-fw fas fa-film"></i> <span>电影</span></a></li><li><a class="site-page" href="/games"><i class="fa-fw fas fa-gamepad"></i> <span>游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/qita"><i class="fa-fw fa fa-apple"></i> <span>其他</span></a></div></div></div></div><i class="fas fa-arrow-right" id="toggle-sidebar"></i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#第一节、等值式"><span class="toc-number">1.</span> <span class="toc-text">第一节、等值式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#判断两个公式等值的方法"><span class="toc-number">1.1.</span> <span class="toc-text">判断两个公式等值的方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#真值表法"><span class="toc-number">1.1.1.</span> <span class="toc-text">真值表法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#利用已知等值式代换得到新的等值式"><span class="toc-number">1.1.2.</span> <span class="toc-text">利用已知等值式代换得到新的等值式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#等值演算"><span class="toc-number">1.2.</span> <span class="toc-text">等值演算</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#证明等值式"><span class="toc-number">1.2.1.</span> <span class="toc-text">证明等值式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#判断公式类型"><span class="toc-number">1.2.2.</span> <span class="toc-text">判断公式类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文字断案问题"><span class="toc-number">1.2.3.</span> <span class="toc-text">文字断案问题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第二节、析取范式与合取范式"><span class="toc-number">2.</span> <span class="toc-text">第二节、析取范式与合取范式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#基本铺垫"><span class="toc-number">2.1.</span> <span class="toc-text">基本铺垫</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主析取范式的用途（主合取范式类似讨论）"><span class="toc-number">2.2.</span> <span class="toc-text">主析取范式的用途（主合取范式类似讨论）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第三节、连接词的完备集"><span class="toc-number">3.</span> <span class="toc-text">第三节、连接词的完备集</span></a></li></ol></div></div></div><div id="body-wrap"><div id="web_bg" data-type="color"></div><header class="post-bg" id="page-header" style="background-image:url(https://img-blog.csdnimg.cn/20200713202337417.PNG)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">PaddyLin的博客</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i> <span>Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i> <span>首页</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw iconfont icon-bilibili"></i> <span>b站</span></a></div><div class="menus_item"><a class="site-page" href="/playlist"><i class="fa-fw fas fa-music"></i> <span>音乐</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i> <span>友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i> <span>关于我</span></a></div><div class="menus_item"><a class="site-page" href="/gallery"><i class="fa-fw fas fa-camera"></i> <span>画廊</span></a></div><div class="menus_item"><a class="site-page" href="/shige"><i class="fa-fw fas fa-heartbeat"></i> <span>诗歌</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw iconfont icon-douban"></i> <span>豆瓣</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/books"><i class="fa-fw fas fa-book"></i> <span>图书</span></a></li><li><a class="site-page" href="/movies"><i class="fa-fw fas fa-film"></i> <span>电影</span></a></li><li><a class="site-page" href="/games"><i class="fa-fw fas fa-gamepad"></i> <span>游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/qita"><i class="fa-fw fa fa-apple"></i> <span>其他</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">数理逻辑第二章</div></div><div id="post-meta"><div class="meta-firstline"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2020-07-12 23:34:11"><i class="far fa-calendar-alt fa-fw"></i> Created 2020-07-12</span><span class="post-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2020-07-19 19:06:22"><i class="fas fa-history fa-fw"></i> Updated 2020-07-19</span></time></div><div class="meta-secondline"><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta__icon"></i> <span>Word count:</span><span class="word-count">2.2k</span><span class="post-meta__separator">|</span><i class="far fa-clock fa-fw post-meta__icon"></i><span>Reading time: 8 min</span></span></div><div class="meta-thirdline"><span class="post-meta-pv-cv"></span><span class="post-meta-commentcount"></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><h1 id="第一节、等值式"><a href="#第一节、等值式" class="headerlink" title="第一节、等值式"></a>第一节、等值式</h1><p><strong>定义</strong>：设A,B是两个命题公式，若A，B构成的等价式A $\leftrightarrow$ B为重言式，则称A与B是等值的，记作A$\Leftrightarrow$ B。</p><blockquote class="question">注：A$\Leftrightarrow$ 1,则A为重言式， A$\Leftrightarrow$ 0,则A为矛盾式</blockquote><h2 id="判断两个公式等值的方法"><a href="#判断两个公式等值的方法" class="headerlink" title="判断两个公式等值的方法"></a>判断两个公式等值的方法</h2><h3 id="真值表法"><a href="#真值表法" class="headerlink" title="真值表法"></a>真值表法</h3><p>例如判断p$\to$(q$\to$r)和（p$\to$q)$\to$r是否相等</p><div class="table-container"><table><thead><tr><th>p</th><th>q</th><th>r</th><th>p$\wedge$q</th><th>q$\to$r</th><th>p$\to$(q$\to$r)</th><th>(p$\to$q)$\to$r</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td></tr><tr><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td></tr><tr><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr><tr><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td></tr><tr><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td></tr><tr><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td></tr><tr><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td></tr><tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr></tbody></table></div><p>由此可知两式是等值式。但是用真值表，工作量比较大。</p><h3 id="利用已知等值式代换得到新的等值式"><a href="#利用已知等值式代换得到新的等值式" class="headerlink" title="利用已知等值式代换得到新的等值式"></a>利用已知等值式代换得到新的等值式</h3><blockquote><ul><li>(p$\wedge\rceil$q)$\vee$($\rceil$p$\wedge$q) $\Leftrightarrow$（p$\vee$q）$\wedge$$\rceil$(p$\wedge$q)</li></ul></blockquote><p>我们有这么一个结论<br></p><blockquote class="question">设A是含有命题变项$p_1,p_2,\cdots,p_n$的命题公式，$A_1,A_2,\cdots,A_n$是任意的命题公式。对每一个i，把$p_i$在A中的所有出现都替换成$A_i$所得的新公式记为B。那么如果A是重言式，则B也是重言式</blockquote><p></p><ul><li>根据$p\leftrightarrow\rceil\rceil$p是重言式和上面的结论知，对于任意的A，都有$A\leftrightarrow\rceil\rceil$A是重言式，即$A\Leftrightarrow\rceil\rceil$A</li></ul><p>需要记忆的16组重要的等值式模式</p><blockquote><ul><li>双重否定律(双重否定表肯定)：<br>$\rceil\rceil$A$\Leftrightarrow$A</li><li>等幂律(一件事情说两遍)：<br>A$\vee$A⟺A，A$\wedge$A⟺A</li><li>交换律：<br>A$\vee$B⟺B$\vee$A，A$\wedge$B⟺B$\wedge$A</li><li>结合律：<br>(A$\vee$B)$\vee$C⟺A$\vee$(B$\vee$C)<br>(A$\wedge$B)$\wedge$C⟺A$\wedge$(B$\wedge$C)</li><li>分配律：<br>A$\vee$(B$\wedge$C)⟺(A$\vee$B)$\wedge$(A$\vee$C)<br>A$\wedge$(B$\vee$C)⟺(A$\wedge$B)$\vee$(A$\wedge$C)</li><li>德摩根律(去括号要变号)：<br>$\rceil$(A$\vee$B)⟺$\rceil$A$\wedge\rceil$B<br>$\rceil$(A$\wedge$B)⟺$\rceil$A$\vee\rceil$B</li><li>吸收律：<br>A$\vee$(A$\wedge$B)⟺A<br>A$\wedge$(A$\vee$B)⟺A</li><li>零律：<br>A$\vee$1⟺1<br>A$\wedge$0⟺0</li><li>同一律：<br>A$vee$0⟺A<br>A$\wedge$1⟺A</li><li>排中律：<br>A$\vee\rceil$A⟺1</li><li>矛盾律：<br>A$\wedge\rceil$A⟺0</li><li>蕴含等值式：<br>A$\to$B⟺$\rceil$A$\vee$B</li><li>等价等值式<br>A$\leftrightarrow$B⟺(A$\to$B)$\wedge$(B$\to$A)</li><li>假言易位(逆否命题)<br>A$\to$B⟺$\rceil$B$\leftrightarrow\rceil$A</li><li>等价否定等值式<br>A$\leftrightarrow$B⟺$\rceil$A$\to\rceil$B</li><li>归谬论(前提AAA错误)：<br>(A$\leftrightarrow$B)$\wedge$(A$\leftrightarrow\rceil$B)⟺$\rceil$A</li></ul></blockquote><h2 id="等值演算"><a href="#等值演算" class="headerlink" title="等值演算"></a>等值演算</h2><p><strong>等值演算</strong>：由已知的等值式推演出另外一些等值式的过程。<br><strong>置换规则</strong>：设$\Phi(A)$是包含A的命题公式，$\Phi(B)$用B置换了$\Phi(A)$中的所有（或部分）A得到的公式，若A$\Leftrightarrow$B，则$\Phi$(A)$\Leftrightarrow\Phi$(B)<br>等值演算的用途：</p><h3 id="证明等值式"><a href="#证明等值式" class="headerlink" title="证明等值式"></a>证明等值式</h3><p>例：验证p$\to$(q$\to$r)$\Leftrightarrow$（p$\to$q)$\to$r</p><blockquote><p>右边$\Leftrightarrow\rceil$(p$\wedge$q)$\vee$r$\Leftrightarrow$($\rceil$p$\vee\rceil$q)$\vee$r$\Leftrightarrow\rceil$p$\vee$($\rceil$q$\vee$r)$\Leftrightarrow\rceil$p$\vee$(q$\to$r)$\Leftrightarrow$p$\to$(q$\to$r)</p></blockquote><h3 id="判断公式类型"><a href="#判断公式类型" class="headerlink" title="判断公式类型"></a>判断公式类型</h3><p>例：判断公式(p$\to$q)$\wedge$p$\to$q</p><blockquote><p>原式$\Leftrightarrow\rceil$((p$\to$q)$\wedge$p)$\vee$q<br>$\Leftrightarrow\rceil$(($\rceil$p$\vee$q)$\wedge$p)$\vee$q<br>$\Leftrightarrow\rceil$($\rceil$p$\vee$q)$\vee\rceil$p$\vee$q<br>$\Leftrightarrow$(p$\wedge\rceil$q)$\vee\rceil$p$\vee$q<br>$\Leftrightarrow$(p$\vee\rceil$q)$\wedge$($\rceil$p$\vee\rceil$q)$\vee$q<br>$\Leftrightarrow$1$\wedge$($\rceil$p$\vee\rceil$q)$\vee$q<br>$\Leftrightarrow$($\rceil$p$\vee\rceil$q)$\vee$q<br>$\Leftrightarrow\rceil$p$\vee(\rceil$q$\vee$q)<br>$\Leftrightarrow\rceil$p$\vee$1<br>$\Leftrightarrow$1</p></blockquote><h3 id="文字断案问题"><a href="#文字断案问题" class="headerlink" title="文字断案问题"></a>文字断案问题</h3><p>具体分析看课件</p><h1 id="第二节、析取范式与合取范式"><a href="#第二节、析取范式与合取范式" class="headerlink" title="第二节、析取范式与合取范式"></a>第二节、析取范式与合取范式</h1><h2 id="基本铺垫"><a href="#基本铺垫" class="headerlink" title="基本铺垫"></a>基本铺垫</h2><p><strong>文字</strong>：命题变式及其否定式统称为文字。如$p$和$\rceil p$<br><strong>简单析取式</strong>：仅有有限个文字组成的析取式。如$p \vee q$<br><strong>简单合取式</strong>：仅有有限个文字组成的合取式。如$p \wedge q$<br></p><blockquote class="question">为方便起见，有时候用$A_i$表示一个简单析取/合取式</blockquote><p></p><p><strong>定理</strong>：一个简单析取式是重言式$\Leftrightarrow$它同时含有某个命题变项及其否定式；一个简单合取式是矛盾式$\Leftrightarrow$它同时含有某个命题变项及其否定式。</p><p><strong>析取范式</strong>：由有限个简单合取式构成的析取式。<br><strong>合取范式</strong>：由有限个简单析取式构成的合取式。<br><strong>范式</strong>：析取范式与合取范式统称为范式。</p><blockquote class="question">注：一个简单合取式既是析取范式，又是合取范式；一个简单析取式既是合取范式，又是析取范式</blockquote><p><strong>定理</strong>：(1)一个析取范式是矛盾式$\Leftrightarrow$它的每个简单合取式都是矛盾式。(2)一个合取范式是重言式$\Leftrightarrow$它的每个简单析取式都是重言式。</p><p><strong>定理</strong>: (范式存在定理)任一个命题公式都存在着与之等值的析取范式与合取范式。<br><strong>步骤</strong>:</p><ol><li>消去连接词$\to$、$\Leftrightarrow$<blockquote><p>A $\to$B $\Leftrightarrow$($\rceil$ A $\vee$ B)<br>A$\leftrightarrow$B $\Leftrightarrow$( $\rceil$A $\vee$ B) $\wedge$ (A $\vee\rceil$ B)</p></blockquote></li><li>否定联接词的消去或内移。</li><li>利用分配律</li></ol><p><strong>定义</strong>:在含有n个命题变项的简单合（析）取式中，每个命题变项和它的否定不同时出现，而二者之一必出现且仅出现一次，且第i个命题变项或它的否定式出现在从左算起的第i位上（若命题变项无角标，就按字母顺序），称这样的简单合（析）取式为极小（大）项。</p><p><strong>定理</strong>：(1)每个极小项，如$p_1$ $\wedge$ $p_2$ $\wedge$ $p_3$ $\wedge\cdots\wedge$ $p_n$,有且仅有一个成真赋值，若成真赋值所对应的二进制数转化为十进制数为i，就将所对应的极小项记作$m_i$。(2)每个极大项，如$p_1$ $\vee$ $p_2$ $\vee$ $p_3$ $\vee\cdots\vee$ $p_n$,有且仅有一个成假赋值，若成假赋值所对应的二进制数转化为十进制数为i，就将所对应的极大项记作$M_i$。</p><p><strong>定理</strong>:(极小项与极大项关系)设$m_i$和$M_i$是命题变项$p_1$,$p_2$,$\cdots$,$p_n$形成的极小项和极大项，则$\rceil$ $m_i$ $\Leftrightarrow$ $M_i$，$\rceil$ $M_i$ $\Leftrightarrow$ $m_i$</p><p><strong>定义</strong>:设由n个命题变项构成的析（合）取范式中所有的简单合（析）取式都是极小（大）项，则且无重复出现，则称该析（合）取范式为主析（合）取范式。</p><p><strong>定理</strong>:任何命题公式都存在着与之等值的主析取范式和主合取范式，并且（在不计极小（大）项的顺序的前提下）是唯一的。</p><p><strong>结论</strong>:主析取范式的极小项的下标（对应的0，1符号串）恰为原命题公式的成真赋值，而主合取范式的极大项的下标（对应的0，1符号串）恰为原命题公式的成假赋值。它们二者是互“补”的<br></p><blockquote class="question">因此，当命题变项比较少时，可以求真值表法来求主范式</blockquote><p></p><h2 id="主析取范式的用途（主合取范式类似讨论）"><a href="#主析取范式的用途（主合取范式类似讨论）" class="headerlink" title="主析取范式的用途（主合取范式类似讨论）"></a>主析取范式的用途（主合取范式类似讨论）</h2><ol><li>求公式的成真/成假赋值：若公式A中含有n个命题变项，且A的主析取范式含s个极小项，则A有s个成真赋值，有$2^n$-s个成假赋值。</li><li>判断公式的类型：<ul><li>A为重言式$\Leftrightarrow$A的主析取范式含全部$2^n$个极小项。</li><li>A为矛盾式$\Leftrightarrow$A的主析取范式不含任何极小项。</li><li>A为满足式$\Leftrightarrow$A的主析取范式至少含1个极小项。</li></ul></li><li>判断两个命题公式是否等值。设公式A、B中共含有n个命题变项，按n个命题变项求出A、B的主析取范式$M$、$N$。 若$M$=$N$ ，则A$\Leftrightarrow$B，否则A、B不等值</li></ol><blockquote class="question">注：重言式不含极大项，其主合取范式记为1。矛盾式不含极小项，其主析取范式记为0。</blockquote><h1 id="第三节、连接词的完备集"><a href="#第三节、连接词的完备集" class="headerlink" title="第三节、连接词的完备集"></a>第三节、连接词的完备集</h1><p><strong>定义</strong>：称F：{0,1}$^n$ $\to${0,1}为n元真值函数。这里{0,1}$^n$是长为n的0和1构成的所有字符串形式的集合</p><p><strong>定义</strong>:设S是一个联结词集合，如果任何n元真值函数都可以由仅含S中的联结词构成的命题公式表示，则称S是一个联结词完备集。</p><blockquote class="question">含有n个命题变项的公式的真值表(指最后一列)至多有$2^{2^n}$。</blockquote><p><strong>定理</strong>:S={$\rceil$,$\wedge$,$\vee$}是联接词的完备集</p><p><strong>推论</strong>:以下联接词集都是完备集</p><ul><li>S={$\rceil$,$\wedge$,$\vee$,$\to$,$\leftrightarrow$}</li><li>S={$\rceil$,$\wedge$,$\vee$,$\to$}</li><li>S={$\rceil$,$\wedge$}</li><li>S={$\rceil$,$\vee$}</li><li>S={$\rceil$,$\to$}</li></ul><p><strong>定义</strong>: 设p和q是两个命题，复合命题“p与（或）q的否定式” 称为p，q的与非式（或非式），记作p$\uparrow$q（ p$\downarrow$q ），符号$\uparrow$（ $\downarrow$ ）称为与（或）非联结词。并规定p$\uparrow$q为真当且仅当p与q不同时为真（p$\downarrow$q为真当且仅当p与q同时为假。）</p><p><strong>定理</strong>:{$\uparrow$}、{$\downarrow$}都是联接词的完备集</p></div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author:</span> <span class="post-copyright-info"><a href="mailto:undefined">Paddy</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link:</span> <span class="post-copyright-info"><a href="https://www.paddylin.top/2020/07/12/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91%E7%AC%AC%E4%BA%8C%E7%AB%A0/">https://www.paddylin.top/2020/07/12/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91%E7%AC%AC%E4%BA%8C%E7%AB%A0/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice:</span> <span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91/">数理逻辑</a></div><div class="post_share"><div class="social-share" data-image="/img/1.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><button class="reward-button"><i class="fas fa-qrcode"></i> Donate<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="post-qr-code__img" src="/img/wechat.png" alt="wechat" onclick='window.open("/img/wechat.png")'><div class="post-qr-code__desc">wechat</div></li><li class="reward-item"><img class="post-qr-code__img" src="/img/alipay.png" alt="alipay" onclick='window.open("/img/alipay.png")'><div class="post-qr-code__desc">alipay</div></li></ul></div></button></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2020/07/15/%E4%BA%94%E6%AC%BEHexo%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E6%8E%A8%E8%8D%90/"><img class="prev-cover" data-src="https://img-blog.csdnimg.cn/20200715175140290.PNG" onerror='onerror=null,src="/img/404.jpg"'><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">五款Hexo音乐播放器推荐</div></div></a></div><div class="next-post pull-right"><a href="/2020/07/12/%E7%94%BB%E5%BB%8A%EF%BC%88%E7%9B%B8%E5%86%8C%EF%BC%89%E5%88%B6%E4%BD%9C/"><img class="next-cover" data-src="https://img-blog.csdnimg.cn/20200712174249594.PNG" onerror='onerror=null,src="/img/404.jpg"'><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">画廊（相册）制作</div></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fas fa-thumbs-up fa-fw"></i> <span>Related Articles</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/2020/07/11/数理逻辑第一章/" title="数理逻辑第一章"><img class="relatedPosts_cover" data-src="https://img-blog.csdnimg.cn/20200711230726452.PNG"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-07-11</div><div class="relatedPosts_title">数理逻辑第一章</div></div></a></div><div class="relatedPosts_item"><a href="/2020/07/17/数理逻辑第三章/" title="数理逻辑第三章"><img class="relatedPosts_cover" data-src="https://img-blog.csdnimg.cn/20200713202337417.PNG"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-07-17</div><div class="relatedPosts_title">数理逻辑第三章</div></div></a></div></div></div><hr><div id="post-comment"><div class="comment_headling"><i class="fas fa-comments fa-fw"></i> <span>Comment</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var requestSetting=function(i,e){i=i;var n=e.split(",").filter(function(e){return-1<i.indexOf(e)});return n=0==n.length?i:n},guestInfo=requestSetting(["nick","mail","link"],"nick,mail,link"),requiredFields=requestSetting(["nick","mail"],"nick,mail");window.valine=new Valine({el:"#vcomment",appId:"OUCMtOBo79jERvniRk3JDri6-gzGzoHsz",appKey:"uD8EeO34CUYMlwetpQUguOHj",placeholder:"Please leave your footprints",avatar:"monsterid",meta:guestInfo,pageSize:"10",lang:"en",recordIP:!1,serverURLs:"",emojiCDN:"",emojiMaps:"",enableQQ:!1,requiredFields:requiredFields})</script></div></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By Paddy</div><div class="framework-info"><span>Driven</span> <a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme</span> <a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="footer_custom_text">Welcome to my <a href="https://www.paddylin.top">blog</a>!</div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><button id="readmode" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font_plus" title="Increase Font Size"><i class="fas fa-plus"></i></button><button id="font_minus" title="Decrease Font Size"><i class="fas fa-minus"></i></button><button class="translate_chn_to_cht" id="translateLink" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" title="Setting"><i class="fas fa-cog"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="scroll_to_comment fas fa-comments"></i></a><button class="close" id="mobile-toc-button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="chat_btn" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><button id="go-up" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">Local search</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>Powered by</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49b1f5">hexo-generator-search</a></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div class="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="prev" title="五款Hexo音乐播放器推荐" href="https://www.paddylin.top/2020/07/15/%E4%BA%94%E6%AC%BEHexo%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E6%8E%A8%E8%8D%90/"><link rel="next" title="画廊（相册）制作" href="https://www.paddylin.top/2020/07/12/%E7%94%BB%E5%BB%8A%EF%BC%88%E7%9B%B8%E5%86%8C%EF%BC%89%E5%88%B6%E4%BD%9C/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: {"bookmark":{"message_prev":"Press","message_next":"to bookmark this page"},"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: true
+  }</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img{
+  opacity: 1
+}
+</style></noscript><link rel="stylesheet" href="//at.alicdn.com/t/font_1953542_wn6asyp7en.css"><link rel="stylesheet" href="/css/background.css"><link rel="stylesheet" href="/css/xiangce.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"><script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script><script src="js/zzsc.js"></script><script type="text/javascript" src="js/jquery-1.8.3.min.js"></script><meta name="generator" content="Hexo 4.2.1"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">Loading...</div></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/author.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">Articles</div><div class="length_num">20</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">Tags</div><div class="length_num">5</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw iconfont icon-bilibili"></i><span> b站</span></a></div><div class="menus_item"><a class="site-page" href="/playlist"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于我</span></a></div><div class="menus_item"><a class="site-page" href="/gallery"><i class="fa-fw fas fa-camera"></i><span> 画廊</span></a></div><div class="menus_item"><a class="site-page" href="/shige"><i class="fa-fw fas fa-heartbeat"></i><span> 诗歌</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw iconfont icon-douban"></i><span> 豆瓣</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/books"><i class="fa-fw fas fa-book"></i><span> 图书</span></a></li><li><a class="site-page" href="/movies"><i class="fa-fw fas fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/games"><i class="fa-fw fas fa-gamepad"></i><span> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/qita"><i class="fa-fw fa fa-apple"></i><span> 其他</span></a></div></div></div></div><i class="fas fa-arrow-right" id="toggle-sidebar"></i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#第一节、等值式"><span class="toc-number">1.</span> <span class="toc-text">第一节、等值式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#判断两个公式等值的方法"><span class="toc-number">1.1.</span> <span class="toc-text">判断两个公式等值的方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#真值表法"><span class="toc-number">1.1.1.</span> <span class="toc-text">真值表法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#利用已知等值式代换得到新的等值式"><span class="toc-number">1.1.2.</span> <span class="toc-text">利用已知等值式代换得到新的等值式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#等值演算"><span class="toc-number">1.2.</span> <span class="toc-text">等值演算</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#证明等值式"><span class="toc-number">1.2.1.</span> <span class="toc-text">证明等值式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#判断公式类型"><span class="toc-number">1.2.2.</span> <span class="toc-text">判断公式类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文字断案问题"><span class="toc-number">1.2.3.</span> <span class="toc-text">文字断案问题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第二节、析取范式与合取范式"><span class="toc-number">2.</span> <span class="toc-text">第二节、析取范式与合取范式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#基本铺垫"><span class="toc-number">2.1.</span> <span class="toc-text">基本铺垫</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主析取范式的用途（主合取范式类似讨论）"><span class="toc-number">2.2.</span> <span class="toc-text">主析取范式的用途（主合取范式类似讨论）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第三节、连接词的完备集"><span class="toc-number">3.</span> <span class="toc-text">第三节、连接词的完备集</span></a></li></ol></div></div></div><div id="body-wrap"><div id="web_bg" data-type="color"></div><header class="post-bg" id="page-header" style="background-image: url(https://img-blog.csdnimg.cn/20200713202337417.PNG)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">PaddyLin的博客</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw iconfont icon-bilibili"></i><span> b站</span></a></div><div class="menus_item"><a class="site-page" href="/playlist"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于我</span></a></div><div class="menus_item"><a class="site-page" href="/gallery"><i class="fa-fw fas fa-camera"></i><span> 画廊</span></a></div><div class="menus_item"><a class="site-page" href="/shige"><i class="fa-fw fas fa-heartbeat"></i><span> 诗歌</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw iconfont icon-douban"></i><span> 豆瓣</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/books"><i class="fa-fw fas fa-book"></i><span> 图书</span></a></li><li><a class="site-page" href="/movies"><i class="fa-fw fas fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/games"><i class="fa-fw fas fa-gamepad"></i><span> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/qita"><i class="fa-fw fa fa-apple"></i><span> 其他</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">数理逻辑第二章</div></div><div id="post-meta"><div class="meta-firstline"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2020-07-12 23:34:11"><i class="far fa-calendar-alt fa-fw"></i> Created 2020-07-12</span><span class="post-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2020-07-19 19:06:22"><i class="fas fa-history fa-fw"></i> Updated 2020-07-19</span></time></div><div class="meta-secondline"> <span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta__icon"></i><span>Word count:</span><span class="word-count">2.2k</span><span class="post-meta__separator">|</span><i class="far fa-clock fa-fw post-meta__icon"></i><span>Reading time: 8 min</span></span></div><div class="meta-thirdline"><span class="post-meta-pv-cv"></span><span class="post-meta-commentcount"></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><h1 id="第一节、等值式"><a href="#第一节、等值式" class="headerlink" title="第一节、等值式"></a>第一节、等值式</h1><p><strong>定义</strong>：设A,B是两个命题公式，若A，B构成的等价式A $\leftrightarrow$ B为重言式，则称A与B是等值的，记作A$\Leftrightarrow$ B。</p>
+<blockquote class="question">注：A$\Leftrightarrow$ 1,则A为重言式， A$\Leftrightarrow$ 0,则A为矛盾式 </blockquote>
+
+<h2 id="判断两个公式等值的方法"><a href="#判断两个公式等值的方法" class="headerlink" title="判断两个公式等值的方法"></a>判断两个公式等值的方法</h2><h3 id="真值表法"><a href="#真值表法" class="headerlink" title="真值表法"></a>真值表法</h3><p>例如判断p$\to$(q$\to$r)和（p$\to$q)$\to$r是否相等</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>p</th>
+<th>q</th>
+<th>r</th>
+<th>p$\wedge$q</th>
+<th>q$\to$r</th>
+<th>p$\to$(q$\to$r)</th>
+<th>(p$\to$q)$\to$r</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>由此可知两式是等值式。但是用真值表，工作量比较大。</p>
+<h3 id="利用已知等值式代换得到新的等值式"><a href="#利用已知等值式代换得到新的等值式" class="headerlink" title="利用已知等值式代换得到新的等值式"></a>利用已知等值式代换得到新的等值式</h3><blockquote>
+<ul>
+<li>(p$\wedge\rceil$q)$\vee$($\rceil$p$\wedge$q) $\Leftrightarrow$（p$\vee$q）$\wedge$$\rceil$(p$\wedge$q)</li>
+</ul>
+</blockquote>
+<p>我们有这么一个结论<br> <blockquote class="question">设A是含有命题变项$p_1,p_2,\cdots,p_n$的命题公式，$A_1,A_2,\cdots,A_n$是任意的命题公式。对每一个i，把$p_i$在A中的所有出现都替换成$A_i$所得的新公式记为B。那么如果A是重言式，则B也是重言式</blockquote></p>
+<ul>
+<li>根据$p\leftrightarrow\rceil\rceil$p是重言式和上面的结论知，对于任意的A，都有$A\leftrightarrow\rceil\rceil$A是重言式，即$A\Leftrightarrow\rceil\rceil$A</li>
+</ul>
+<p>需要记忆的16组重要的等值式模式</p>
+<blockquote>
+<ul>
+<li>双重否定律(双重否定表肯定)：<br>$\rceil\rceil$A$\Leftrightarrow$A</li>
+<li>等幂律(一件事情说两遍)：<br>A$\vee$A⟺A，A$\wedge$A⟺A</li>
+<li>交换律：<br>A$\vee$B⟺B$\vee$A，A$\wedge$B⟺B$\wedge$A</li>
+<li>结合律：<br>(A$\vee$B)$\vee$C⟺A$\vee$(B$\vee$C)<br>(A$\wedge$B)$\wedge$C⟺A$\wedge$(B$\wedge$C)</li>
+<li>分配律：<br>A$\vee$(B$\wedge$C)⟺(A$\vee$B)$\wedge$(A$\vee$C)<br>A$\wedge$(B$\vee$C)⟺(A$\wedge$B)$\vee$(A$\wedge$C)</li>
+<li>德摩根律(去括号要变号)：<br>$\rceil$(A$\vee$B)⟺$\rceil$A$\wedge\rceil$B<br>$\rceil$(A$\wedge$B)⟺$\rceil$A$\vee\rceil$B</li>
+<li>吸收律：<br>A$\vee$(A$\wedge$B)⟺A<br>A$\wedge$(A$\vee$B)⟺A</li>
+<li>零律：<br>A$\vee$1⟺1<br>A$\wedge$0⟺0</li>
+<li>同一律：<br>A$vee$0⟺A<br>A$\wedge$1⟺A</li>
+<li>排中律：<br>A$\vee\rceil$A⟺1</li>
+<li>矛盾律：<br>A$\wedge\rceil$A⟺0</li>
+<li>蕴含等值式：<br>A$\to$B⟺$\rceil$A$\vee$B</li>
+<li>等价等值式<br>A$\leftrightarrow$B⟺(A$\to$B)$\wedge$(B$\to$A)</li>
+<li>假言易位(逆否命题)<br>A$\to$B⟺$\rceil$B$\leftrightarrow\rceil$A</li>
+<li>等价否定等值式<br>A$\leftrightarrow$B⟺$\rceil$A$\to\rceil$B</li>
+<li>归谬论(前提AAA错误)：<br>(A$\leftrightarrow$B)$\wedge$(A$\leftrightarrow\rceil$B)⟺$\rceil$A</li>
+</ul>
+</blockquote>
+<h2 id="等值演算"><a href="#等值演算" class="headerlink" title="等值演算"></a>等值演算</h2><p><strong>等值演算</strong>：由已知的等值式推演出另外一些等值式的过程。<br><strong>置换规则</strong>：设$\Phi(A)$是包含A的命题公式，$\Phi(B)$用B置换了$\Phi(A)$中的所有（或部分）A得到的公式，若A$\Leftrightarrow$B，则$\Phi$(A)$\Leftrightarrow\Phi$(B)<br>等值演算的用途：</p>
+<h3 id="证明等值式"><a href="#证明等值式" class="headerlink" title="证明等值式"></a>证明等值式</h3><p>例：验证p$\to$(q$\to$r)$\Leftrightarrow$（p$\to$q)$\to$r</p>
+<blockquote>
+<p>右边$\Leftrightarrow\rceil$(p$\wedge$q)$\vee$r$\Leftrightarrow$($\rceil$p$\vee\rceil$q)$\vee$r$\Leftrightarrow\rceil$p$\vee$($\rceil$q$\vee$r)$\Leftrightarrow\rceil$p$\vee$(q$\to$r)$\Leftrightarrow$p$\to$(q$\to$r)</p>
+</blockquote>
+<h3 id="判断公式类型"><a href="#判断公式类型" class="headerlink" title="判断公式类型"></a>判断公式类型</h3><p>例：判断公式(p$\to$q)$\wedge$p$\to$q</p>
+<blockquote>
+<p>原式$\Leftrightarrow\rceil$((p$\to$q)$\wedge$p)$\vee$q<br>$\Leftrightarrow\rceil$(($\rceil$p$\vee$q)$\wedge$p)$\vee$q<br>$\Leftrightarrow\rceil$($\rceil$p$\vee$q)$\vee\rceil$p$\vee$q<br>$\Leftrightarrow$(p$\wedge\rceil$q)$\vee\rceil$p$\vee$q<br>$\Leftrightarrow$(p$\vee\rceil$q)$\wedge$($\rceil$p$\vee\rceil$q)$\vee$q<br>$\Leftrightarrow$1$\wedge$($\rceil$p$\vee\rceil$q)$\vee$q<br>$\Leftrightarrow$($\rceil$p$\vee\rceil$q)$\vee$q<br>$\Leftrightarrow\rceil$p$\vee(\rceil$q$\vee$q)<br>$\Leftrightarrow\rceil$p$\vee$1<br>$\Leftrightarrow$1</p>
+</blockquote>
+<h3 id="文字断案问题"><a href="#文字断案问题" class="headerlink" title="文字断案问题"></a>文字断案问题</h3><p>具体分析看课件</p>
+<h1 id="第二节、析取范式与合取范式"><a href="#第二节、析取范式与合取范式" class="headerlink" title="第二节、析取范式与合取范式"></a>第二节、析取范式与合取范式</h1><h2 id="基本铺垫"><a href="#基本铺垫" class="headerlink" title="基本铺垫"></a>基本铺垫</h2><p><strong>文字</strong>：命题变式及其否定式统称为文字。如$p$和$\rceil p$<br><strong>简单析取式</strong>：仅有有限个文字组成的析取式。如$p \vee q$<br><strong>简单合取式</strong>：仅有有限个文字组成的合取式。如$p \wedge q$<br> <blockquote class="question">为方便起见，有时候用$A_i$表示一个简单析取/合取式</blockquote></p>
+<p><strong>定理</strong>：一个简单析取式是重言式$\Leftrightarrow$它同时含有某个命题变项及其否定式；一个简单合取式是矛盾式$\Leftrightarrow$它同时含有某个命题变项及其否定式。</p>
+<p><strong>析取范式</strong>：由有限个简单合取式构成的析取式。<br><strong>合取范式</strong>：由有限个简单析取式构成的合取式。<br><strong>范式</strong>：析取范式与合取范式统称为范式。</p>
+ <blockquote class="question">注：一个简单合取式既是析取范式，又是合取范式；一个简单析取式既是合取范式，又是析取范式</blockquote>
+
+<p><strong>定理</strong>：(1)一个析取范式是矛盾式$\Leftrightarrow$它的每个简单合取式都是矛盾式。(2)一个合取范式是重言式$\Leftrightarrow$它的每个简单析取式都是重言式。</p>
+<p><strong>定理</strong>: (范式存在定理)任一个命题公式都存在着与之等值的析取范式与合取范式。<br><strong>步骤</strong>:</p>
+<ol>
+<li>消去连接词$\to$、$\Leftrightarrow$<blockquote>
+<p>A $\to$B $\Leftrightarrow$($\rceil$ A $\vee$ B)<br>A$\leftrightarrow$B $\Leftrightarrow$( $\rceil$A $\vee$ B) $\wedge$ (A $\vee\rceil$  B)</p>
+</blockquote>
+</li>
+<li>否定联接词的消去或内移。</li>
+<li>利用分配律</li>
+</ol>
+<p><strong>定义</strong>:在含有n个命题变项的简单合（析）取式中，每个命题变项和它的否定不同时出现，而二者之一必出现且仅出现一次，且第i个命题变项或它的否定式出现在从左算起的第i位上（若命题变项无角标，就按字母顺序），称这样的简单合（析）取式为极小（大）项。</p>
+<p><strong>定理</strong>：(1)每个极小项，如$p_1$ $\wedge$ $p_2$ $\wedge$ $p_3$ $\wedge\cdots\wedge$ $p_n$,有且仅有一个成真赋值，若成真赋值所对应的二进制数转化为十进制数为i，就将所对应的极小项记作$m_i$。(2)每个极大项，如$p_1$ $\vee$ $p_2$ $\vee$ $p_3$ $\vee\cdots\vee$ $p_n$,有且仅有一个成假赋值，若成假赋值所对应的二进制数转化为十进制数为i，就将所对应的极大项记作$M_i$。</p>
+<p><strong>定理</strong>:(极小项与极大项关系)设$m_i$和$M_i$是命题变项$p_1$,$p_2$,$\cdots$,$p_n$形成的极小项和极大项，则$\rceil$ $m_i$ $\Leftrightarrow$ $M_i$，$\rceil$ $M_i$ $\Leftrightarrow$ $m_i$</p>
+<p><strong>定义</strong>:设由n个命题变项构成的析（合）取范式中所有的简单合（析）取式都是极小（大）项，则且无重复出现，则称该析（合）取范式为主析（合）取范式。</p>
+<p><strong>定理</strong>:任何命题公式都存在着与之等值的主析取范式和主合取范式，并且（在不计极小（大）项的顺序的前提下）是唯一的。</p>
+<p><strong>结论</strong>:主析取范式的极小项的下标（对应的0，1符号串）恰为原命题公式的成真赋值，而主合取范式的极大项的下标（对应的0，1符号串）恰为原命题公式的成假赋值。它们二者是互“补”的<br> <blockquote class="question">因此，当命题变项比较少时，可以求真值表法来求主范式</blockquote></p>
+<h2 id="主析取范式的用途（主合取范式类似讨论）"><a href="#主析取范式的用途（主合取范式类似讨论）" class="headerlink" title="主析取范式的用途（主合取范式类似讨论）"></a>主析取范式的用途（主合取范式类似讨论）</h2><ol>
+<li>求公式的成真/成假赋值：若公式A中含有n个命题变项，且A的主析取范式含s个极小项，则A有s个成真赋值，有$2^n$-s个成假赋值。</li>
+<li>判断公式的类型：<ul>
+<li>A为重言式$\Leftrightarrow$A的主析取范式含全部$2^n$个极小项。</li>
+<li>A为矛盾式$\Leftrightarrow$A的主析取范式不含任何极小项。 </li>
+<li>A为满足式$\Leftrightarrow$A的主析取范式至少含1个极小项。   </li>
+</ul>
+</li>
+<li>判断两个命题公式是否等值。设公式A、B中共含有n个命题变项，按n个命题变项求出A、B的主析取范式$M$、$N$。 若$M$=$N$ ，则A$\Leftrightarrow$B，否则A、B不等值</li>
+</ol>
+<blockquote class="question">注：重言式不含极大项，其主合取范式记为1。矛盾式不含极小项，其主析取范式记为0。</blockquote>
+
+<h1 id="第三节、连接词的完备集"><a href="#第三节、连接词的完备集" class="headerlink" title="第三节、连接词的完备集"></a>第三节、连接词的完备集</h1><p><strong>定义</strong>：称F：{0,1}$^n$ $\to${0,1}为n元真值函数。这里{0,1}$^n$是长为n的0和1构成的所有字符串形式的集合</p>
+<p><strong>定义</strong>:设S是一个联结词集合，如果任何n元真值函数都可以由仅含S中的联结词构成的命题公式表示，则称S是一个联结词完备集。</p>
+<blockquote class="question">含有n个命题变项的公式的真值表(指最后一列)至多有$2^{2^n}$。</blockquote>
+
+<p><strong>定理</strong>:S={$\rceil$,$\wedge$,$\vee$}是联接词的完备集</p>
+<p><strong>推论</strong>:以下联接词集都是完备集</p>
+<ul>
+<li>S={$\rceil$,$\wedge$,$\vee$,$\to$,$\leftrightarrow$}</li>
+<li>S={$\rceil$,$\wedge$,$\vee$,$\to$}</li>
+<li>S={$\rceil$,$\wedge$}</li>
+<li>S={$\rceil$,$\vee$}</li>
+<li>S={$\rceil$,$\to$}</li>
+</ul>
+<p><strong>定义</strong>: 设p和q是两个命题，复合命题“p与（或）q的否定式” 称为p，q的与非式（或非式），记作p$\uparrow$q（ p$\downarrow$q ），符号$\uparrow$（ $\downarrow$ ）称为与（或）非联结词。并规定p$\uparrow$q为真当且仅当p与q不同时为真（p$\downarrow$q为真当且仅当p与q同时为假。）</p>
+<p><strong>定理</strong>:{$\uparrow$}、{$\downarrow$}都是联接词的完备集</p>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Paddy</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://www.paddylin.top/2020/07/12/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91%E7%AC%AC%E4%BA%8C%E7%AB%A0/">https://www.paddylin.top/2020/07/12/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91%E7%AC%AC%E4%BA%8C%E7%AB%A0/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91/">数理逻辑</a></div><div class="post_share"><div class="social-share" data-image="/img/1.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"/><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><button class="reward-button"><i class="fas fa-qrcode"></i> Donate<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="post-qr-code__img" src="/img/wechat.png" alt="wechat" onclick="window.open('/img/wechat.png')"/><div class="post-qr-code__desc">wechat</div></li><li class="reward-item"><img class="post-qr-code__img" src="/img/alipay.png" alt="alipay" onclick="window.open('/img/alipay.png')"/><div class="post-qr-code__desc">alipay</div></li></ul></div></button></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2020/07/15/%E4%BA%94%E6%AC%BEHexo%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E6%8E%A8%E8%8D%90/"><img class="prev-cover" data-src="https://img-blog.csdnimg.cn/20200715175140290.PNG" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">五款Hexo音乐播放器推荐</div></div></a></div><div class="next-post pull-right"><a href="/2020/07/12/%E7%94%BB%E5%BB%8A%EF%BC%88%E7%9B%B8%E5%86%8C%EF%BC%89%E5%88%B6%E4%BD%9C/"><img class="next-cover" data-src="https://img-blog.csdnimg.cn/20200712174249594.PNG" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">画廊（相册）制作</div></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fas fa-thumbs-up fa-fw"></i><span> Related Articles</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/2020/07/11/数理逻辑第一章/" title="数理逻辑第一章"><img class="relatedPosts_cover" data-src="https://img-blog.csdnimg.cn/20200711230726452.PNG"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-07-11</div><div class="relatedPosts_title">数理逻辑第一章</div></div></a></div><div class="relatedPosts_item"><a href="/2020/07/17/数理逻辑第三章/" title="数理逻辑第三章"><img class="relatedPosts_cover" data-src="https://img-blog.csdnimg.cn/20200713202337417.PNG"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-07-17</div><div class="relatedPosts_title">数理逻辑第三章</div></div></a></div></div></div><hr><div id="post-comment"><div class="comment_headling"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var requestSetting = function (from,set) {
+  var from = from
+  var setting = set.split(',').filter(function(item){
+  return from.indexOf(item) > -1
+  });
+  setting = setting.length == 0 ? from :setting;
+  return setting
+}
+
+var guestInfo = requestSetting(['nick','mail','link'],'nick,mail,link')
+var requiredFields = requestSetting(['nick','mail'],'nick,mail')
+
+window.valine = new Valine({
+  el:'#vcomment',
+  appId: 'OUCMtOBo79jERvniRk3JDri6-gzGzoHsz',
+  appKey: 'uD8EeO34CUYMlwetpQUguOHj',
+  placeholder: 'Please leave your footprints',
+  avatar: 'monsterid',
+  meta: guestInfo,
+  pageSize: '10',
+  lang: 'en',
+  recordIP: false,
+  serverURLs: '',
+  emojiCDN: '',
+  emojiMaps: "",
+  enableQQ: false,
+  requiredFields: requiredFields
+  
+});</script></div></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By Paddy</div><div class="framework-info"><span>Driven </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="footer_custom_text">Welcome to my <a href="https://www.paddylin.top">blog</a>!</div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><button id="readmode" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font_plus" title="Increase Font Size"><i class="fas fa-plus"></i></button><button id="font_minus" title="Decrease Font Size"><i class="fas fa-minus"></i></button><button class="translate_chn_to_cht" id="translateLink" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" title="Setting"><i class="fas fa-cog"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="scroll_to_comment fas fa-comments"></i></a><button class="close" id="mobile-toc-button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="chat_btn" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><button id="go-up" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">Local search</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>Powered by</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div class="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
   tex2jax: {
     inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
     processEscapes: true,
@@ -67,9 +320,37 @@ if (autoChangeMode === '1') {
   "SVG": { 
     linebreaks: { automatic: true, width: "90% container" }
   }
-});</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
   var all = MathJax.Hub.getAllJax(), i;
   for (i=0; i < all.length; i += 1) {
     all[i].SourceElement().parentNode.className += ' has-jax';
   }
-});</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css"><script>$(function(){$("span.katex-display").wrap('<div class="katex-wrap"></div>')})</script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script id="ribbon_piao" mobile="false" src="/js/third-party/piao.js"></script><script src="/js/third-party/activate-power-mode.js"></script><script>POWERMODE.colorful=!0,POWERMODE.shake=!0,document.body.addEventListener("input",POWERMODE)</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="/js/third-party/click_heart.js"></script><script src="/js/search/local-search.js"></script><script src="https://myhkw.cn/player/js/player.js" id="myhk" key="159438862858" m="1"></script><script src="/live2d-widget/autoload.js"></script><script src="/js/calendar.js"></script><script src="/js/languages.js"></script><script src="https://cdn.jsdelivr.net/gh/lete114/CDN/Sum/sakura.js"></script>#樱花<script src="https://cdn.jsdelivr.net/gh/lete114/CDN/Sum/title.js"></script>#樱花<script src="/js/linkcard.js"></script><script>var endLoading=function(){document.body.style.overflow="auto",document.getElementById("loading-box").classList.add("loaded")};window.addEventListener("load",endLoading)</script><script src="//code.tidio.co/msfqscdza5igxebqgtko4utxvuuhtfat.js" async></script><script>!function(){function i(){window.tidioChatApi.hide(),window.tidioChatApi.on("close",function(){window.tidioChatApi.hide()})}window.tidioChatApi?window.tidioChatApi.on("ready",i):document.addEventListener("tidioChat-ready",i),document.getElementById("chat_btn").addEventListener("click",function(){window.tidioChatApi.show(),window.tidioChatApi.open()})}()</script></body></html>
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css"><script>$(function () {
+  $('span.katex-display').wrap('<div class="katex-wrap"></div>')
+})</script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script id="ribbon_piao" mobile="false" src="/js/third-party/piao.js"></script><script src="/js/third-party/activate-power-mode.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="/js/third-party/click_heart.js"></script><script src="/js/search/local-search.js"></script><script src="https://myhkw.cn/player/js/player.js" id="myhk" key="159438862858" m="1"></script><script src="/live2d-widget/autoload.js"></script><script src="/js/calendar.js"></script><script src="/js/languages.js"></script><script src="https://cdn.jsdelivr.net/gh/lete114/CDN/Sum/sakura.js"></script>#樱花<script src="https://cdn.jsdelivr.net/gh/lete114/CDN/Sum/title.js"></script>#樱花<script src="/js/linkcard.js"></script><script>var endLoading = function () {
+  document.body.style.overflow = 'auto';
+  document.getElementById('loading-box').classList.add("loaded")
+}
+window.addEventListener('load',endLoading)</script><script src="//code.tidio.co/msfqscdza5igxebqgtko4utxvuuhtfat.js" async="async"></script><script>(function() {
+  function onTidioChatApiReady() {
+    window.tidioChatApi.hide();
+    window.tidioChatApi.on("close", function() {
+      window.tidioChatApi.hide();
+    });
+  }
+  if (window.tidioChatApi) {
+    window.tidioChatApi.on("ready", onTidioChatApiReady);
+  } else {
+    document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+  }
+
+  document.getElementById("chat_btn").addEventListener("click", function(){
+    window.tidioChatApi.show();
+    window.tidioChatApi.open();
+});
+})();</script></body></html>
