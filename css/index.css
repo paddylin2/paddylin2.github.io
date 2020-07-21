@@ -84,6 +84,9 @@ hr:before,
   background-image: url("https://ae01.alicdn.com/kf/H5662031fbf344418aa2c8bf74c68826eV.png"), -ms-linear-gradient(45deg, #6dd0f2 15%, #f59abe 85%);
   background-image: url("https://ae01.alicdn.com/kf/H5662031fbf344418aa2c8bf74c68826eV.png"), linear-gradient(45deg, #6dd0f2 15%, #f59abe 85%);
 }
+#recent-posts > .recent-post-item {
+  background: #c1efef;
+}
 html {
   height: 100%;
   font-size: 20px;
@@ -3540,7 +3543,7 @@ _:future,
 #recent-posts > .recent-post-item >.recent-post-info > .article-title {
   margin-bottom: 0.3rem;
   color: #4c4948;
-  font-size: 1.2rem;
+  font-size: 30px;
   line-height: 1.4;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -3848,6 +3851,7 @@ _:future,
     -ms-flex-direction: column;
     flex-direction: column;
     height: auto !important;
+    background: #c1efef;
   }
   #recent-posts .recent-post-item .post_cover {
     -webkit-box-ordinal-group: 1 !important;

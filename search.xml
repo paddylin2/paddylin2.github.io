@@ -100,9 +100,14 @@
       </tags>
   </entry>
   <entry>
-    <title>PaddyLin的博客</title>
-    <url>/2020/07/04/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="我的博客诞生了"><a href="#我的博客诞生了" class="headerlink" title="我的博客诞生了"></a>我的博客诞生了</h2><p>纪念我在2020年7月4日开始接触hexo和github，并学习了搭建博客</p>
+    <title>Python之DataFrame</title>
+    <url>/2020/07/18/Python%E4%B9%8BDataFrame/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="创建方法"><a href="#创建方法" class="headerlink" title="创建方法"></a>创建方法</h1><p><strong>分为直接定义和导入定义</strong><br>1、直接定义：pd.DataFrame()，pd.DataFrame()的参数可以是ndarray，列表，字典，元组、Series等。<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">df1=pd.DataFrame(np.arange(<span class="number">10</span>).reshape(<span class="number">2</span>,<span class="number">5</span>))</span><br><span class="line">print(df1)</span><br><span class="line"><span class="comment"># Out：</span></span><br><span class="line"><span class="comment">#    0 1 2 3 4</span></span><br><span class="line"><span class="comment"># 0  0 1 2 3 4</span></span><br><span class="line"><span class="comment"># 1  5 6 7 8 9</span></span><br></pre></td></tr></table></figure><br>2、导入定义：当用Pandas包导入一个外部文件时，将自动转换为DataFrame对象</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df2 = pd.read_csv(<span class="string">'bc_data.csv'</span>)</span><br><span class="line">df2.shape</span><br><span class="line"><span class="comment">#  Out</span></span><br><span class="line"><span class="comment"># (569,32)</span></span><br></pre></td></tr></table></figure>
+<h1 id="DataFrame中的行-列"><a href="#DataFrame中的行-列" class="headerlink" title="DataFrame中的行/列"></a>DataFrame中的行/列</h1><p>查看行——用index属性</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df2.index</span><br><span class="line"><span class="comment"># Out</span></span><br><span class="line"><span class="comment"># RangeIndex(start=0, stop=569, step=1)</span></span><br></pre></td></tr></table></figure>
+<p>计算行数——用.index.size属性<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df2.index.size</span><br><span class="line"><span class="comment"># Out</span></span><br><span class="line"><span class="comment"># 569</span></span><br></pre></td></tr></table></figure><br>查看列——用columns属性</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df2.columns</span><br><span class="line"><span class="comment"># Out</span></span><br><span class="line"><span class="comment"># Index(['id', 'diagnosis', 'area_mean'], dtype='object')</span></span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -113,6 +118,12 @@
       <tags>
         <tag>Python</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>PaddyLin的博客</title>
+    <url>/2020/07/04/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="我的博客诞生了"><a href="#我的博客诞生了" class="headerlink" title="我的博客诞生了"></a>我的博客诞生了</h2><p>纪念我在2020年7月4日开始接触hexo和github，并学习了搭建博客</p>
+]]></content>
   </entry>
   <entry>
     <title>五款Hexo音乐播放器推荐</title>
@@ -129,29 +140,9 @@
       </tags>
   </entry>
   <entry>
-    <title>Python之DataFrame</title>
-    <url>/2020/07/18/Python%E4%B9%8BDataFrame/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="创建方法"><a href="#创建方法" class="headerlink" title="创建方法"></a>创建方法</h1><p><strong>分为直接定义和导入定义</strong><br>1、直接定义：pd.DataFrame()，pd.DataFrame()的参数可以是ndarray，列表，字典，元组、Series等。<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">df1=pd.DataFrame(np.arange(<span class="number">10</span>).reshape(<span class="number">2</span>,<span class="number">5</span>))</span><br><span class="line">print(df1)</span><br><span class="line"><span class="comment"># Out：</span></span><br><span class="line"><span class="comment">#    0 1 2 3 4</span></span><br><span class="line"><span class="comment"># 0  0 1 2 3 4</span></span><br><span class="line"><span class="comment"># 1  5 6 7 8 9</span></span><br></pre></td></tr></table></figure><br>2、导入定义：当用Pandas包导入一个外部文件时，将自动转换为DataFrame对象</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df2 = pd.read_csv(<span class="string">'bc_data.csv'</span>)</span><br><span class="line">df2.shape</span><br><span class="line"><span class="comment">#  Out</span></span><br><span class="line"><span class="comment"># (569,32)</span></span><br></pre></td></tr></table></figure>
-<h1 id="DataFrame中的行-列"><a href="#DataFrame中的行-列" class="headerlink" title="DataFrame中的行/列"></a>DataFrame中的行/列</h1><p>查看行——用index属性</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df2.index</span><br><span class="line"><span class="comment"># Out</span></span><br><span class="line"><span class="comment"># RangeIndex(start=0, stop=569, step=1)</span></span><br></pre></td></tr></table></figure>
-<p>计算行数——用.index.size属性<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df2.index.size</span><br><span class="line"><span class="comment"># Out</span></span><br><span class="line"><span class="comment"># 569</span></span><br></pre></td></tr></table></figure><br>查看列——用columns属性</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df2.columns</span><br><span class="line"><span class="comment"># Out</span></span><br><span class="line"><span class="comment"># Index(['id', 'diagnosis', 'area_mean'], dtype='object')</span></span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
     <title>P站图片分享1</title>
     <url>/2020/07/06/%E5%88%86%E4%BA%AB%E4%B8%80/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="图片分享"><a href="#图片分享" class="headerlink" title="图片分享"></a>图片分享</h2><p><strong>Picture Share</strong><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200706162904532.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200706162903133.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200706162902421.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200706162901900.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200706162950121.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200706162949738.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200706162949638.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/2020070616294869.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200706162947934.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-]]></content>
-      <tags>
-        <tag>图片</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>P站图片分享2</title>
-    <url>/2020/07/06/%E5%88%86%E4%BA%AB%E4%BA%8C/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="图片分享"><a href="#图片分享" class="headerlink" title="图片分享"></a>图片分享</h2><p><strong>Picture Share</strong><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200706194757859.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200706194757459.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200706194756497.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200706194755284.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200706195609505.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200706195609290.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200706195608503.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200706195606535.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200706195605674.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 ]]></content>
       <tags>
         <tag>图片</tag>
@@ -167,44 +158,30 @@
       </tags>
   </entry>
   <entry>
-    <title>数理逻辑第三章</title>
-    <url>/2020/07/17/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91%E7%AC%AC%E4%B8%89%E7%AB%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="第一节、推理的形式结构"><a href="#第一节、推理的形式结构" class="headerlink" title="第一节、推理的形式结构"></a>第一节、推理的形式结构</h1><p><strong>定义</strong>:设$A_1$,$A_2$,$\cdots$,$A_k$,B都是命题公式，若对于$A_1$,$A_2$,$\cdots$,$A_k$,B中出现的所有命题变项的任意一组赋值，或者$A_1$ $\wedge$ $A_2$ $\wedge$ $\cdots$ $\wedge$ $A_k$为假，或者当$A_1$ $\wedge$ $A_2$ $\wedge$ $\cdots$ $\wedge$ $A_k$ 为真时，B也为真。则称由前提$A_1$,$A_2$,$\cdots$,$A_k$推出结论B的推理是有效的或正确的。</p>
-<ul>
-<li>由前提$A_1$,$A_2$,$\cdots$,$A_k$推B的推理记作{A1， A2，…Ak}|-B ,这称为推理的形式结构。如果推理是正确的，记作{$A_1$,$A_2$,$\cdots$,$A_k$}|=B ，否则记作{$A_1$,$A_2$,$\cdots$,$A_k$}|$\neq$B。</li>
-<li>对于任一组赋值，只有前提为1和结论为0的取值才能使推理不是正确的</li>
-<li>从上一条可看出，推理正确并不是指结论是重言式。</li>
-<li>推理正确与否与诸前提的顺序无关</li>
-</ul>
-<p><strong>定理</strong>:命题公式$A_1$,$A_2$,$\cdots$,$A_k$推B的推理正确当且仅当($A_1$ $\wedge$ $A_2$ $\wedge$ $\cdots$ $\wedge$ $A_k$) $\to$B为重言式</p>
-<blockquote class="question"> 证明重言式的三种方法：真值表法、等值演算法、主析取式法</blockquote>
-
-<p><strong>九条推理定律(重言蕴含式)</strong>:</p>
-<blockquote>
-<p>A$\Rightarrow$(A$\vee$B)<br>(A$\wedge$B) $\Rightarrow$A; 化简<br>((A$\to$B)$\wedge$A) $\Rightarrow$ B; 假言推理<br>((A$\to$B)$\wedge\rceil$ B) $\Rightarrow\rceil$ A; 拒取式<br>((A$\vee$B)$\wedge\rceil$  A) $\Rightarrow$ B; 析取三段论<br>((A$\to$B)$\wedge$(B$\to$C)) $\Rightarrow$( (A$\to$C); 假言三段论<br>((A$\leftrightarrow$B)$\wedge$(B $\leftrightarrow$ C)) $\Rightarrow$((A $\leftrightarrow$(C); 等价三段论<br>(A$\to$B)$wedge$(C$to$D)$\wedge$(A$\vee$C) $\Rightarrow$(B$\vee$D). 构造性二难 (A$\to$B)$\wedge$($\rceil$A$\to$B)$\wedge$(A$\vee\rceil$ A) $\Rightarrow$ B. (特殊形式)<br>(A$\to$B)$\wedge$(C$\to$D)$\wedge$($\rceil$ B$\vee\rceil$ D) $\Rightarrow$($\rceil$A$\vee\rceil$ C). 破坏性二难</p>
-</blockquote>
-<h1 id="第二节、自然推理系统-P"><a href="#第二节、自然推理系统-P" class="headerlink" title="第二节、自然推理系统 P"></a>第二节、自然推理系统 P</h1><p><strong>定义(形式系统)</strong>: 一个形式系统I 由下列四个部分组成</p>
-<ol>
-<li>非空的字母表集，记作$A(I)$</li>
-<li>$A(I)$符号构造的合式公式集，记作$E(I)$</li>
-<li>$E(I)$中一些特殊的公式组成的公理集,记作$A_X$ $(I)$</li>
-<li>推理规则集，记作$R(I)$</li>
-</ol>
-<p>可以将I记为四元组 &lt; A(I),E(I),$A_X$(I),R(I) &gt;,其中 &lt; A(I),E(I) &gt; 称为I 的形式语言系统， &lt;$A_X$(I),R(I) &gt;称为I 的形式演算系统。</p>
-<p><strong>形式系统分两类</strong>：</p>
-<ol>
-<li><strong>自然推理系统</strong>：特点是从任意给定的前提出发，利用推理规则进行推理演算，得到最后的命题公式是推理的结论，结论可能是重言式，也可能不是</li>
-<li><strong>公理推理系统</strong>：特点是从若干给定的公理出发，利用推理规则进行推理演算，得到的结论是系统中的重言式，称为定理。</li>
-</ol>
-<p><strong>定义(自然推理系统 P)</strong>：</p>
-<ol>
-<li>字母表:(1)命题变项符号：p,q,r,…(2)联结词符号： $\rceil$,$\wedge$,$\vee$,$\to$,$\leftrightarrow$ （3）括号与逗号</li>
-<li>合式公式</li>
-<li>12条推理规则</li>
-</ol>
+    <title>P站图片分享2</title>
+    <url>/2020/07/06/%E5%88%86%E4%BA%AB%E4%BA%8C/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="图片分享"><a href="#图片分享" class="headerlink" title="图片分享"></a>图片分享</h2><p><strong>Picture Share</strong><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200706194757859.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200706194757459.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200706194756497.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200706194755284.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200706195609505.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200706195609290.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200706195608503.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200706195606535.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200706195605674.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 ]]></content>
       <tags>
-        <tag>数理逻辑</tag>
+        <tag>图片</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>分享五</title>
+    <url>/2020/07/21/%E5%88%86%E4%BA%AB%E4%BA%94/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><a href="https://www.paddylin.top/gallery/%E5%88%86%E4%BA%AB%E4%BA%8C/" class="LinkCard">分享</a></p>
+]]></content>
+      <tags>
+        <tag>图片</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>分享六</title>
+    <url>/2020/07/21/%E5%88%86%E4%BA%AB%E5%85%AD/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><a href="https://www.paddylin.top/gallery/%E5%88%86%E4%BA%AB%E4%B8%89/" class="LinkCard">分享</a></p>
+]]></content>
+      <tags>
+        <tag>图片</tag>
       </tags>
   </entry>
   <entry>
@@ -258,118 +235,44 @@
       </tags>
   </entry>
   <entry>
-    <title>添加音乐播放器</title>
-    <url>/2020/07/08/%E7%94%9F%E6%88%90%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="博客制作单独页面音乐播放器"><a href="#博客制作单独页面音乐播放器" class="headerlink" title="博客制作单独页面音乐播放器"></a>博客制作单独页面音乐播放器</h1><hr>
-<p>首先我们给出效果图<br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200708121933181.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="">接下来让我们开始操作吧！！！</p>
-<h2 id="1、添加“我的音乐”模块"><a href="#1、添加“我的音乐”模块" class="headerlink" title="1、添加“我的音乐”模块"></a><strong>1、添加“我的音乐”模块</strong></h2><p>在<code>Git Bash</code>中执行代码<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new page playlist</span><br></pre></td></tr></table></figure><br>之后会在博客<code>sourse</code>目录下生成文件<code>playlist</code>，修改里面<code>index</code>文件如下</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 歌单</span><br><span class="line">date: 2020-07-08 10:08:04</span><br><span class="line"><span class="built_in">type</span>: <span class="string">"playlist"</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>我引用的主题为<code>spfk</code>，我们在<code>theme\spfk\lanhuages</code>下找到<code>zh-Hans.yml</code><br>并在<code>menu</code>下添加<code>playlist: 歌单</code></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  menu: 菜单</span><br><span class="line">  home: 首页</span><br><span class="line">  archives: 归档</span><br><span class="line">  categories: 分类</span><br><span class="line">  playlist: 歌单</span><br></pre></td></tr></table></figure>
-<h2 id="2、添加-hexo-tag-aplayer-插件"><a href="#2、添加-hexo-tag-aplayer-插件" class="headerlink" title="2、添加 hexo-tag-aplayer 插件"></a><strong>2、添加 hexo-tag-aplayer 插件</strong></h2><p>安装执行<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install --save hexo-tag-aplayer</span><br></pre></td></tr></table></figure><br>在 Hexo 配置文件<code>_config.yml</code>中设置</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">aplayer:</span><br><span class="line">   meting: true</span><br></pre></td></tr></table></figure>
-<p>接着就可以使用 MetingJS 播放器了，例如我们在 Hexo的<code>sourse\playlist\index</code>中添加歌单模块</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&#123;% meting <span class="string">"523845661"</span> <span class="string">"netease"</span> <span class="string">"playlist"</span> <span class="string">"theme:#FF4081"</span> <span class="string">"mode:circulation"</span> <span class="string">"mutex:true"</span> <span class="string">"listmaxheight:340px"</span> <span class="string">"preload:auto"</span> %&#125;</span><br></pre></td></tr></table></figure>
-<p>和</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&#123;% meting <span class="string">"547791232"</span> <span class="string">"netease"</span> <span class="string">"playlist"</span> <span class="string">"theme:#FF4081"</span> <span class="string">"mode:circulation"</span> <span class="string">"mutex:true"</span> <span class="string">"listmaxheight:340px"</span> <span class="string">"preload:auto"</span> %&#125;</span><br></pre></td></tr></table></figure>
-<p>找到博客中的“我的音乐”就可以看到我们第一张图中的结果</p>
-<h2 id="3、歌单模块中的参数设置"><a href="#3、歌单模块中的参数设置" class="headerlink" title="3、歌单模块中的参数设置"></a><strong>3、歌单模块中的参数设置</strong></h2><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>默认值</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>id</td>
-<td>必须值</td>
-<td>歌曲 id / 播放列表 id / 相册 id / 搜索关键字</td>
-</tr>
-<tr>
-<td>server</td>
-<td>必须值</td>
-<td>音乐平台: netease, tencent, kugou, xiami, baidu</td>
-</tr>
-<tr>
-<td>type</td>
-<td>必须值</td>
-<td>song, playlist, album, search, artist</td>
-</tr>
-<tr>
-<td>fixed</td>
-<td>false</td>
-<td>开启固定模式</td>
-</tr>
-<tr>
-<td>mini</td>
-<td>false</td>
-<td>开启迷你模式</td>
-</tr>
-<tr>
-<td>loop</td>
-<td>all</td>
-<td>列表循环模式：all, one,none</td>
-</tr>
-<tr>
-<td>order</td>
-<td>list</td>
-<td>列表播放模式： list, random</td>
-</tr>
-<tr>
-<td>volume</td>
-<td>0.7</td>
-<td>播放器音量</td>
-</tr>
-<tr>
-<td>lrctype</td>
-<td>0</td>
-<td>歌词格式类型</td>
-</tr>
-<tr>
-<td>listfolded</td>
-<td>false</td>
-<td>指定音乐播放列表是否折叠</td>
-</tr>
-<tr>
-<td>storagename</td>
-<td>metingjs</td>
-<td>LocalStorage 中存储播放器设定的键名</td>
-</tr>
-<tr>
-<td>autoplay</td>
-<td>true</td>
-<td>自动播放，移动端浏览器暂时不支持此功能</td>
-</tr>
-<tr>
-<td>mutex</td>
-<td>true</td>
-<td>该选项开启时，如果同页面有其他 aplayer 播放，该播放器会暂停</td>
-</tr>
-<tr>
-<td>listmaxheight</td>
-<td>340px</td>
-<td>播放列表的最大长度</td>
-</tr>
-<tr>
-<td>preload</td>
-<td>auto</td>
-<td>音乐文件预载入模式，可选项： none, metadata, auto</td>
-</tr>
-<tr>
-<td>theme</td>
-<td>#ad7a86</td>
-<td>播放器风格色彩设置</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="4、结语"><a href="#4、结语" class="headerlink" title="4、结语"></a><strong>4、结语</strong></h2><p>关于音乐的板块制作到此结束了，但是当我们换页面时，音乐会停止播放。要做到切换页面时，音乐继续播放，需要安装 <code>Pajx</code> 插件，但是我还没弄懂怎么做，大家可以去搜索一下资料，弄懂了也可以告诉我哦！！！，下一篇我们将介绍怎么获得<code>音乐id</code></p>
+    <title>数理逻辑第三章</title>
+    <url>/2020/07/17/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91%E7%AC%AC%E4%B8%89%E7%AB%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="第一节、推理的形式结构"><a href="#第一节、推理的形式结构" class="headerlink" title="第一节、推理的形式结构"></a>第一节、推理的形式结构</h1><p><strong>定义</strong>:设$A_1$,$A_2$,$\cdots$,$A_k$,B都是命题公式，若对于$A_1$,$A_2$,$\cdots$,$A_k$,B中出现的所有命题变项的任意一组赋值，或者$A_1$ $\wedge$ $A_2$ $\wedge$ $\cdots$ $\wedge$ $A_k$为假，或者当$A_1$ $\wedge$ $A_2$ $\wedge$ $\cdots$ $\wedge$ $A_k$ 为真时，B也为真。则称由前提$A_1$,$A_2$,$\cdots$,$A_k$推出结论B的推理是有效的或正确的。</p>
+<ul>
+<li>由前提$A_1$,$A_2$,$\cdots$,$A_k$推B的推理记作{A1， A2，…Ak}|-B ,这称为推理的形式结构。如果推理是正确的，记作{$A_1$,$A_2$,$\cdots$,$A_k$}|=B ，否则记作{$A_1$,$A_2$,$\cdots$,$A_k$}|$\neq$B。</li>
+<li>对于任一组赋值，只有前提为1和结论为0的取值才能使推理不是正确的</li>
+<li>从上一条可看出，推理正确并不是指结论是重言式。</li>
+<li>推理正确与否与诸前提的顺序无关</li>
+</ul>
+<p><strong>定理</strong>:命题公式$A_1$,$A_2$,$\cdots$,$A_k$推B的推理正确当且仅当($A_1$ $\wedge$ $A_2$ $\wedge$ $\cdots$ $\wedge$ $A_k$) $\to$B为重言式</p>
+<blockquote class="question"> 证明重言式的三种方法：真值表法、等值演算法、主析取式法</blockquote>
+
+<p><strong>九条推理定律(重言蕴含式)</strong>:</p>
+<blockquote>
+<p>A$\Rightarrow$(A$\vee$B)<br>(A$\wedge$B) $\Rightarrow$A; 化简<br>((A$\to$B)$\wedge$A) $\Rightarrow$ B; 假言推理<br>((A$\to$B)$\wedge\rceil$ B) $\Rightarrow\rceil$ A; 拒取式<br>((A$\vee$B)$\wedge\rceil$  A) $\Rightarrow$ B; 析取三段论<br>((A$\to$B)$\wedge$(B$\to$C)) $\Rightarrow$( (A$\to$C); 假言三段论<br>((A$\leftrightarrow$B)$\wedge$(B $\leftrightarrow$ C)) $\Rightarrow$((A $\leftrightarrow$(C); 等价三段论<br>(A$\to$B)$wedge$(C$to$D)$\wedge$(A$\vee$C) $\Rightarrow$(B$\vee$D). 构造性二难 (A$\to$B)$\wedge$($\rceil$A$\to$B)$\wedge$(A$\vee\rceil$ A) $\Rightarrow$ B. (特殊形式)<br>(A$\to$B)$\wedge$(C$\to$D)$\wedge$($\rceil$ B$\vee\rceil$ D) $\Rightarrow$($\rceil$A$\vee\rceil$ C). 破坏性二难</p>
+</blockquote>
+<h1 id="第二节、自然推理系统-P"><a href="#第二节、自然推理系统-P" class="headerlink" title="第二节、自然推理系统 P"></a>第二节、自然推理系统 P</h1><p><strong>定义(形式系统)</strong>: 一个形式系统I 由下列四个部分组成</p>
+<ol>
+<li>非空的字母表集，记作$A(I)$</li>
+<li>$A(I)$符号构造的合式公式集，记作$E(I)$</li>
+<li>$E(I)$中一些特殊的公式组成的公理集,记作$A_X$ $(I)$</li>
+<li>推理规则集，记作$R(I)$</li>
+</ol>
+<p>可以将I记为四元组 &lt; A(I),E(I),$A_X$(I),R(I) &gt;,其中 &lt; A(I),E(I) &gt; 称为I 的形式语言系统， &lt;$A_X$(I),R(I) &gt;称为I 的形式演算系统。</p>
+<p><strong>形式系统分两类</strong>：</p>
+<ol>
+<li><strong>自然推理系统</strong>：特点是从任意给定的前提出发，利用推理规则进行推理演算，得到最后的命题公式是推理的结论，结论可能是重言式，也可能不是</li>
+<li><strong>公理推理系统</strong>：特点是从若干给定的公理出发，利用推理规则进行推理演算，得到的结论是系统中的重言式，称为定理。</li>
+</ol>
+<p><strong>定义(自然推理系统 P)</strong>：</p>
+<ol>
+<li>字母表:(1)命题变项符号：p,q,r,…(2)联结词符号： $\rceil$,$\wedge$,$\vee$,$\to$,$\leftrightarrow$ （3）括号与逗号</li>
+<li>合式公式</li>
+<li>12条推理规则</li>
+</ol>
 ]]></content>
       <tags>
-        <tag>Hexo</tag>
+        <tag>数理逻辑</tag>
       </tags>
   </entry>
   <entry>
@@ -563,29 +466,178 @@
       </tags>
   </entry>
   <entry>
-    <title>自定义“引用”板块</title>
-    <url>/2020/07/11/%E8%87%AA%E5%AE%9A%E4%B9%89%E2%80%9C%E5%BC%95%E7%94%A8%E2%80%9D%E6%9D%BF%E5%9D%97/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="自定义“引用”板块"><a href="#自定义“引用”板块" class="headerlink" title="自定义“引用”板块"></a>自定义“引用”板块</h1><h2 id="启发"><a href="#启发" class="headerlink" title="启发"></a>启发</h2><hr>
-<p>自从为了方便编写Md文件，我一直在用CSDN写文章，但我一直困扰于如何使用更加引人注目的<code>引用板块</code>，因为在CSDN中引用板块样子如下</p>
+    <title>添加音乐播放器</title>
+    <url>/2020/07/08/%E7%94%9F%E6%88%90%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="博客制作单独页面音乐播放器"><a href="#博客制作单独页面音乐播放器" class="headerlink" title="博客制作单独页面音乐播放器"></a>博客制作单独页面音乐播放器</h1><hr>
+<p>首先我们给出效果图<br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200708121933181.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70" alt="">接下来让我们开始操作吧！！！</p>
+<h2 id="1、添加“我的音乐”模块"><a href="#1、添加“我的音乐”模块" class="headerlink" title="1、添加“我的音乐”模块"></a><strong>1、添加“我的音乐”模块</strong></h2><p>在<code>Git Bash</code>中执行代码<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new page playlist</span><br></pre></td></tr></table></figure><br>之后会在博客<code>sourse</code>目录下生成文件<code>playlist</code>，修改里面<code>index</code>文件如下</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 歌单</span><br><span class="line">date: 2020-07-08 10:08:04</span><br><span class="line"><span class="built_in">type</span>: <span class="string">"playlist"</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>我引用的主题为<code>spfk</code>，我们在<code>theme\spfk\lanhuages</code>下找到<code>zh-Hans.yml</code><br>并在<code>menu</code>下添加<code>playlist: 歌单</code></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  menu: 菜单</span><br><span class="line">  home: 首页</span><br><span class="line">  archives: 归档</span><br><span class="line">  categories: 分类</span><br><span class="line">  playlist: 歌单</span><br></pre></td></tr></table></figure>
+<h2 id="2、添加-hexo-tag-aplayer-插件"><a href="#2、添加-hexo-tag-aplayer-插件" class="headerlink" title="2、添加 hexo-tag-aplayer 插件"></a><strong>2、添加 hexo-tag-aplayer 插件</strong></h2><p>安装执行<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install --save hexo-tag-aplayer</span><br></pre></td></tr></table></figure><br>在 Hexo 配置文件<code>_config.yml</code>中设置</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">aplayer:</span><br><span class="line">   meting: true</span><br></pre></td></tr></table></figure>
+<p>接着就可以使用 MetingJS 播放器了，例如我们在 Hexo的<code>sourse\playlist\index</code>中添加歌单模块</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&#123;% meting <span class="string">"523845661"</span> <span class="string">"netease"</span> <span class="string">"playlist"</span> <span class="string">"theme:#FF4081"</span> <span class="string">"mode:circulation"</span> <span class="string">"mutex:true"</span> <span class="string">"listmaxheight:340px"</span> <span class="string">"preload:auto"</span> %&#125;</span><br></pre></td></tr></table></figure>
+<p>和</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&#123;% meting <span class="string">"547791232"</span> <span class="string">"netease"</span> <span class="string">"playlist"</span> <span class="string">"theme:#FF4081"</span> <span class="string">"mode:circulation"</span> <span class="string">"mutex:true"</span> <span class="string">"listmaxheight:340px"</span> <span class="string">"preload:auto"</span> %&#125;</span><br></pre></td></tr></table></figure>
+<p>找到博客中的“我的音乐”就可以看到我们第一张图中的结果</p>
+<h2 id="3、歌单模块中的参数设置"><a href="#3、歌单模块中的参数设置" class="headerlink" title="3、歌单模块中的参数设置"></a><strong>3、歌单模块中的参数设置</strong></h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>默认值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>必须值</td>
+<td>歌曲 id / 播放列表 id / 相册 id / 搜索关键字</td>
+</tr>
+<tr>
+<td>server</td>
+<td>必须值</td>
+<td>音乐平台: netease, tencent, kugou, xiami, baidu</td>
+</tr>
+<tr>
+<td>type</td>
+<td>必须值</td>
+<td>song, playlist, album, search, artist</td>
+</tr>
+<tr>
+<td>fixed</td>
+<td>false</td>
+<td>开启固定模式</td>
+</tr>
+<tr>
+<td>mini</td>
+<td>false</td>
+<td>开启迷你模式</td>
+</tr>
+<tr>
+<td>loop</td>
+<td>all</td>
+<td>列表循环模式：all, one,none</td>
+</tr>
+<tr>
+<td>order</td>
+<td>list</td>
+<td>列表播放模式： list, random</td>
+</tr>
+<tr>
+<td>volume</td>
+<td>0.7</td>
+<td>播放器音量</td>
+</tr>
+<tr>
+<td>lrctype</td>
+<td>0</td>
+<td>歌词格式类型</td>
+</tr>
+<tr>
+<td>listfolded</td>
+<td>false</td>
+<td>指定音乐播放列表是否折叠</td>
+</tr>
+<tr>
+<td>storagename</td>
+<td>metingjs</td>
+<td>LocalStorage 中存储播放器设定的键名</td>
+</tr>
+<tr>
+<td>autoplay</td>
+<td>true</td>
+<td>自动播放，移动端浏览器暂时不支持此功能</td>
+</tr>
+<tr>
+<td>mutex</td>
+<td>true</td>
+<td>该选项开启时，如果同页面有其他 aplayer 播放，该播放器会暂停</td>
+</tr>
+<tr>
+<td>listmaxheight</td>
+<td>340px</td>
+<td>播放列表的最大长度</td>
+</tr>
+<tr>
+<td>preload</td>
+<td>auto</td>
+<td>音乐文件预载入模式，可选项： none, metadata, auto</td>
+</tr>
+<tr>
+<td>theme</td>
+<td>#ad7a86</td>
+<td>播放器风格色彩设置</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="4、结语"><a href="#4、结语" class="headerlink" title="4、结语"></a><strong>4、结语</strong></h2><p>关于音乐的板块制作到此结束了，但是当我们换页面时，音乐会停止播放。要做到切换页面时，音乐继续播放，需要安装 <code>Pajx</code> 插件，但是我还没弄懂怎么做，大家可以去搜索一下资料，弄懂了也可以告诉我哦！！！，下一篇我们将介绍怎么获得<code>音乐id</code></p>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>画廊（相册）制作</title>
+    <url>/2020/07/12/%E7%94%BB%E5%BB%8A%EF%BC%88%E7%9B%B8%E5%86%8C%EF%BC%89%E5%88%B6%E4%BD%9C/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="建立相册经历"><a href="#建立相册经历" class="headerlink" title="建立相册经历"></a>建立相册经历</h1><p>本人比较轴，为了建立博客相册，在百度、360等浏览器上找了多种方法，也试了很多方法，但是多于不太懂前端的人来说，即使这种方法失败了，也不知道原因。但是建立相册的决心不倒，我花了四天的时间一直捣鼓这个东西终于找到了下面这种方法，但是我依葫芦画瓢做了一番，发现还是不能实现，于是稍微改了其中一些代码，总算是完成了(ಥ _ ಥ)(ಥ _ ಥ)</p>
+<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><ul>
+<li>本节内容是基于实现本地保存图片功能前提记录的笔记，如果是用图床外链，可以跳过所有涉及到 <code>img</code> 文件夹以及 <code>img/s</code> 文件夹的步骤。</li>
+<li>本相册的所有功能均仅测试了在 <code>hexo-theme-next</code> 下实现的效果，使用其它主题时部分布局尺寸数据可能会出现偏差，需要自行根据主题设置修改</li>
+</ul>
+<h1 id="创建目录"><a href="#创建目录" class="headerlink" title="创建目录"></a>创建目录</h1><ul>
+<li>在 git bash 中输入命令 hexo new page gallery；</li>
+<li>在 hexo/sourse/gallery 目录下建立你需要的分类相册文件夹；</li>
+<li>进入 hexo/sourse/gallery 目录，新建 img 文件夹用来存放相册封面；</li>
+<li>在每个相册文件夹中创建 img 文件夹用来存放大图，以及 img/s 文件夹用来存放缩略图。</li>
+</ul>
 <blockquote>
-<p>内容:又学废了</p>
+<p>注意：img/s 文件夹可以省略不建，用文件名-s.jpg 的格式重命名缩略图即可。</p>
 </blockquote>
-<p>经过多方努力，我终于在大佬reuixiy的博客<br><a href="https://io-oi.me/tech/hexo-next-optimization/#%E4%B8%BB%E9%A2%98%E8%87%AA%E5%B8%A6%E6%A0%B7%E5%BC%8F-%E4%BB%A3%E7%A0%81%E5%9D%97%E9%AB%98%E4%BA%AE" target="_blank" rel="noopener" class="LinkCard">reuixiy</a><br>里面找到了答案。首先在文件位置：<code>/blog/themes/next/source/css/_custom/custom.styl</code>中添加如下代码</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">blockquote</span><span class="selector-class">.question</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#BA55D3</span>;</span><br><span class="line">    <span class="attribute">border-left</span>: <span class="number">4px</span> solid <span class="built_in">rgb</span>(<span class="number">16</span>, <span class="number">152</span>, <span class="number">173</span>);</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">250</span>, <span class="number">240</span>, <span class="number">230</span>);</span><br><span class="line">    <span class="attribute">border-top-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    <span class="attribute">border-bottom-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    <span class="attribute">margin-bottom</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>其中</p>
-<p>1）文字颜色改 <code>color</code> 的值<br>2）背景色改 <code>background-color</code> 的值<br>3）边框颜色和粗细改 <code>border-left</code> 的值</p>
-<p>在文章中这样使用：</p>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;blockquote class="question"&gt;内容：又学废了&lt;/blockquote&gt;</span><br></pre></td></tr></table></figure>
-<p>结果为</p>
-<blockquote class="question">内容：又学废了</blockquote>
-
-<h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><hr>
-<p>基于对上面的理解。我又添加了如下代码</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">blockquote</span><span class="selector-class">.moli</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>:  <span class="number">#FF7F00</span>;</span><br><span class="line">    <span class="attribute">border-left</span>: <span class="number">4px</span> solid <span class="built_in">rgb</span>(<span class="number">16</span>, <span class="number">152</span>, <span class="number">173</span>);</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">205</span>, <span class="number">197</span>, <span class="number">191</span>);</span><br><span class="line">    <span class="attribute">border-top-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    <span class="attribute">border-bottom-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    <span class="attribute">margin-bottom</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>在文章中运行结果为：</p>
-<blockquote class="moli">内容：又学废了</blockquote>
-
-<p>最后附上RGB颜色对照表：<br><a href="https://tool.oschina.net/commons?type=3" target="_blank" rel="noopener" class="LinkCard">RGB</a></p>
+<h1 id="图片处理"><a href="#图片处理" class="headerlink" title="图片处理"></a>图片处理</h1><h2 id="原图处理"><a href="#原图处理" class="headerlink" title="原图处理"></a>原图处理</h2><ul>
+<li>将需要上传的图片放入 <code>gallery/相册名/img</code> 文件夹中，为了加载速度建议压缩至 <code>1mb</code> 以下，使用 <code>jpg</code> 格式保存；</li>
+<li>除了文件大小以外没有其它要求，但是为了方便后续页面编辑，建议将文件以容易辨识的方式重命名，例如<code>日期-图片名.jpg</code>。</li>
+</ul>
+<h2 id="缩略图处理"><a href="#缩略图处理" class="headerlink" title="缩略图处理"></a>缩略图处理</h2><ul>
+<li>将 <code>gallery/相册名/img</code> 下的所有图片复制到 <code>gallery/相册名/img/s</code> 文件夹中，使用 PS 等其它处理工具压缩图片大小；</li>
+<li>建议宽度为 300px，最终输出文件大小在 30kb 左右，高度无要求</li>
+</ul>
+<h1 id="相册主界面"><a href="#相册主界面" class="headerlink" title="相册主界面"></a>相册主界面</h1><ul>
+<li>打开 <code>gallery/index.md</code>，将 title 设置成你需要的相册页面名称；</li>
+<li>（可选）在日期下方加上 <code>comments: false</code> 关闭评论；</li>
+<li>复制以下代码粘贴至正文，并按需求修改相册描述、相册名、相册文件夹名以及封面图文件名</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;center&gt;！相册描述【此行可删除】&lt;/center&gt;</span><br><span class="line">&lt;center&gt;自定义分隔符【此行可删除】&lt;/center&gt;</span><br><span class="line">&lt;div class="gallery-page"&gt;</span><br><span class="line">	&lt;div class="gallery-list"&gt;</span><br><span class="line">		&lt;div class="gallery-column"&gt;</span><br><span class="line">			&lt;div class="gallery-item"&gt;</span><br><span class="line">				&lt;a href="【！相册文件夹名】"&gt;&lt;img src="img/【！封面图文件名】.jpg"&gt;</span><br><span class="line">				&lt;/a&gt;</span><br><span class="line">				&lt;p&gt;- ！相册1 -&lt;/p&gt;</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">			&lt;div class="gallery-item"&gt;</span><br><span class="line">				&lt;a href="【！相册文件夹名】"&gt;&lt;img src="img/【！封面图文件名】.jpg"&gt;</span><br><span class="line">				&lt;/a&gt;</span><br><span class="line">				&lt;p&gt;- ！相册2 -&lt;/p&gt;</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		&lt;div class="gallery-column"&gt;</span><br><span class="line">			&lt;div class="gallery-item"&gt;</span><br><span class="line">				&lt;a href="sample"&gt;&lt;img src="img/sample.jpg"&gt;</span><br><span class="line">				&lt;/a&gt;</span><br><span class="line">				&lt;p&gt;- 相册名 -&lt;/p&gt;</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		&lt;div class="gallery-column"&gt;</span><br><span class="line">			&lt;div class="gallery-item"&gt;</span><br><span class="line">				&lt;a href="sample"&gt;&lt;img src="img/sample.jpg"&gt;</span><br><span class="line">				&lt;/a&gt;</span><br><span class="line">				&lt;p&gt;- 相册名 -&lt;/p&gt;</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;center&gt;自定义分割线【此行可删除】&lt;/center&gt;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>需要使用外链的场合，将 <code>&lt;img src=&quot;img/【封面图文件名】.jpg&quot;&gt;</code> 中的内容替换为图床外链地址即可；</li>
+<li>代码中 <code>&lt;div class=&quot;gallery-column&quot;&gt;</code> 元素为分列显示相册的列数，可按需要增减；</li>
+<li>新增相册时请确认代码添加在 <code>&lt;div class=&quot;gallery-column&quot;&gt;</code> 元素内部，否则会造成显示错误。</li>
+</ol>
+<h1 id="分类相册界面"><a href="#分类相册界面" class="headerlink" title="分类相册界面"></a>分类相册界面</h1><ul>
+<li>打开 <code>gallery/相册名/index.md</code>，将 title 设置成你需要的相册页面名称；</li>
+<li>（可选）在日期下方加上 <code>comments: false</code> 关闭评论；</li>
+<li><p>复制以下代码粘贴至正文，并按需求修改相册描述、图片名以及缩略图文件名；</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;center&gt;！相册描述【此行可删除】&lt;/center&gt;</span><br><span class="line">&lt;center&gt;自定义分隔符【此行可删除】&lt;/center&gt;</span><br><span class="line">&lt;div class="gallery-page"&gt;</span><br><span class="line">	&lt;div class="img-list"&gt;</span><br><span class="line">		&lt;div class="img-column"&gt;</span><br><span class="line">			&lt;a href="img/【！图片名1】.jpg" target="_Blank"&gt;&lt;img src="img/s/【！缩略图文件名1】.jpg"&gt;&lt;/a&gt;</span><br><span class="line">			&lt;a href="img/【！图片名2】.jpg" target="_Blank"&gt;&lt;img src="img/s/【！缩略图文件名2】.jpg"&gt;&lt;/a&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		&lt;div class="img-column"&gt;</span><br><span class="line">			&lt;a href="img/sample.jpg" target="_Blank"&gt;&lt;img src="img/s/sample.jpg"&gt;&lt;/a&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		&lt;div class="img-column"&gt;</span><br><span class="line">			&lt;a href="img/sample.jpg" target="_Blank"&gt;&lt;img src="img/s/sample.jpg"&gt;&lt;/a&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;center&gt;自定义分割线【此行可删除】&lt;/center&gt;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>需要使用外链的场合，将 <code>&lt;img src=&quot;img/【图片名】.jpg&quot;&gt;</code> 中的内容替换为图床外链地址即可，如果图床加载速度够快可以用同一个链接填充缩略图部分；</li>
+<li>代码中 <code>&lt;div class=&quot;img-column&quot;&gt;</code> 元素为分列显示图片的列数，可按需要增减；</li>
+<li>添加图片时请确认代码添加在 <code>&lt;div class=&quot;img-column&quot;&gt;</code> 元素内部，否则会造成显示错误。</li>
+</ol>
+</li>
+</ul>
+<h1 id="CSS样式"><a href="#CSS样式" class="headerlink" title="CSS样式"></a>CSS样式</h1><p> 在<code>custom.styl</code> 中加入如下代码：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*gallery*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-class">.gallery-page</span> &#123;</span><br><span class="line">	<span class="attribute">margin-top</span>: -<span class="number">50px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.img-list</span>,</span><br><span class="line"><span class="selector-class">.gallery-list</span> &#123;</span><br><span class="line">	<span class="attribute">display</span>: flex;</span><br><span class="line">	<span class="attribute">flex-direction</span>: row;</span><br><span class="line">	<span class="attribute">flex-wrap</span>: nowrap;</span><br><span class="line">	<span class="attribute">align-items</span>: flex-start;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.img-column</span> &#123;</span><br><span class="line">	<span class="attribute">display</span>: flex;</span><br><span class="line">	<span class="attribute">flex-direction</span>: column-reverse;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.img-column</span> <span class="selector-tag">a</span>,</span><br><span class="line"><span class="selector-class">.gallery-column</span> <span class="selector-tag">a</span> &#123;</span><br><span class="line">	<span class="attribute">border-bottom</span>: <span class="number">0px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.gallery-item</span> &#123;</span><br><span class="line">	<span class="attribute">margin-bottom</span>: -<span class="number">50px</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.gallery-item</span> <span class="selector-tag">p</span> &#123;</span><br><span class="line">	<span class="attribute">margin</span>: -<span class="number">25px</span> auto -<span class="number">10px</span>;</span><br><span class="line">	<span class="attribute">max-width</span>: <span class="number">50%</span>;</span><br><span class="line">	<span class="attribute">text-align</span>: center;</span><br><span class="line">	<span class="attribute">font-size</span>: <span class="number">15px</span>;</span><br><span class="line">	<span class="attribute">color</span>: $black-deep;</span><br><span class="line">	<span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,.<span class="number">3</span>);</span><br><span class="line">	<span class="attribute">border-radius</span>: <span class="number">7px</span>;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">1px</span> solid $black-deep;</span><br><span class="line">	<span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">8px</span> <span class="number">20px</span> -<span class="number">8px</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,.<span class="number">3</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.posts-expand</span> <span class="selector-class">.post-body</span> <span class="selector-class">.gallery-column</span> <span class="selector-tag">a</span> <span class="selector-tag">img</span> &#123;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">250px</span>;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">	<span class="attribute">object-fit</span>: cover;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@media</span> (<span class="attribute">max-width:</span> <span class="number">767px</span>)&#123;</span><br><span class="line">	<span class="selector-class">.gallery-item</span> <span class="selector-tag">p</span> &#123;</span><br><span class="line">		<span class="attribute">min-width</span>: <span class="number">75px</span>;</span><br><span class="line">		<span class="attribute">font-size</span>: <span class="number">13px</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>}</p>
+<ol>
+<li>@media 标签内的样式是防止移动端浏览时相册名被强制换行的，建议保留；</li>
+<li>其余样式除了 flex 相关行与 object-fit 样式以外，均可根据需要自行更改，在此不作赘述。</li>
+</ol>
+<h1 id="改进"><a href="#改进" class="headerlink" title="改进"></a>改进</h1><p>以上方法来自大佬：<a href="https://www.liaofuzhan.com/photos/" target="_blank" rel="noopener" class="LinkCard">†少女癌†</a><br>但是我用了之后发现点击图片不能进入相册的二级目录，于是就在代码上做文章，经过多次试验后我终于成功了，废话不多说，上码：</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">---</span></span><br><span class="line"><span class="selector-tag">title</span>: 我的画廊终于开通啦！！！</span><br><span class="line"><span class="selector-tag">date</span>: 2020<span class="selector-tag">-07-12</span> 13<span class="selector-pseudo">:13</span><span class="selector-pseudo">:25</span></span><br><span class="line"><span class="selector-tag">comments</span>: <span class="selector-tag">false</span></span><br><span class="line"><span class="selector-tag">---</span></span><br><span class="line">&lt;div class="gallery-page"&gt;</span><br><span class="line">	&lt;div class="gallery-list"&gt;</span><br><span class="line">		&lt;div class="gallery-column"&gt;</span><br><span class="line">			&lt;div class="gallery-item"&gt;</span><br><span class="line">	     		   &lt;a&gt;&lt;img src="img/相册一.jpg"&gt;&lt;/a&gt;</span><br><span class="line">				&lt;a href="分享一"&gt;&lt;center&gt; 分享一&lt;/center&gt;&lt;/a&gt;</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">		&lt;/div&gt;		</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>上面代码是在<code>source/gallery/index.md</code>中修改，结果图为<br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200712165727661.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述">点击<code>分享一</code>即可进入：<br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200712165803824.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
 ]]></content>
       <tags>
         <tag>Hexo</tag>
@@ -676,84 +728,32 @@
       </tags>
   </entry>
   <entry>
-    <title>画廊（相册）制作</title>
-    <url>/2020/07/12/%E7%94%BB%E5%BB%8A%EF%BC%88%E7%9B%B8%E5%86%8C%EF%BC%89%E5%88%B6%E4%BD%9C/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="建立相册经历"><a href="#建立相册经历" class="headerlink" title="建立相册经历"></a>建立相册经历</h1><p>本人比较轴，为了建立博客相册，在百度、360等浏览器上找了多种方法，也试了很多方法，但是多于不太懂前端的人来说，即使这种方法失败了，也不知道原因。但是建立相册的决心不倒，我花了四天的时间一直捣鼓这个东西终于找到了下面这种方法，但是我依葫芦画瓢做了一番，发现还是不能实现，于是稍微改了其中一些代码，总算是完成了(ಥ _ ಥ)(ಥ _ ಥ)</p>
-<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><ul>
-<li>本节内容是基于实现本地保存图片功能前提记录的笔记，如果是用图床外链，可以跳过所有涉及到 <code>img</code> 文件夹以及 <code>img/s</code> 文件夹的步骤。</li>
-<li>本相册的所有功能均仅测试了在 <code>hexo-theme-next</code> 下实现的效果，使用其它主题时部分布局尺寸数据可能会出现偏差，需要自行根据主题设置修改</li>
-</ul>
-<h1 id="创建目录"><a href="#创建目录" class="headerlink" title="创建目录"></a>创建目录</h1><ul>
-<li>在 git bash 中输入命令 hexo new page gallery；</li>
-<li>在 hexo/sourse/gallery 目录下建立你需要的分类相册文件夹；</li>
-<li>进入 hexo/sourse/gallery 目录，新建 img 文件夹用来存放相册封面；</li>
-<li>在每个相册文件夹中创建 img 文件夹用来存放大图，以及 img/s 文件夹用来存放缩略图。</li>
-</ul>
+    <title>自定义“引用”板块</title>
+    <url>/2020/07/11/%E8%87%AA%E5%AE%9A%E4%B9%89%E2%80%9C%E5%BC%95%E7%94%A8%E2%80%9D%E6%9D%BF%E5%9D%97/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="自定义“引用”板块"><a href="#自定义“引用”板块" class="headerlink" title="自定义“引用”板块"></a>自定义“引用”板块</h1><h2 id="启发"><a href="#启发" class="headerlink" title="启发"></a>启发</h2><hr>
+<p>自从为了方便编写Md文件，我一直在用CSDN写文章，但我一直困扰于如何使用更加引人注目的<code>引用板块</code>，因为在CSDN中引用板块样子如下</p>
 <blockquote>
-<p>注意：img/s 文件夹可以省略不建，用文件名-s.jpg 的格式重命名缩略图即可。</p>
+<p>内容:又学废了</p>
 </blockquote>
-<h1 id="图片处理"><a href="#图片处理" class="headerlink" title="图片处理"></a>图片处理</h1><h2 id="原图处理"><a href="#原图处理" class="headerlink" title="原图处理"></a>原图处理</h2><ul>
-<li>将需要上传的图片放入 <code>gallery/相册名/img</code> 文件夹中，为了加载速度建议压缩至 <code>1mb</code> 以下，使用 <code>jpg</code> 格式保存；</li>
-<li>除了文件大小以外没有其它要求，但是为了方便后续页面编辑，建议将文件以容易辨识的方式重命名，例如<code>日期-图片名.jpg</code>。</li>
-</ul>
-<h2 id="缩略图处理"><a href="#缩略图处理" class="headerlink" title="缩略图处理"></a>缩略图处理</h2><ul>
-<li>将 <code>gallery/相册名/img</code> 下的所有图片复制到 <code>gallery/相册名/img/s</code> 文件夹中，使用 PS 等其它处理工具压缩图片大小；</li>
-<li>建议宽度为 300px，最终输出文件大小在 30kb 左右，高度无要求</li>
-</ul>
-<h1 id="相册主界面"><a href="#相册主界面" class="headerlink" title="相册主界面"></a>相册主界面</h1><ul>
-<li>打开 <code>gallery/index.md</code>，将 title 设置成你需要的相册页面名称；</li>
-<li>（可选）在日期下方加上 <code>comments: false</code> 关闭评论；</li>
-<li>复制以下代码粘贴至正文，并按需求修改相册描述、相册名、相册文件夹名以及封面图文件名</li>
-</ul>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;center&gt;！相册描述【此行可删除】&lt;/center&gt;</span><br><span class="line">&lt;center&gt;自定义分隔符【此行可删除】&lt;/center&gt;</span><br><span class="line">&lt;div class="gallery-page"&gt;</span><br><span class="line">	&lt;div class="gallery-list"&gt;</span><br><span class="line">		&lt;div class="gallery-column"&gt;</span><br><span class="line">			&lt;div class="gallery-item"&gt;</span><br><span class="line">				&lt;a href="【！相册文件夹名】"&gt;&lt;img src="img/【！封面图文件名】.jpg"&gt;</span><br><span class="line">				&lt;/a&gt;</span><br><span class="line">				&lt;p&gt;- ！相册1 -&lt;/p&gt;</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">			&lt;div class="gallery-item"&gt;</span><br><span class="line">				&lt;a href="【！相册文件夹名】"&gt;&lt;img src="img/【！封面图文件名】.jpg"&gt;</span><br><span class="line">				&lt;/a&gt;</span><br><span class="line">				&lt;p&gt;- ！相册2 -&lt;/p&gt;</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		&lt;div class="gallery-column"&gt;</span><br><span class="line">			&lt;div class="gallery-item"&gt;</span><br><span class="line">				&lt;a href="sample"&gt;&lt;img src="img/sample.jpg"&gt;</span><br><span class="line">				&lt;/a&gt;</span><br><span class="line">				&lt;p&gt;- 相册名 -&lt;/p&gt;</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		&lt;div class="gallery-column"&gt;</span><br><span class="line">			&lt;div class="gallery-item"&gt;</span><br><span class="line">				&lt;a href="sample"&gt;&lt;img src="img/sample.jpg"&gt;</span><br><span class="line">				&lt;/a&gt;</span><br><span class="line">				&lt;p&gt;- 相册名 -&lt;/p&gt;</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;center&gt;自定义分割线【此行可删除】&lt;/center&gt;</span><br></pre></td></tr></table></figure>
-<ol>
-<li>需要使用外链的场合，将 <code>&lt;img src=&quot;img/【封面图文件名】.jpg&quot;&gt;</code> 中的内容替换为图床外链地址即可；</li>
-<li>代码中 <code>&lt;div class=&quot;gallery-column&quot;&gt;</code> 元素为分列显示相册的列数，可按需要增减；</li>
-<li>新增相册时请确认代码添加在 <code>&lt;div class=&quot;gallery-column&quot;&gt;</code> 元素内部，否则会造成显示错误。</li>
-</ol>
-<h1 id="分类相册界面"><a href="#分类相册界面" class="headerlink" title="分类相册界面"></a>分类相册界面</h1><ul>
-<li>打开 <code>gallery/相册名/index.md</code>，将 title 设置成你需要的相册页面名称；</li>
-<li>（可选）在日期下方加上 <code>comments: false</code> 关闭评论；</li>
-<li><p>复制以下代码粘贴至正文，并按需求修改相册描述、图片名以及缩略图文件名；</p>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;center&gt;！相册描述【此行可删除】&lt;/center&gt;</span><br><span class="line">&lt;center&gt;自定义分隔符【此行可删除】&lt;/center&gt;</span><br><span class="line">&lt;div class="gallery-page"&gt;</span><br><span class="line">	&lt;div class="img-list"&gt;</span><br><span class="line">		&lt;div class="img-column"&gt;</span><br><span class="line">			&lt;a href="img/【！图片名1】.jpg" target="_Blank"&gt;&lt;img src="img/s/【！缩略图文件名1】.jpg"&gt;&lt;/a&gt;</span><br><span class="line">			&lt;a href="img/【！图片名2】.jpg" target="_Blank"&gt;&lt;img src="img/s/【！缩略图文件名2】.jpg"&gt;&lt;/a&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		&lt;div class="img-column"&gt;</span><br><span class="line">			&lt;a href="img/sample.jpg" target="_Blank"&gt;&lt;img src="img/s/sample.jpg"&gt;&lt;/a&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		&lt;div class="img-column"&gt;</span><br><span class="line">			&lt;a href="img/sample.jpg" target="_Blank"&gt;&lt;img src="img/s/sample.jpg"&gt;&lt;/a&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;center&gt;自定义分割线【此行可删除】&lt;/center&gt;</span><br></pre></td></tr></table></figure>
-<ol>
-<li>需要使用外链的场合，将 <code>&lt;img src=&quot;img/【图片名】.jpg&quot;&gt;</code> 中的内容替换为图床外链地址即可，如果图床加载速度够快可以用同一个链接填充缩略图部分；</li>
-<li>代码中 <code>&lt;div class=&quot;img-column&quot;&gt;</code> 元素为分列显示图片的列数，可按需要增减；</li>
-<li>添加图片时请确认代码添加在 <code>&lt;div class=&quot;img-column&quot;&gt;</code> 元素内部，否则会造成显示错误。</li>
-</ol>
-</li>
-</ul>
-<h1 id="CSS样式"><a href="#CSS样式" class="headerlink" title="CSS样式"></a>CSS样式</h1><p> 在<code>custom.styl</code> 中加入如下代码：</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*gallery*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-class">.gallery-page</span> &#123;</span><br><span class="line">	<span class="attribute">margin-top</span>: -<span class="number">50px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.img-list</span>,</span><br><span class="line"><span class="selector-class">.gallery-list</span> &#123;</span><br><span class="line">	<span class="attribute">display</span>: flex;</span><br><span class="line">	<span class="attribute">flex-direction</span>: row;</span><br><span class="line">	<span class="attribute">flex-wrap</span>: nowrap;</span><br><span class="line">	<span class="attribute">align-items</span>: flex-start;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.img-column</span> &#123;</span><br><span class="line">	<span class="attribute">display</span>: flex;</span><br><span class="line">	<span class="attribute">flex-direction</span>: column-reverse;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.img-column</span> <span class="selector-tag">a</span>,</span><br><span class="line"><span class="selector-class">.gallery-column</span> <span class="selector-tag">a</span> &#123;</span><br><span class="line">	<span class="attribute">border-bottom</span>: <span class="number">0px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.gallery-item</span> &#123;</span><br><span class="line">	<span class="attribute">margin-bottom</span>: -<span class="number">50px</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.gallery-item</span> <span class="selector-tag">p</span> &#123;</span><br><span class="line">	<span class="attribute">margin</span>: -<span class="number">25px</span> auto -<span class="number">10px</span>;</span><br><span class="line">	<span class="attribute">max-width</span>: <span class="number">50%</span>;</span><br><span class="line">	<span class="attribute">text-align</span>: center;</span><br><span class="line">	<span class="attribute">font-size</span>: <span class="number">15px</span>;</span><br><span class="line">	<span class="attribute">color</span>: $black-deep;</span><br><span class="line">	<span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,.<span class="number">3</span>);</span><br><span class="line">	<span class="attribute">border-radius</span>: <span class="number">7px</span>;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">1px</span> solid $black-deep;</span><br><span class="line">	<span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">8px</span> <span class="number">20px</span> -<span class="number">8px</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,.<span class="number">3</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.posts-expand</span> <span class="selector-class">.post-body</span> <span class="selector-class">.gallery-column</span> <span class="selector-tag">a</span> <span class="selector-tag">img</span> &#123;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">250px</span>;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">	<span class="attribute">object-fit</span>: cover;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@media</span> (<span class="attribute">max-width:</span> <span class="number">767px</span>)&#123;</span><br><span class="line">	<span class="selector-class">.gallery-item</span> <span class="selector-tag">p</span> &#123;</span><br><span class="line">		<span class="attribute">min-width</span>: <span class="number">75px</span>;</span><br><span class="line">		<span class="attribute">font-size</span>: <span class="number">13px</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>}</p>
-<ol>
-<li>@media 标签内的样式是防止移动端浏览时相册名被强制换行的，建议保留；</li>
-<li>其余样式除了 flex 相关行与 object-fit 样式以外，均可根据需要自行更改，在此不作赘述。</li>
-</ol>
-<h1 id="改进"><a href="#改进" class="headerlink" title="改进"></a>改进</h1><p>以上方法来自大佬：<a href="https://www.liaofuzhan.com/photos/" target="_blank" rel="noopener" class="LinkCard">†少女癌†</a><br>但是我用了之后发现点击图片不能进入相册的二级目录，于是就在代码上做文章，经过多次试验后我终于成功了，废话不多说，上码：</p>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">---</span></span><br><span class="line"><span class="selector-tag">title</span>: 我的画廊终于开通啦！！！</span><br><span class="line"><span class="selector-tag">date</span>: 2020<span class="selector-tag">-07-12</span> 13<span class="selector-pseudo">:13</span><span class="selector-pseudo">:25</span></span><br><span class="line"><span class="selector-tag">comments</span>: <span class="selector-tag">false</span></span><br><span class="line"><span class="selector-tag">---</span></span><br><span class="line">&lt;div class="gallery-page"&gt;</span><br><span class="line">	&lt;div class="gallery-list"&gt;</span><br><span class="line">		&lt;div class="gallery-column"&gt;</span><br><span class="line">			&lt;div class="gallery-item"&gt;</span><br><span class="line">	     		   &lt;a&gt;&lt;img src="img/相册一.jpg"&gt;&lt;/a&gt;</span><br><span class="line">				&lt;a href="分享一"&gt;&lt;center&gt; 分享一&lt;/center&gt;&lt;/a&gt;</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">		&lt;/div&gt;		</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<p>上面代码是在<code>source/gallery/index.md</code>中修改，结果图为<br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200712165727661.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述">点击<code>分享一</code>即可进入：<br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20200712165803824.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hoYmh4Yg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<p>经过多方努力，我终于在大佬reuixiy的博客<br><a href="https://io-oi.me/tech/hexo-next-optimization/#%E4%B8%BB%E9%A2%98%E8%87%AA%E5%B8%A6%E6%A0%B7%E5%BC%8F-%E4%BB%A3%E7%A0%81%E5%9D%97%E9%AB%98%E4%BA%AE" target="_blank" rel="noopener" class="LinkCard">reuixiy</a><br>里面找到了答案。首先在文件位置：<code>/blog/themes/next/source/css/_custom/custom.styl</code>中添加如下代码</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">blockquote</span><span class="selector-class">.question</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#BA55D3</span>;</span><br><span class="line">    <span class="attribute">border-left</span>: <span class="number">4px</span> solid <span class="built_in">rgb</span>(<span class="number">16</span>, <span class="number">152</span>, <span class="number">173</span>);</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">250</span>, <span class="number">240</span>, <span class="number">230</span>);</span><br><span class="line">    <span class="attribute">border-top-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    <span class="attribute">border-bottom-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    <span class="attribute">margin-bottom</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其中</p>
+<p>1）文字颜色改 <code>color</code> 的值<br>2）背景色改 <code>background-color</code> 的值<br>3）边框颜色和粗细改 <code>border-left</code> 的值</p>
+<p>在文章中这样使用：</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;blockquote class="question"&gt;内容：又学废了&lt;/blockquote&gt;</span><br></pre></td></tr></table></figure>
+<p>结果为</p>
+<blockquote class="question">内容：又学废了</blockquote>
+
+<h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><hr>
+<p>基于对上面的理解。我又添加了如下代码</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">blockquote</span><span class="selector-class">.moli</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>:  <span class="number">#FF7F00</span>;</span><br><span class="line">    <span class="attribute">border-left</span>: <span class="number">4px</span> solid <span class="built_in">rgb</span>(<span class="number">16</span>, <span class="number">152</span>, <span class="number">173</span>);</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">205</span>, <span class="number">197</span>, <span class="number">191</span>);</span><br><span class="line">    <span class="attribute">border-top-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    <span class="attribute">border-bottom-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    <span class="attribute">margin-bottom</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在文章中运行结果为：</p>
+<blockquote class="moli">内容：又学废了</blockquote>
+
+<p>最后附上RGB颜色对照表：<br><a href="https://tool.oschina.net/commons?type=3" target="_blank" rel="noopener" class="LinkCard">RGB</a></p>
 ]]></content>
       <tags>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>分享五</title>
-    <url>/2020/07/21/%E5%88%86%E4%BA%AB%E4%BA%94/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><a href="https://www.paddylin.top/gallery/%E5%88%86%E4%BA%AB%E4%BA%8C/" class="LinkCard">分享</a></p>
-]]></content>
-      <tags>
-        <tag>图片</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>分享六</title>
-    <url>/2020/07/21/%E5%88%86%E4%BA%AB%E5%85%AD/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><a href="https://www.paddylin.top/gallery/%E5%88%86%E4%BA%AB%E4%B8%89/" class="LinkCard">分享</a></p>
-]]></content>
-      <tags>
-        <tag>图片</tag>
       </tags>
   </entry>
 </search>
